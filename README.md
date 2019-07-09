@@ -19,4 +19,8 @@
 
 * [关于A类地址，B类地址，C类地址的划分和详细理解](https://blog.csdn.net/qq_40160605/article/details/84667066)
 
-* []()
+* [IP地址为什要分类？就是a类,b类,c类。。。?](https://www.zhihu.com/question/31766172)
+
+* [IP地址，子网掩码，默认网关，DNS服务器详解](https://www.cnblogs.com/JuneWang/p/3917697.html)
+
+* [如何计算网络地址和广播地址](https://blog.csdn.net/lzh657083979/article/details/77606217)
