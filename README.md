@@ -24,3 +24,5 @@
 * [IP地址，子网掩码，默认网关，DNS服务器详解](https://www.cnblogs.com/JuneWang/p/3917697.html)
 
 * [如何计算网络地址和广播地址](https://blog.csdn.net/lzh657083979/article/details/77606217)
+
+* [【科普】IP地址详解-你,是谁？(二）](https://zhuanlan.zhihu.com/p/26098552)
