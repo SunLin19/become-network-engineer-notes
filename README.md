@@ -30,3 +30,5 @@
 * [子网掩码的计算及与子网数、主机数关系](https://blog.csdn.net/yinshitaoyuan/article/details/51782330)
 
 * [网络位和主机位怎么分的?](https://zhidao.baidu.com/question/26770723.html)
+
+* [ip ,子网掩码， 网关 ，主机位数，网络位数，子网数 ,这都什么鬼！终于明白了！](https://blog.csdn.net/weixin_41955327/article/details/85557630)
