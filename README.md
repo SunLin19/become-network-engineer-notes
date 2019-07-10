@@ -26,3 +26,5 @@
 * [如何计算网络地址和广播地址](https://blog.csdn.net/lzh657083979/article/details/77606217)
 
 * [【科普】IP地址详解-你,是谁？(二）](https://zhuanlan.zhihu.com/p/26098552)
+
+* [子网掩码的计算及与子网数、主机数关系](https://blog.csdn.net/yinshitaoyuan/article/details/51782330)
