@@ -32,11 +32,11 @@ IP地址是一个32位的二进制数，通常被分割为4个“8位二进制�
 
 例题：计算IP地址为:192.168.95.27，子网掩码是255.255.255.0，求此IP的网络地址？
 
-将IP地址与子网掩码的[二进制](https://zh.wikihow.com/%E4%BB%8E%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E8%BF%9B%E5%88%B6)进行[逻辑与](https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E4%B8%8E)运算即可得出网络地址
+将IP地址与子网掩码的[二进制](https://zh.wikihow.com/%E4%BB%8E%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E8%BF%9B%E5%88%B6)进行[逻辑与运算](https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E4%B8%8E)即可得出网络地址
 
 ![](https://i.postimg.cc/7YyVF3vM/Snipaste-2019-07-13-01-27-45.png)
 
-
+192.168.95.0
 
 子网掩码是用来判断任意两台计算机的ip地址是否属于同一子网络的根据。最为简单的理解就是两台计算机各自的ip地址与子网掩码进行and运算后，得出的结果是相同的，则说明这两台计算机是处于同一个子网络上的，可以进行直接的通讯。
 
