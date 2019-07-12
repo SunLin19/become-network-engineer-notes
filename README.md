@@ -31,4 +31,6 @@
 
 * [网络位和主机位怎么分的?](https://zhidao.baidu.com/question/26770723.html)
 
+* [百度百科主机地址](https://baike.baidu.com/item/%E4%B8%BB%E6%9C%BA%E5%9C%B0%E5%9D%80)
+
 * [ip ,子网掩码， 网关 ，主机位数，网络位数，子网数 ,这都什么鬼！终于明白了！](https://blog.csdn.net/weixin_41955327/article/details/85557630)
