@@ -19,6 +19,8 @@
 
 ### 参考链接
 
+* [ip地址0.0.0.0是什么意思 - segmentfault](https://segmentfault.com/q/1010000003732310)
+
 * [关于A类地址，B类地址，C类地址的划分和详细理解](https://blog.csdn.net/qq_40160605/article/details/84667066)
 
 * [IP地址为什要分类？就是a类,b类,c类。。。?](https://www.zhihu.com/question/31766172)
