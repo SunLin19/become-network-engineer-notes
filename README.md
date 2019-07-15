@@ -45,3 +45,5 @@
 * [IBM® IBM Knowledge Center - IPv4 与 IPv6 的比较 ](https://www.ibm.com/support/knowledgecenter/zh/ssw_ibm_i_71/rzai2/rzai2compipv4ipv6.htm#rzai2compipv4ipv6__compaddress) 
 
 * [MBA智库 - 网关](https://wiki.mbalib.com/wiki/%E7%BD%91%E5%85%B3)
+
+* [要想实现两台电脑通讯，如何修改网络ip地址及默认网关？](http://www.360doc.com/content/18/0409/13/47178282_744151500.shtml)
