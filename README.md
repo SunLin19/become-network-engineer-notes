@@ -44,4 +44,4 @@
 
 * [IBM® IBM Knowledge Center - IPv4 与 IPv6 的比较 ](https://www.ibm.com/support/knowledgecenter/zh/ssw_ibm_i_71/rzai2/rzai2compipv4ipv6.htm#rzai2compipv4ipv6__compaddress) 
 
-* [ip ,子网掩码， 网关 ，主机位数，网络位数，子网数 ,这都什么鬼！终于明白了！](https://blog.csdn.net/weixin_41955327/article/details/85557630)
+* [MBA智库 - 网关](https://wiki.mbalib.com/wiki/%E7%BD%91%E5%85%B3)
