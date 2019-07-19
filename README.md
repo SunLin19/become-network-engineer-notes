@@ -49,3 +49,5 @@
 * [要想实现两台电脑通讯，如何修改网络ip地址及默认网关？](http://www.360doc.com/content/18/0409/13/47178282_744151500.shtml)
 
 * [问cisco里的"特权模式"和"全局模式"有什么区别?](https://zhidao.baidu.com/question/92946651.html)
+
+* [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
