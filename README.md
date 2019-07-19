@@ -47,3 +47,5 @@
 * [MBA智库 - 网关](https://wiki.mbalib.com/wiki/%E7%BD%91%E5%85%B3)
 
 * [要想实现两台电脑通讯，如何修改网络ip地址及默认网关？](http://www.360doc.com/content/18/0409/13/47178282_744151500.shtml)
+
+* [问cisco里的"特权模式"和"全局模式"有什么区别?](https://zhidao.baidu.com/question/92946651.html)
