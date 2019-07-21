@@ -59,3 +59,9 @@
 * [问cisco里的"特权模式"和"全局模式"有什么区别?](https://zhidao.baidu.com/question/92946651.html)
 
 * [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
+
+
+todo 
+
+* [ ] 今天弄清楚DTE与DCE区别
+
