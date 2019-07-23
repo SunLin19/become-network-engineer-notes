@@ -60,8 +60,7 @@
 
 * [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
 
+* [OSI七层协议模型和TCP/IP四层模型](https://blog.csdn.net/freeking101/article/details/77977941)
 
-todo 
-
-* [ ] 今天弄清楚DTE与DCE区别
+* [OSI/RM七层模型 和 TCP/IP四层模型](https://my.oschina.net/tita/blog/3053424)
 
