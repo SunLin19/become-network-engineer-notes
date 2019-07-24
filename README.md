@@ -79,6 +79,8 @@ IP、子网掩码、网关
 
 * [中继器和集线器的区别](http://www.hqps.com/tech/201411/219528.html)
 
+* [集线器的作用是什么 和交换机有什么区别](http://m.365azw.com/share/117006)
+
 
 OSI
 
