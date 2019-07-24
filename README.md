@@ -92,3 +92,5 @@ OSI
 * [OSI/RM七层模型 和 TCP/IP四层模型](https://my.oschina.net/tita/blog/3053424)
 
 * [OSI协议和TCP/IP协议模型](https://blog.csdn.net/zhydream77/article/details/81700535)
+
+* [牛客-物理层的作用（概览）](https://www.nowcoder.com/questionTerminal/527819d3161d40229ff0d1e3b78f8d57)
