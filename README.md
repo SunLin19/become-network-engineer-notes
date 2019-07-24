@@ -37,6 +37,8 @@
 
 ### 参考链接
 
+IP、子网掩码、网关
+
 * [ip地址0.0.0.0是什么意思 - segmentfault](https://segmentfault.com/q/1010000003732310)
 
 * [关于A类地址，B类地址，C类地址的划分和详细理解](https://blog.csdn.net/qq_40160605/article/details/84667066)
@@ -63,13 +65,8 @@
 
 * [问cisco里的"特权模式"和"全局模式"有什么区别?](https://zhidao.baidu.com/question/92946651.html)
 
-* [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
 
-* [OSI七层协议模型和TCP/IP四层模型](https://blog.csdn.net/freeking101/article/details/77977941)
-
-* [OSI/RM七层模型 和 TCP/IP四层模型](https://my.oschina.net/tita/blog/3053424)
-
-* [OSI协议和TCP/IP协议模型](https://blog.csdn.net/zhydream77/article/details/81700535)
+网络设备
 
 
 * [多种场景的网桥应用案例](https://www.sohu.com/a/237267116_657991)
@@ -81,3 +78,14 @@
 * [无线AP图](http://www.sohu.com/a/256460042_374240)
 
 * [中继器和集线器的区别](http://www.hqps.com/tech/201411/219528.html)
+
+
+OSI
+
+* [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
+
+* [OSI七层协议模型和TCP/IP四层模型](https://blog.csdn.net/freeking101/article/details/77977941)
+
+* [OSI/RM七层模型 和 TCP/IP四层模型](https://my.oschina.net/tita/blog/3053424)
+
+* [OSI协议和TCP/IP协议模型](https://blog.csdn.net/zhydream77/article/details/81700535)
