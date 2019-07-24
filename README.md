@@ -79,3 +79,5 @@
 * [无线AP与路由器的区别](https://www.diangon.com/m430171.html)
 
 * [无线AP图](http://www.sohu.com/a/256460042_374240)
+
+* [中继器和集线器的区别](http://www.hqps.com/tech/201411/219528.html)
