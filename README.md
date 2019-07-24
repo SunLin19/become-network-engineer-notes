@@ -70,3 +70,8 @@
 * [OSI/RM七层模型 和 TCP/IP四层模型](https://my.oschina.net/tita/blog/3053424)
 
 * [OSI协议和TCP/IP协议模型](https://blog.csdn.net/zhydream77/article/details/81700535)
+
+
+* [多种场景的网桥应用案例](https://www.sohu.com/a/237267116_657991)
+
+* [无线网桥应用场景](https://jingyan.baidu.com/article/1876c85255a529890b137681.html)
