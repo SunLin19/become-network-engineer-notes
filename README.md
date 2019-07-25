@@ -82,6 +82,8 @@ IP、子网掩码、网关
 
 * [集线器的作用是什么 和交换机有什么区别](http://m.365azw.com/share/117006)
 
+* [交换机的广播风暴](https://blog.csdn.net/u010486124/article/details/31803263)
+
 
 OSI
 
