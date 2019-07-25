@@ -84,6 +84,10 @@ IP、子网掩码、网关
 
 * [交换机的广播风暴](https://blog.csdn.net/u010486124/article/details/31803263)
 
+* [交换机的工作原理？](https://www.zhihu.com/question/34736235)
+
+* [交换机工作原理、MAC地址表、路由器工作原理详解](https://www.cnblogs.com/gopark/p/8980783.html)
+
 
 OSI
 
