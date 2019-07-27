@@ -88,6 +88,8 @@ IP、子网掩码、网关
 
 * [交换机工作原理、MAC地址表、路由器工作原理详解](https://www.cnblogs.com/gopark/p/8980783.html)
 
+* [物理层的基本概念和数据通信基础](https://www.cnblogs.com/yangmingxianshen/p/7796386.html)
+
 
 OSI
 
