@@ -96,6 +96,8 @@ IP、子网掩码、网关
 
 * [物理层的基本概念和数据通信基础](https://www.cnblogs.com/yangmingxianshen/p/7796386.html)
 
+* [电梯无线网桥监控方案](https://zhuanlan.zhihu.com/p/38515313)
+
 
 OSI
 
