@@ -96,6 +96,8 @@ IP、子网掩码、网关
 
 * [电梯无线网桥监控方案](https://zhuanlan.zhihu.com/p/38515313)
 
+* [二层交换机与三层交换机区别详解！](https://www.cnblogs.com/felixzh/p/8690036.html)
+
 
 OSI
 
