@@ -98,6 +98,8 @@ IP、子网掩码、网关
 
 * [二层交换机与三层交换机区别详解！](https://www.cnblogs.com/felixzh/p/8690036.html)
 
+* [二层、三层、四层交换机、路由器的区别](https://network.pconline.com.cn/474/4741916.html)
+
 
 OSI
 
