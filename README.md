@@ -100,6 +100,8 @@ IP、子网掩码、网关
 
 * [二层、三层、四层交换机、路由器的区别](https://network.pconline.com.cn/474/4741916.html)
 
+* [OSI参考模型——网络层：路由选择算法和协议](https://blog.csdn.net/jeffleo/article/details/53965708)
+
 
 OSI
 
