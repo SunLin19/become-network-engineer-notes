@@ -105,9 +105,9 @@ IP、子网掩码、网关
 * [OSI参考模型——网络层：路由选择算法和协议](https://blog.csdn.net/jeffleo/article/details/53965708)
 
 
-网络发展史
+网络连接
 
-* [计算机网络发展史](https://www.douban.com/note/159759602/)
+![【网络是怎样连接的】第2章 - 用电信号传输 TCP/IP 数据（5）](https://www.jianshu.com/p/ce8425c6be9e)
 
 
 
