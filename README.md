@@ -107,7 +107,7 @@ IP、子网掩码、网关
 
 网络连接
 
-[【网络是怎样连接的】第2章 - 用电信号传输 TCP/IP 数据（5）](https://www.jianshu.com/p/ce8425c6be9e)
+http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
 
 
 
