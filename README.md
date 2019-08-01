@@ -122,7 +122,7 @@ IP、子网掩码、网关
 
 http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
 
-
+https://www.zhihu.com/question/24002080
 
 OSI
 
