@@ -13,6 +13,10 @@
 |表示层||
 |应用层||
 
+> 图片摘自 [钛白Logic](https://www.cnblogs.com/qishui/p/5428938.html)
+
+![](https://i.postimg.cc/N0N7gyZ5/705728-20160424234825491-384470376.png)
+
 > 图片摘自 [超级课程表哥](https://blog.csdn.net/qq_25606103/article/details/51295965)
 
 ![](https://i.postimg.cc/T1x8fHzd/2019-08-02-165336.png)
