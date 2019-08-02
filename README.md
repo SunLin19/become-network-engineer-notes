@@ -124,6 +124,11 @@ http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
 
 https://www.zhihu.com/question/24002080
 
+
+传输层
+
+[计算机网络学习笔记--传输层知识总结](https://www.cnblogs.com/fingerboy/p/5402354.html)
+
 OSI
 
 * [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
