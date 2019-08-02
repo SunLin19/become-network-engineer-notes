@@ -13,5 +13,11 @@
 |表示层||
 |应用层||
 
+> 图片摘自 [超级课程表哥](https://blog.csdn.net/qq_25606103/article/details/51295965)
+
+![](https://i.postimg.cc/bwNv77V0/20160502150850828.png
+
+
+
 
 接单类比、自做图
