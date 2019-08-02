@@ -1,5 +1,13 @@
 # OSI模型的快递服务
 
+
+# OSI模型与TCP/IP模型
+
+> 图片摘自 [钛白Logic](https://www.cnblogs.com/qishui/p/5428938.html)
+
+![](https://i.postimg.cc/tCT1jSpt/2019-08-02-170123.png)
+
+
 从生活中举例主要是为了方便形象化，更便于理解OSI模型每一层的主要作用
 
 
@@ -13,9 +21,6 @@
 |表示层||
 |应用层||
 
-> 图片摘自 [钛白Logic](https://www.cnblogs.com/qishui/p/5428938.html)
-
-![](https://i.postimg.cc/tCT1jSpt/2019-08-02-170123.png)
 
 > 图片摘自 [超级课程表哥](https://blog.csdn.net/qq_25606103/article/details/51295965)
 
