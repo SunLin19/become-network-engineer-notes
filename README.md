@@ -146,3 +146,8 @@ OSI
 * [牛客-物理层的作用（概览）](https://www.nowcoder.com/questionTerminal/527819d3161d40229ff0d1e3b78f8d57)
 
 * [应用层、表示层、会话层、传输层、网络层、数据链路层、物理层](https://blog.csdn.net/weixin_41738417/article/details/92796077)
+
+
+传输层
+
+* [理解面向连接和无连接协议之间的区别](https://michaelyou.github.io/2015/03/24/%E7%90%86%E8%A7%A3%E9%9D%A2%E5%90%91%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%97%A0%E8%BF%9E%E6%8E%A5%E5%8D%8F%E8%AE%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/)
