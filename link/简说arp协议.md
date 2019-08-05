@@ -6,4 +6,5 @@ IP数据包常通过以太网发送。以太网设备并不识别32位IP地址�
 
 > 摘自 [IBM - ARP协议揭密](https://www.ibm.com/developerworks/cn/linux/l-arp/index.html)
 
+## arp工作机制
 
