@@ -60,12 +60,12 @@ OSI模型对网络的整体理解也是十分友好，因此理解OSI模型也�
 
 ![](https://i.postimg.cc/9fcS0TGq/image004.jpg)
 
-
+<!--
 ## 经过数据链路的包
 
 ![](https://i.postimg.cc/Njv7WDCB/Snipaste-2019-08-05-10-23-44.png)
 
-
+-->
 
 
 
