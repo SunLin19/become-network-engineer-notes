@@ -18,7 +18,7 @@ IP数据包常通过以太网发送。以太网设备并不识别32位IP地址�
 
 使用 ping 及wireshark方式，抓包查看
 
-![]()
+![](https://i.postimg.cc/PqLZjHPR/Snipaste-2019-08-07-21-17-23.png)
 
 arp报文简要格式
 
