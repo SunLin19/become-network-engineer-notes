@@ -131,6 +131,11 @@ https://www.zhihu.com/question/24002080
 
 https://wizardforcel.gitbooks.io/network-basic/0.html
 
+tcp
+
+![](https://www.cnblogs.com/youxin/p/3565421.html)
+
+
 
 传输层
 
