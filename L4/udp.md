@@ -1,5 +1,5 @@
 # 简说UDP协议
 
-UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议，它是一种<u>无连接的传输层协议</u>，提供<u>面向事务的简单不可靠信息传送服务</u>。
+UDP 是User Datagram Protocol的简称，中文名是用户数据报协议，它是一种<ins>无连接的传输层协议</ins>，提供<ins>面向事务的简单不可靠信息传送服务</ins>。
 
 无连接的传输层协议：
