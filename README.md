@@ -1,7 +1,6 @@
 # ip-book
-继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，
 
-《从零开始理解网络》？可能吧。。。
+笔记
 
  [IBM® IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/zh/)
 
@@ -66,3 +65,5 @@ https://www.linuxidc.com/Linux/2018-09/154366.htm
 
 http://velep.com/archives/934.html
 
+<!--
+继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，《从零开始理解网络》？可能吧。。。-->
