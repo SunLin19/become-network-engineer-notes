@@ -135,6 +135,9 @@ tcp
 
 [](https://www.cnblogs.com/youxin/p/3565421.html)
 
+udp
+
+https://www.linuxidc.com/Linux/2018-09/154366.htm
 
 
 传输层
