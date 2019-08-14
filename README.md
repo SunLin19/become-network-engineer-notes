@@ -2,6 +2,8 @@
 
 笔记
 
+http://www.itgemini.net/News/detail/3946.html
+
  [IBM® IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/zh/)
 
 ### 计划
