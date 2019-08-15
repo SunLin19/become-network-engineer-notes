@@ -4,3 +4,6 @@ UDP 是User Datagram Protocol的简称，中文名是用户数据报协议，UDP
 
 
 理解网络编程方法以及流程图
+
+
+![](https://i.postimg.cc/rsyz9qX9/180924145972612.jpg)
