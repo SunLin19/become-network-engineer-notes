@@ -11,8 +11,9 @@ UDP 是User Datagram Protocol的简称，中文名是用户数据报协议，UDP
 
 > 以下代码摘自 [xiao-apple36-Python UDP实例](cnblogs.com/xiao-apple36/p/9279108.html)，并作必要性的注释说明
 
+server
+
 ```python
-# server端
 import socket
 BUFSIZE = 1024 # 字符大小
 ip_port = ('127.0.0.1', 9999)
@@ -24,7 +25,21 @@ while True:
     server.sendto(data.upper(),client_addr)#发送UDP数据（大写，地址端口（套接字））
  server.close()
 ```
+client
 
+```
+import socket
+BUFSIZE = 1024
+client = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+while True:
+    msg = input(">> ").strip()
+    ip_port = ('127.0.0.1', 9999)
+    client.sendto(msg.encode('utf-8'),ip_port)
+    data,server_addr = client.recvfrom(BUFSIZE)
+    print('客户端recvfrom ',data,'server地址',server_addr)
+ 
+client.close()
+```
 
 
 [Python3 网络编程](https://www.runoob.com/python3/python3-socket.html)
