@@ -20,7 +20,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # udp协议
 server.bind(ip_port) #绑定ip与端口
 while True:
     data,client_addr = server.recvfrom(BUFSIZE) #接收UDP数据
-    print('server收到的数据', data)
+    print('server收到的数据',data,'client地址',client_addr)
     server.sendto(data.upper(),client_addr)#发送UDP数据（大写，地址端口（套接字））
  server.close()
 ```
