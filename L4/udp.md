@@ -18,7 +18,7 @@ import socket
 BUFSIZE = 1024 # 字符大小
 ip_port = ('127.0.0.1', 9999)
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # udp协议
-server.bind(ip_port) #绑定ip与端口
+server.bind(ip_port) #服务端绑定ip与端口
 while True:
     data,client_addr = server.recvfrom(BUFSIZE) #接收UDP数据
     print('server收到的数据',data,'client地址',client_addr)
@@ -34,7 +34,7 @@ client = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 while True:
     msg = input(">> ").strip()
     ip_port = ('127.0.0.1', 9999)
-    client.sendto(msg.encode('utf-8'),ip_port)
+    client.sendto(msg.encode('utf-8'),ip_port) # 将消息发送给服务端
     data,server_addr = client.recvfrom(BUFSIZE)
     print('客户端recvfrom ',data,'server地址',server_addr)
  
