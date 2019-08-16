@@ -9,6 +9,12 @@ UDP 是User Datagram Protocol的简称，中文名是用户数据报协议，UDP
 * 连接（伪代码）
 * 编程
 
+> 以下代码摘自 [xiao-apple36-Python UDP实例](cnblogs.com/xiao-apple36/p/9279108.html)，并作必要性的注释说明
+
+```
+
+```
+
 
 
 [Python3 网络编程](https://www.runoob.com/python3/python3-socket.html)
