@@ -49,4 +49,4 @@ udp抓包格式
 
 ![](https://i.postimg.cc/vBLTMjsH/20150408144330303.jpg)
 
-> 摘自 [TCP数据段格式+UDP数据段格式详解](https://www.cnblogs.com/love-jelly-pig/p/8471181.html)
+> 摘自 [TCP数据段格式+UDP数据段格式详解](https://www.cnblogs.com/love-jelly-pig/p/8471181.html)，并对图片相关部分做出必要说明
