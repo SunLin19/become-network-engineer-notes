@@ -40,10 +40,6 @@ client.close()
 
 ![](https://i.postimg.cc/Y0Qv7w7P/2019-08-17-104419.png)
 
->编程实现流程概览图 图片摘自[UDP协议图文详解-Linux社区](https://www.linuxidc.com/Linux/2018-09/154366.htm)
-
-![](https://i.postimg.cc/rsyz9qX9/180924145972612.jpg)
-
 
 ## udp报文格式
 
