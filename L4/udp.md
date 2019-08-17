@@ -41,6 +41,12 @@ client.close()
 
 ![](https://i.postimg.cc/rsyz9qX9/180924145972612.jpg)
 
-udp格式
+udp抓包格式
 
 ![](https://i.postimg.cc/63B6HqxM/Snipaste-2019-08-17-09-54-17.png)
+
+伪首部， 又称为伪包头（Pseudo Header）：是指在 TCP 的分段或 UDP 的数据报格式中，在数据报首部前面增加源 IP 地址、目的 IP 地址、IP 分组的协议字段、TCP 或 UDP 数据报的总长度等共12字节，所构成的扩展首部结构。此伪首部是一个临时的结构，它既不向上也不向下传递，仅仅只是为了保证可以校验套接字的正确性。
+
+![]()
+
+> 摘自 [TCP数据段格式+UDP数据段格式详解](https://www.cnblogs.com/love-jelly-pig/p/8471181.html)
