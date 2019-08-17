@@ -2,7 +2,7 @@
 
 UDP 是User Datagram Protocol的简称，中文名是用户数据报协议，UDP有不提供数据包分组、组装和不能对数据包进行排序的缺点，也就是说，当报文发送之后，是无法得知其是否安全完整到达的。当使用UDP协议传输信息流时，用户应用程序必须负责解决数据报丢失、重复、排序，差错确认等问题。所以，UDP是一种<ins>无连接的传输层协议</ins>，提供<ins>面向事务的简单不可靠信息传送服务</ins>。
 
-
+## 实现部分
 
 > 以下代码摘自 [xiao-apple36-Python UDP实例](cnblogs.com/xiao-apple36/p/9279108.html)，并作必要性的注释说明，方法作用在[Python3 网络编程](https://www.runoob.com/python3/python3-socket.html)均有说明
 
@@ -41,7 +41,9 @@ client.close()
 
 ![](https://i.postimg.cc/rsyz9qX9/180924145972612.jpg)
 
-udp抓包格式
+## udp报文格式
+
+通过实验代码测试并抓包获取报文格式
 
 ![](https://i.postimg.cc/63B6HqxM/Snipaste-2019-08-17-09-54-17.png)
 
