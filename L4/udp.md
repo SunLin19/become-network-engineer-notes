@@ -10,7 +10,7 @@ server
 
 ```python
 import socket
-BUFSIZE = 1024 # 字符大小
+BUFSIZE = 1024 # 字节组大小
 ip_port = ('127.0.0.1', 9999)
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # udp协议
 server.bind(ip_port) #服务端绑定ip与端口
