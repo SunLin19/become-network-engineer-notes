@@ -5,8 +5,11 @@
 * 用于内部网或网络服务供应商自动分配IP地址给用户
 * 用于内部网管理员作为对所有计算机作中央管理的手段
 
+## DHCP原理
 
-[](https://i.postimg.cc/44zhF27G/p-IYBAFqe-Z5q-AXTe-OAABe-E14sd-KY128.jpg)
+> 摘自 [dhcp原理及其实现流程 - 电子发烧友](http://www.elecfans.com/baike/wangluo/luyouqi/20180306643883.html)
+
+![](https://i.postimg.cc/44zhF27G/p-IYBAFqe-Z5q-AXTe-OAABe-E14sd-KY128.jpg)
 
 
 参考文章：
