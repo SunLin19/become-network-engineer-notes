@@ -6,8 +6,7 @@
 * 用于内部网管理员作为对所有计算机作中央管理的手段
 
 
-
-[]
+[](https://i.postimg.cc/44zhF27G/p-IYBAFqe-Z5q-AXTe-OAABe-E14sd-KY128.jpg)
 
 
 参考文章：
