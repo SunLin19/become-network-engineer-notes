@@ -11,6 +11,13 @@
 
 ![](https://i.postimg.cc/44zhF27G/p-IYBAFqe-Z5q-AXTe-OAABe-E14sd-KY128.jpg)
 
+DHCP请求IP地址的过程如下：
+
+　　1. 主机发送DHCPDISCOVER广播包在网络上寻找DHCP服务器
+　　2. DHCP服务器向主机发送DHCPOFFER单播数据包，包含IP地址、MAC地址、域名信息以及地址租期
+　　3. 主机发送DHCPREQUEST广播包，正式向服务器请求分配已提供的IP地址
+　　4. DHCP服务器向主机发送DHCPACK单播包，确认主机的请求
+
 
 参考文章：
 
