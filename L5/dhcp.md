@@ -17,7 +17,13 @@ DHCP请求IP地址的过程如下：
 3. 主机发送DHCPREQUEST广播包，正式向服务器请求分配已提供的IP地址
 4. DHCP服务器向主机发送DHCPACK单播包，确认主机的请求
 
+## DHCP简略配置
+
+使用win server进行dhcp的安装配置
+
 ![](https://i.postimg.cc/wTytv8BQ/Snipaste-2019-09-01-15-00-52.png)
+
+将client端IP设为自动获取
 
 ![](https://i.postimg.cc/6q0N6Qvp/Snipaste-2019-09-01-16-44-29.png)
 
