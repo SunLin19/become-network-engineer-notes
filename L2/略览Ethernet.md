@@ -1,17 +1,9 @@
 # 略览以太网
 
-## 拓扑结构
+网络拓扑结构的参考文章
 
-
-https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/10230127
-
-
-
-#### 总线型拓扑
-
-
-#### 星型拓扑
-
+* [百度经验-认识计算机网络拓扑结构](https://jingyan.baidu.com/article/09ea3ede69b7c4c0aede39d1.html)
+* [百度百科-计算机网络拓扑结构](https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/10230127)
 
 ### 共享介质型以太网
 
