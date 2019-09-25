@@ -15,7 +15,7 @@
 
 > 摘自 [陈彦霏 linux-network-programming](https://linux-network-programming.readthedocs.io/zh_CN/latest/protocols/ethernet.html)
 
-个人理解：从硬件功能描述来看网卡在执行物理层功能，从软件运行目的来说网卡是在执行数据链路层负责的功能。
+个人理解：从硬件功能描述来看网卡在执行物理层功能，从软件运行目的来说网卡是在执行数据链路层负责的功能。但传送和识别数据帧这是物理层不具有的，所以网卡还是属于数据链路层。
 
 ### 共享介质型以太网
 
