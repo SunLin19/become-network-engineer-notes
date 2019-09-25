@@ -13,6 +13,10 @@
 
 从软件的层面看，发送数据时，内核协议栈负责封装以太网帧(填充 目的地址 ， 源地址 ， 类型 和 数据 并计算 校验和)，并调用网卡驱动发送； 接收数据时，负责验证 目的地址 、 校验和 并取出数据部分，交由上层协议栈处理。
 
+> 摘自 [陈彦霏 linux-network-programming](https://linux-network-programming.readthedocs.io/zh_CN/latest/protocols/ethernet.html)
+
+个人理解：从硬件功能描述来看网卡在执行物理层功能，从软件运行目的来说网卡是在执行数据链路层负责的功能。
+
 ### 共享介质型以太网
 
 **关键词：CSMA、CSMA/CD**
