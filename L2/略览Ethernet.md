@@ -48,9 +48,11 @@
 
 ## 交换式以太网
 
-[百度百科-交换式以太网](https://baike.baidu.com/item/%E4%BA%A4%E6%8D%A2%E5%BC%8F%E4%BB%A5%E5%A4%AA%E7%BD%91/188374?fr=aladdin)
-
 交换式以太网不需要改变网络其它硬件，包括电缆和用户的网卡，仅需要用**交换式交换机改变共享式HUB**，节省用户网络升级的费用。
+
+> 摘自 [百度百科-以太网](https://baike.baidu.com/item/%E4%BB%A5%E5%A4%AA%E7%BD%91/99684?fr=aladdin)
+
+
 
 参考连接
 
