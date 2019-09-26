@@ -40,6 +40,7 @@ http://www.wonggang.com/8151.html
 
 ![](https://i.postimg.cc/0yyRdjyn/15246473058058711fc585f.gif)
 
+> 节选自 [王刚 - 一个动画看懂网络原理之令牌环网的工作原理](http://www.wonggang.com/8151.html)
 
 ## 交换式以太网
 
