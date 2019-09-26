@@ -5,8 +5,6 @@
 * [百度经验-认识计算机网络拓扑结构](https://jingyan.baidu.com/article/09ea3ede69b7c4c0aede39d1.html)
 * [百度百科-计算机网络拓扑结构](https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/10230127)
 
-http://www.wonggang.com/8151.html
-
 ## 网卡
 
 每台通过网线通讯的计算机都需要安装一个硬件设备—— 网卡 ( NIC )， NIC 是 Network Interface Controller 的缩写。
