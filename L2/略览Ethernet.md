@@ -50,13 +50,5 @@
 
 还有另一条出路可以处理不断增长的负载：即交换式以太网。交换式以太网的核心是一个交换机，它包含一块连接所有端口的高速背板。从外面看交换机很像集线器，它们都是一个盒子，通常拥有4-48个端口，每个端口都有一个标准的RJ-45连接器用来连接双绞电缆。交换机只把帧输出到该帧想去的端口。通过简单的插入或者拔出电缆就能完成或者删除一台机器，而且由于片状电缆或者端口通常只影响到一台机器，因此大多数错误都很容易被发现。这种配置模式仍然存在一个共享组件出现故障的问题，即交换机本身的故障：如果所有站都失去了网络连接，则IT人员知道该怎么解决这个问题：更换整个交换机。
 
-
 > 摘自 [百度百科-以太网](https://baike.baidu.com/item/%E4%BB%A5%E5%A4%AA%E7%BD%91/99684?fr=aladdin)
 
-
-
-参考连接
-
-* [以太网（数据链路层）学习笔记](https://blog.csdn.net/u014492609/article/details/51285935)
-* [陈彦霏 linux-network-programming](https://linux-network-programming.readthedocs.io/zh_CN/latest/protocols/ethernet.html)
-* [晴刃- 晴刃 ccna 文章归档](https://www.qingsword.com/sitemap.html#ccna)
