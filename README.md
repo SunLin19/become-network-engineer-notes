@@ -27,7 +27,7 @@
   * 应用层：[简述DHCP](L5/简述dhcp.md) (已完成)
   * 传输层：[简说UDP协议](L4/简说UDP协议.md) （已完成）
   * 网络层：[arp协议](L3/简说arp协议.md) （已完成）
-  * 数据链路层：[略览Ethernet](L2/略览Ethernet.md) (计划中)
+  * 数据链路层：[略览Ethernet](L2/略览Ethernet.md) (已完成)
   * 物理层：[网线综合知识](L1/网线综合知识.md)
   * TCP/IP各层设备：[]()
   
