@@ -51,14 +51,14 @@
 
 ## VLAN
 
-VLAN(Virtual LAN)，翻译成中文是“虚拟局域网”，VLAN所指的LAN特指使用路由器分割的网络，也就是广播域。本来，二层交换机只能构建单一的广播域，不过使用VLAN功能后，它能够将网络分割成多个广播域。
-
 ![](https://i.postimg.cc/QxxfcnXN/v2-hd.jpg)
 
-> [知乎专栏-VLAN基础知识](https://zhuanlan.zhihu.com/p/35616289)
+图中交换机1收到广播帧(ARP请求)后，会将它转发给除接收端口外的其他所有端口，也就是Flooding了。接着，交换机2收到广播帧后也会Flooding。交换机3、4、5也还会Flooding。最终ARP请求会被转发到同一网络中的所有客户机上。由此带来的后果：易造成网络瘫痪、计算机处理效率下降等诸多安全问题。
 
- 附网络拓扑结构参考：
+由此就引出VLAN技术，VLAN(Virtual LAN)，翻译成中文是“虚拟局域网”，VLAN所指的LAN特指使用路由器分割的网络，也就是广播域。本来，二层交换机只能构建单一的广播域，不过使用VLAN功能后，它能够将网络分割成多个广播域。这样就削减了大面积广播域的危害，提高带宽，以及计算机处理效率，同时划分VLAN也便于有效化管理控制，也提高了安全性能。
 
-* [百度经验-认识计算机网络拓扑结构](https://jingyan.baidu.com/article/09ea3ede69b7c4c0aede39d1.html)
-* [百度百科-计算机网络拓扑结构](https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/10230127)
-* [百度百科-局域网络拓扑结构](https://baike.baidu.com/item/%E5%B1%80%E5%9F%9F%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/21149646)
+
+
+> 参考自 [知乎专栏-VLAN基础知识](https://zhuanlan.zhihu.com/p/35616289)
+
+
