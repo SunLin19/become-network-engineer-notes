@@ -51,9 +51,9 @@
 
 ## VLAN
 
-![](https://i.postimg.cc/QxxfcnXN/v2-hd.jpg)
-
 图中交换机1收到广播帧(ARP请求)后，会将它转发给除接收端口外的其他所有端口，也就是Flooding了。接着，交换机2收到广播帧后也会Flooding。交换机3、4、5也还会Flooding。最终ARP请求会被转发到同一网络中的所有客户机上。由此带来的后果：易造成网络瘫痪、计算机处理效率下降等诸多安全问题。
+
+![](https://i.postimg.cc/QxxfcnXN/v2-hd.jpg)
 
 由此就引出VLAN技术，VLAN(Virtual LAN)，翻译成中文是“虚拟局域网”，VLAN所指的LAN特指使用路由器分割的网络，也就是广播域。本来，二层交换机只能构建单一的广播域，不过使用VLAN功能后，它能够将网络分割成多个广播域。
 
