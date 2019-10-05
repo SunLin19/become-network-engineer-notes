@@ -22,7 +22,7 @@ while True:
 ```
 client
 
-```
+```python
 import socket
 BUFSIZE = 1024
 client = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
