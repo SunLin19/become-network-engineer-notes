@@ -6,13 +6,19 @@
  * [Python 3 教程](https://www.runoob.com/python3/python3-tutorial.html)
  * [ 图解TCP/IP（第5版）](https://www.ituring.com.cn/book/miniarticle/42609)
 
+笔记要达到的目标：通过学习做笔记找到相应工作
+ 
+ 
+
 ### 目录
 
-#### 小宇宙
+#### 前言
 
 * 非正式的前言
   * [对以前处于学生时期的学习反思](my-study/对以前处于学生时期的学习反思.md)
   * [求职期间的回顾与分析](my-study/求职期间的回顾与分析.md)
+
+#### 小宇宙
 
 * 发展史、OSI概览
   * [计算机网络发展过程概览](history/计算机网络发展过程概览.md)
