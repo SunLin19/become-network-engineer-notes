@@ -41,7 +41,7 @@
   
 #### 思科实验  
   
-* [rip协议配置](sike-luyou/rip协议配置.md)
+* [rip协议配置](sike-luyou/rip协议配置.md) （计划中）
 
 
 
