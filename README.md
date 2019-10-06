@@ -7,14 +7,15 @@
  * [ 图解TCP/IP（第5版）](https://www.ituring.com.cn/book/miniarticle/42609)
 
 
-相关资源分享
+## 相关资源分享
 
 为什么不用百度网盘链接？
 
-* 下载资源必须要安装百度网盘及登录，下载严重限速，手机2G网速水准
-* pandownload 网页版下载链接难以使用IDM加速，以及针对油猴反制措施
+* 下载资源**操作麻烦**，必须要安装百度网盘及登录
+* 下载**严重限速**，手机2G网速水准
+* 辅助工具提取到的真实度盘链接**加速困难**
 
-绝大多数资源需要翻墙访问，
+所以选择了MEGA，但GFW是屏蔽的，所以还是翻墙吧
 
 * [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ!W6qoXLmTGy3LCJeoLMI1uEJGK6Yc0b-nvQy6p2ZBEQ4)
 * [CISCO-Aspire Game](https://mega.nz/#!LTojASRT!rk5A3-m2Ep9ht6X_ukt1tWNkxgkQVeyEbmKgdKezH9g)
