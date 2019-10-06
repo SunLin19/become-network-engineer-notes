@@ -45,7 +45,7 @@ A---B---C---D
 
 
 
-<details><summary>路由器Router0（简称R0）配置</summary>
+路由器Router0（简称R0）配置
 
 ```ios
 Router>en // 进入特权模式
@@ -61,9 +61,6 @@ Router(config)#router rip // 开启 rip 协议
 Router(config-router)#network 192.168.10.0 // 宣告直连网段
 Router(config-router)#network 192.168.20.0 // 宣告直连网段
 ```
-
-</details>
-
 
 <details><summary>路由器R1配置</summary>
 
@@ -104,5 +101,5 @@ Router(config-router)#network 192.168.40.0 // 宣告直连网段
 
 </details>
 
-R1、R2的配置也是如此，与R0仅有的不同是网关与网段的地址不相同，所共同点也是将彼此相邻的网关、网段进行配置通告。
+R1、R2的配置也是如此，也是将彼此相邻的网关、网段进行配置通告。
 
