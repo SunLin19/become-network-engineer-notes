@@ -60,5 +60,11 @@ Router(config-router)#network 192.168.10.0 // 宣告直连网段
 Router(config-router)#network 192.168.20.0 // 宣告直连网段
 ```
 
+R1
+
+
+R2
+
+
 R1、R2的配置也是如此，与R0仅有的不同是网关与网段的地址不相同。
 
