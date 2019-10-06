@@ -6,6 +6,13 @@
  * [Python 3 教程](https://www.runoob.com/python3/python3-tutorial.html)
  * [ 图解TCP/IP（第5版）](https://www.ituring.com.cn/book/miniarticle/42609)
 
+
+相关资源分享
+
+* [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ)
+* [CISCO-Aspire Game](https://mega.nz/#!LTojASRT)
+
+
 笔记要达到的目标：通过学习做笔记找到相应工作
  
  
