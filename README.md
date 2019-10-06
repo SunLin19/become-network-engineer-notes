@@ -9,8 +9,8 @@
 
 相关资源分享
 
-* [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ)
-* [CISCO-Aspire Game](https://mega.nz/#!LTojASRT)
+* [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ!W6qoXLmTGy3LCJeoLMI1uEJGK6Yc0b-nvQy6p2ZBEQ4)
+* [CISCO-Aspire Game](https://mega.nz/#!LTojASRT!rk5A3-m2Ep9ht6X_ukt1tWNkxgkQVeyEbmKgdKezH9g)
 
 
 笔记要达到的目标：通过学习做笔记找到相应工作
