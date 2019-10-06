@@ -19,7 +19,7 @@ DHCP请求IP地址的过程如下：
 
 ## DHCP简略配置
 
-使用win server进行dhcp的安装配置
+使用win server进行dhcp的安装配置 （关于IP地址，会在思科实验的IP、掩码、网关章节进行详细阐述）
 
 ![](https://i.postimg.cc/wTytv8BQ/Snipaste-2019-09-01-15-00-52.png)
 
