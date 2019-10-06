@@ -46,6 +46,7 @@ A---B---C---D
 
 
 <details><summary>路由器Router0（简称R0）配置</summary>
+
 ```ios
 Router>en // 进入特权模式
 Router#conf t // 进入全局配置模式
@@ -60,6 +61,7 @@ Router(config)#router rip // 开启 rip 协议
 Router(config-router)#network 192.168.10.0 // 宣告直连网段
 Router(config-router)#network 192.168.20.0 // 宣告直连网段
 ```
+
 </details>
 
 
