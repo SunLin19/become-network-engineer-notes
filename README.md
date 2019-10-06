@@ -58,10 +58,11 @@
 * 下载**严重限速**，手机2G网速水准
 * 辅助工具提取到的真实度盘链接**加速困难**
 
-所以选择了MEGA，但GFW是屏蔽的，所以还是翻墙吧
+所以选择了MEGA，但GFW是屏蔽的，所以还是翻墙吧！以下是资源分享：
 
-* [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ!W6qoXLmTGy3LCJeoLMI1uEJGK6Yc0b-nvQy6p2ZBEQ4)
 * [CISCO-Aspire Game](https://mega.nz/#!LTojASRT!rk5A3-m2Ep9ht6X_ukt1tWNkxgkQVeyEbmKgdKezH9g)
+* [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ!W6qoXLmTGy3LCJeoLMI1uEJGK6Yc0b-nvQy6p2ZBEQ4)
+
 
 <!--
 继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，《从零开始理解网络》？可能吧。。。-->
