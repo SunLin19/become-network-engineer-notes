@@ -65,11 +65,44 @@ Router(config-router)#network 192.168.20.0 // 宣告直连网段
 </details>
 
 
-R1
+<details><summary>路由器R1配置</summary>
+
+```ios
+Router>en // 进入特权模式
+Router#conf t // 进入全局配置模式
+Router(config)#int f0/0 // 进入快速以太网端口 f0/0
+Router(config-if)#ip add 192.168.20.2 255.255.255.0 // 配置网关
+Router(config-if)#no shutdown // 开启接口
+Router(config-if)#int f0/1 // 进入快速以太网端口 f0/1
+Router(config-if)#ip add 192.168.30.1 255.255.255.0 // 配置网关
+Router(config-if)#no shutdown // 开启接口
+Router(config-if)#exit   // 退出到全局模式
+Router(config)#router rip // 开启 rip 协议
+Router(config-router)#network 192.168.20.0 // 宣告直连网段
+Router(config-router)#network 192.168.30.0 // 宣告直连网段
+```
+
+</details>
 
 
-R2
+<details><summary>路由器R2配置</summary>
 
+```ios
+Router>en // 进入特权模式
+Router#conf t // 进入全局配置模式
+Router(config)#int f0/0 // 进入快速以太网端口 f0/0
+Router(config-if)#ip add 192.168.30.2 255.255.255.0 // 配置网关
+Router(config-if)#no shutdown // 开启接口
+Router(config-if)#int f0/1 // 进入快速以太网端口 f0/1
+Router(config-if)#ip add 192.168.40.254 255.255.255.0 // 配置网关
+Router(config-if)#no shutdown // 开启接口
+Router(config-if)#exit   // 退出到全局模式
+Router(config)#router rip // 开启 rip 协议
+Router(config-router)#network 192.168.30.0 // 宣告直连网段
+Router(config-router)#network 192.168.40.0 // 宣告直连网段
+```
 
-R1、R2的配置也是如此，与R0仅有的不同是网关与网段的地址不相同。
+</details>
+
+R1、R2的配置也是如此，与R0仅有的不同是网关与网段的地址不相同，所共同点也是将彼此相邻的网关、网段进行配置通告。
 
