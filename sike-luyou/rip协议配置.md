@@ -41,9 +41,15 @@ A---B---C---D
 
 ![](https://i.postimg.cc/8PTthcGc/214718.png)
 
-### 路由配置
+### 桌面及路由配置
 
+PC0桌面端网络配置
 
+```
+IP Address: 192.168.10.1
+Sub Mark: 255.255.255.0
+Default Gateway: 192.168.10.254
+```
 
 路由器Router0（简称R0）配置
 
