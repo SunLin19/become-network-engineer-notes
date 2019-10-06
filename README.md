@@ -9,6 +9,13 @@
 
 相关资源分享
 
+为什么不用百度网盘链接？
+
+* 下载资源必须要安装百度网盘及登录，下载严重限速，手机2G网速水准
+* pandownload 网页版下载链接难以使用IDM加速，以及针对油猴反制措施
+
+绝大多数资源需要翻墙访问，
+
 * [计算机网络原理flash动画](https://mega.nz/#!zaIVSQSJ!W6qoXLmTGy3LCJeoLMI1uEJGK6Yc0b-nvQy6p2ZBEQ4)
 * [CISCO-Aspire Game](https://mega.nz/#!LTojASRT!rk5A3-m2Ep9ht6X_ukt1tWNkxgkQVeyEbmKgdKezH9g)
 
