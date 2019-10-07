@@ -141,9 +141,12 @@ R1、R2的配置也是如此，也是将彼此相邻的网关、网段进行配�
 
 ![](https://i.postimg.cc/HnGDp8VT/7b2cf.gif)
 
-## 留下来的疑难点
+## 学习笔记
 
-水平分割指的是什么？什么是毒性反转？
+留下来的疑难点：水平分割指的是什么？什么是毒性反转？
 
 所找到的参考资料：[cshihong-RIP基础知识](https://cshihong.github.io/2018/03/23/RIP%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#%E6%AF%92%E6%80%A7%E5%8F%8D%E8%BD%AC%EF%BC%9A)
+
+
+
 
