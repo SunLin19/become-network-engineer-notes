@@ -35,11 +35,11 @@
   * [ip地址的设计](ip-sm-gw/IP地址的设计.md)
   * [子网掩码的作用](ip-sm-gw/子网掩码的作用.md)
   * [网关的意义](ip-sm-gw/网关的意义.md)
-  * [CIDR与VLSM](ip-sm-gw/CIDR与VLSM.md) （计划中）
+  * [CIDR与VLSM](ip-sm-gw/CIDR与VLSM.md) 
   
 * 网络路由
   * [rip协议配置](sike-luyou/rip协议配置.md)
-   * rip2协议（暂不写）
+   * rip2协议（计划中）
 
 
 
