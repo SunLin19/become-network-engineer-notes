@@ -35,7 +35,8 @@
   * [网关的意义](ip-sm-gw/网关的意义.md)
   
 * 网络路由
-  * [rip协议配置](sike-luyou/rip协议配置.md) （计划中）
+  * [rip协议配置](sike-luyou/rip协议配置.md)
+   * rip2协议（计划中）
 
 
 
