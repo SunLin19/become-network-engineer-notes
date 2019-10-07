@@ -7,6 +7,8 @@
 > 参考自 [wiki-无类别域间路由](https://zh.wikipedia.org/zh-cn/无类别域间路由)、[wiki-专用网络](https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C)
 
 
+> 参考 [图解TCP/IP-4.3.7章节CIDR与VLSM](https://pan.ccie.lol:44944/file/PDF/%E5%9B%BE%E8%A7%A3TCP_IP_%E7%AC%AC5%E7%89%88.pdf)
+
 ---
 此表仅作为再次加强局域网地址范围记忆
 
