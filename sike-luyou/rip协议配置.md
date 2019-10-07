@@ -49,7 +49,7 @@ Sub Mark: 255.255.255.0
 Default Gateway: 192.168.10.254
 ```
 
-路由器Router0（简称R0）配置
+路由器Router0（简称R0）配置；另外，可使用`debug ip rip`观察rip更新过程，`show ip route`查看路由表
 
 ```ios
 Router>en // 进入特权模式
@@ -106,4 +106,6 @@ Router(config-router)#network 192.168.40.0 // 宣告直连网段
 </details>
 
 R1、R2的配置也是如此，也是将彼此相邻的网关、网段进行配置通告。
+
+###
 
