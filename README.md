@@ -54,7 +54,7 @@
 
  * [IBM® IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/zh/)
  * [Python 3 教程](https://www.runoob.com/python3/python3-tutorial.html)
- * [ 图解TCP/IP（第5版）](https://www.ituring.com.cn/book/miniarticle/42609)
+ * [图解TCP/IP（第5版）](https://ccie.lol/knowledge-base/pdf-diagram-tcp-ip/)
 
 
 <!--
