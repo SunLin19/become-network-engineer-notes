@@ -3,21 +3,13 @@
 
 由于众多公司或组织申请A、B类IP地址，导致资源出现严重匮乏，无法满足需求；于是人们开始放弃IP地址分类，采用任意长度分割IP地址的网络标识与主机标识，这个方式叫CIDR。
 
-> 参考自 [图解TCP/IP-4.3.7章节CIDR与VLSM](https://pan.ccie.lol:44944/file/PDF/%E5%9B%BE%E8%A7%A3TCP_IP_%E7%AC%AC5%E7%89%88.pdf)
-
 无类别域间路由（CIDR）是基于可变长子网掩码（VLSM）来进行任意长度的前缀的分配的，遵从CIDR规则的地址有一个后缀说明前缀的位数，例如：192.168.0.0/16。其实整个互联网现在都在使用CIDR/VLSM网络地址。
 
 除此之外，CIDR也应用在其他方面，尤其是大型私人网络。在普通大小的局域网里则较少应用，因为这些局域网一般使用私有IP无法直接连接互联网。连接互联网需要使用<ins>网络地址转换（NAT）</ins><sup>①</sup>或者代理服务器（proxy server）来实现。与公网IP相比，私有IP是免费的，同时节省了IP地址资源，适合在局域网使用。
 
 注：①在广域网配置中在进行NAT协议的详细讲解
 
-> 参考自 [wiki-无类别域间路由](https://zh.wikipedia.org/zh-cn/无类别域间路由)、[wiki-专用网络](https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C)
-
-
-
-
-
-
+> 参考自 [wiki-无类别域间路由](https://zh.wikipedia.org/zh-cn/无类别域间路由)、[wiki-专用网络](https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C)、 [图解TCP/IP-4.3.7章节CIDR与VLSM](https://pan.ccie.lol:44944/file/PDF/%E5%9B%BE%E8%A7%A3TCP_IP_%E7%AC%AC5%E7%89%88.pdf)
 
 ---
 此表仅作为再次加强记忆
