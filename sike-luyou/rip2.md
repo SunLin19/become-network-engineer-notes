@@ -1,5 +1,7 @@
 # rip2协议
 
+## rip与rip2
+
 rip与rip2的区别表
 
 > 摘自 [rip1与rip2的区别](https://zhidao.baidu.com/question/5214089.html)
