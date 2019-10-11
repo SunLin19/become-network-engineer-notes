@@ -36,7 +36,7 @@
   * [子网掩码的作用](ip-sm-gw/子网掩码的作用.md)
   * [网关的意义](ip-sm-gw/网关的意义.md)
   * [CIDR与VLSM](ip-sm-gw/CIDR与VLSM.md) 
-  * 组播 （计划中）
+  * [组播](supplement/组播.md) （计划中）
   
 * 网络路由
   * 接入层 （计划中）
