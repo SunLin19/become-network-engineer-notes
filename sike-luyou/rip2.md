@@ -8,6 +8,6 @@ rip与rip2的区别表，这也是有类和无类路由的区别。
 
 ![](https://i.postimg.cc/SxRNHSJk/b660.png)
 
-从这也可以看出推出rip2实际上是给rip续命。
+从这也可以看出推出rip2实际上是给路由信息协议续命。
 
 
