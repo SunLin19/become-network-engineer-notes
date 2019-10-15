@@ -24,8 +24,10 @@ rip2在动态学习的跨路由访问基础上，又增强及优化了传输策�
 R1
 
 ```ios
+
 R1(config)#int loopback 0
 R1(config-if)#ip add 172.16.1.3 255.255.0.0
+R1(config-if)#no shutdown
 R1(config-if)#int s0/1/0
 R1(config-if)#ip add 10.1.1.1 255.255.255.0
 R1(config-if)#no shutdown
@@ -33,12 +35,23 @@ R1(config-if)#no shutdown
 R2
 
 ```ios
+R2(config)#int s0/1/1
+R2(config-if)#ip add 10.1.1.2 255.255.255.0
+R2(config-if)#no shutdown
+R2(config-if)#int s0/1/0
+R2(config-if)#ip add 10.2.2.2 255.255.0.0
+R2(config-if)#no shutdown
 
 ```
 
 R3
 
 ```ios
+R3(config)#int s0/1/0
+R3(config-if)#ip add 10.2.2.3 255.255.0.0
+R3(config-if)#no shutdown
+R3(config)#int loopback 0
+R3(config-if)#ip add 192.168.1.71
 ```
 
 
@@ -47,15 +60,23 @@ rip version2
 ```ios
 R1(config-if)#router rip
 R1(config-router)#version 2
-R1(config-router)#no auto-summary 
-R1(config-router)#network 172.16.0.0
+//用于不同网段的通信
 R1(config-router)#network 10.0.0.0
+//路由间共享该网段
+R1(config-router)#network 172.16.0.0
+R1(config-router)#no auto-summary
 
-R2(config)#router rip
+
+R2(config-if)#router rip
 R2(config-router)#version 2
-R1(config-router)#no auto-summary 
+R2(config-router)#no auto-summary 
 R2(config-router)#network 10.0.0.0
-R2(config-router)#network 192.168.1.0 //对比以下ABC类型IP地址的网络位与主机位的参照表
+
+R3(config)#router rip
+R3(config-router)#version 2
+R3(config-router)#no auto-summary 
+R3(config-router)#network 10.0.0.0
+R3(config-router)#network 192.168.1.0 //对比以下ABC类型IP地址的网络位与主机位的参照表
 ```
 
 |IP地址类型|地址表示范围|缺省（默认）子网掩码|网络位n与主机位h
