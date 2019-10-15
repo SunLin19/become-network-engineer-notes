@@ -33,6 +33,21 @@ R2(config-if)#ip add 10.1.1.2 255.255.255.0
 R2(config-if)#no shutdown
 ```
 
+rip version2
+
+```ios
+R1(config-if)#router rip
+R1(config-router)#version 2
+R1(config-router)#no auto-summary 
+R1(config-router)#network 172.16.1.3
+R1(config-router)#network 10.1.1.1
+
+R2(config)#router rip
+R2(config-router)#version 2
+R1(config-router)#no auto-summary 
+R2(config-router)#network 10.1.1.2
+R2(config-router)#network 192.168.1.71
+```
 
 注：
 
