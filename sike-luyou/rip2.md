@@ -82,3 +82,4 @@ network ip地址：
 
 ![](https://i.postimg.cc/j5dH4HR9/16s.png)
 
+> 参考 [in routes why i cannot set two ip address in same network on two serial interfaces ?](https://learningnetwork.cisco.com/thread/64294)
