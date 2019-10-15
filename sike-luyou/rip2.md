@@ -39,15 +39,22 @@ rip version2
 R1(config-if)#router rip
 R1(config-router)#version 2
 R1(config-router)#no auto-summary 
-R1(config-router)#network 172.16.1.3
-R1(config-router)#network 10.1.1.1
+R1(config-router)#network 172.16.0.0
+R1(config-router)#network 10.0.0.0
 
 R2(config)#router rip
 R2(config-router)#version 2
 R1(config-router)#no auto-summary 
-R2(config-router)#network 10.1.1.2
-R2(config-router)#network 192.168.1.71
+R2(config-router)#network 10.0.0.0
+R2(config-router)#network 192.168.1.0 //对比以下ABC类型IP地址的网络位与主机位的参照表
 ```
+
+|IP地址类型|地址表示范围|缺省（默认）子网掩码|网络位n与主机位h
+|:-:|:-:|:-:|:-:|
+|A类地址：|1.0.0.1-127.255.255.255|255.0.0.0|0nnnnnnn.hhhhhhhh.hhhhhhhh.hhhhhhhh
+|B类地址：|128.0.0.1-191.255.255.255|255.255.0.0|10nnnnnn.nnnnnnnn.hhhhhhhh.hhhhhhhh
+|C类地址：|192.0.0.1-223.255.255.255|255.255.255.0|110nnnnn.nnnnnnnn.nnnnnnnn.hhhhhhhh
+
 
 注：
 
