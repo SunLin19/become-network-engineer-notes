@@ -25,7 +25,7 @@ https://zhidao.baidu.com/question/35015394.html
 
 https://blog.51cto.com/zcry21cn/1740894
 
-
+https://www.zhihu.com/question/264432033
 
 * [思科模拟器rip2协议的配置_](https://jingyan.baidu.com/article/17bd8e522e5b8c85ab2bb8d2.html)
 * [路由协议的自动汇总](https://zhidao.baidu.com/question/521435066.html)
