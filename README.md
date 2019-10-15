@@ -42,7 +42,7 @@
   * [核心层、汇聚层、接入层](supplement/核心层、汇聚层、接入层.md)
   * [静态路由](sike-luyou/静态路由.md)
   * [rip协议配置](sike-luyou/rip协议配置.md)
-   * rip2协议（计划中）11-13
+  * [rip2协议](sike-luyou/rip2.md)
 
 
 
