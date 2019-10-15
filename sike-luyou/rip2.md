@@ -21,6 +21,12 @@ rip2在动态学习的跨路由访问基础上，又增强及优化了传输策�
 
 https://zhidao.baidu.com/question/540720999.html
 
+https://zhidao.baidu.com/question/35015394.html
+
+https://blog.51cto.com/zcry21cn/1740894
+
+
+
 * [思科模拟器rip2协议的配置_](https://jingyan.baidu.com/article/17bd8e522e5b8c85ab2bb8d2.html)
 * [路由协议的自动汇总](https://zhidao.baidu.com/question/521435066.html)
 
