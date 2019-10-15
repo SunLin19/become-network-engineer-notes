@@ -14,8 +14,24 @@ rip2在动态学习的跨路由访问基础上，又增强及优化了传输策�
 
 ![](https://i.postimg.cc/tRnFZ2qM/Snipaste-2019-10-15-21-38-09.png)
 
+R1
 
+```ios
+R1(config)#int loopback 0
+R1(config-if)#ip add 172.16.1.3 255.255.0.0
+R1(config-if)#int s0/1/0
+R1(config-if)#ip add 10.1.1.1 255.255.255.0
+R1(config-if)#no shutdown
+```
+R2
 
+```ios
+R2(config)#int loopback 0
+R2(config-if)#ip add 192.168.1.71 255.255.255.192
+R2(config-if)#int s0/1/1
+R2(config-if)#ip add 10.1.1.2 255.255.255.0
+R2(config-if)#no shutdown
+```
 
 
 注：
