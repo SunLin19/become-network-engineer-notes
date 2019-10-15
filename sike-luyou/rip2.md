@@ -19,7 +19,7 @@ rip2在动态学习的跨路由访问基础上，又增强及优化了传输策�
 
 路由间分享信息，端口连接传送，数据保存在路由器，在借由路由器转发其他端口，network解释
 
-![](https://i.postimg.cc/tRnFZ2qM/Snipaste-2019-10-15-21-38-09.png)
+![](https://i.postimg.cc/NMqBSbW5/2019-10-16-013945.png)
 
 R1
 
@@ -33,12 +33,14 @@ R1(config-if)#no shutdown
 R2
 
 ```ios
-R2(config)#int loopback 0
-R2(config-if)#ip add 192.168.1.71 255.255.255.192
-R2(config-if)#int s0/1/1
-R2(config-if)#ip add 10.1.1.2 255.255.255.0
-R2(config-if)#no shutdown
+
 ```
+
+R3
+
+```ios
+```
+
 
 rip version2
 
