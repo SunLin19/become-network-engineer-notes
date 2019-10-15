@@ -76,31 +76,9 @@ network ip地址：
 
 > 参考 《趣学CCNA——路由与交换》 动态协议概述部分
 
-`% 10.0.0.0 overlaps with Serial0/1/1`：
+关于 `% 10.0.0.0 overlaps with Serial0/1/1` 报错：
 
 在同一路由器上，不能存在涵盖已分配的CIDR更大范围的CIDR，例如：在同一路由的不同串口分别配置10.1.1.2/24、10.2.2.2/8
 
 ![](https://i.postimg.cc/j5dH4HR9/16s.png)
-
-
-### 切入点
-
-或者说能实现自动汇总的前提掩码是要一样，保证网关的覆盖范围。
-
-利用前面的子网掩码章节做实验
-
-https://zhidao.baidu.com/question/540720999.html
-
-https://zhidao.baidu.com/question/35015394.html
-
-https://blog.51cto.com/zcry21cn/1740894
-
-https://www.zhihu.com/question/264432033
-
-* [思科模拟器rip2协议的配置_](https://jingyan.baidu.com/article/17bd8e522e5b8c85ab2bb8d2.html)
-* [路由协议的自动汇总](https://zhidao.baidu.com/question/521435066.html)
-
-
-* int s0/0/1 与 int s2/0 根据设备的不同表达形式不太一样。
-* interface LoopBack0 这是全称。 应该叫做回环口。相当于在设备内部创建了一个pc，且永远在线，也就是状态永远up。用于测试、一些特殊应用里
 
