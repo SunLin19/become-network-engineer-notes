@@ -43,6 +43,7 @@
   * [静态路由](sike-luyou/静态路由.md)
   * [rip协议配置](sike-luyou/rip协议配置.md)
   * [rip2协议](sike-luyou/rip2.md)
+  * ospf 计划中
 
 
 
