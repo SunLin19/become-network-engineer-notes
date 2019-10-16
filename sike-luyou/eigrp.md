@@ -8,11 +8,13 @@
 
 EIGRP是一种**高级**距离矢量路由协议（也称混合型路由协议），英语：Enhanced Interior Gateway Routing Protocol，缩写为EIGRP，因此又被译为加强型网关间选径协议。
 
-高级的体现：
+## 高级的体现
 
 * 采用弥散更新算法的方式计算最短路由<sup>①</sup>
 * 采用更有针对性的触发更新路由
 * 有效可靠的路由传输通信策略
+
+EIGRP既没有使用传输层的TCP协议，
 
 > 参考自 [wiki-增强型内部网关路由协议](https://zh.wikipedia.org/wiki/%E5%8A%A0%E5%BC%B7%E5%9E%8B%E9%96%98%E9%81%93%E9%96%93%E9%81%B8%E5%BE%91%E5%8D%94%E5%AE%9A)
 
