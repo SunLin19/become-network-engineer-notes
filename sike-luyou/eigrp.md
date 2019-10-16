@@ -5,3 +5,8 @@
 **我们使用路由协议的目的是让路由器正确地转发数据包**.转发的标准是路径越短越好，因此路由协议必须包含某种计算最短路径的算法。
 
 > 摘自 《趣学CCNA路由与交换》
+
+
+
+
+需要参考的点：https://www.jannet.hk/zh-Hans/post/enhanced-interior-gateway-routing-protocol-eigrp/
