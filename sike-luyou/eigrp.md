@@ -37,4 +37,6 @@ EIGRP发送hello频率（触发更新）比rip发送周期路由更新频率高�
 
 
 
-需要参考的点：https://www.jannet.hk/zh-Hans/post/enhanced-interior-gateway-routing-protocol-eigrp/
+需要参考的点：
+* https://www.jannet.hk/zh-Hans/post/enhanced-interior-gateway-routing-protocol-eigrp/
+* https://kuaibao.qq.com/s/20180612A1FDKU00?refer=spider
