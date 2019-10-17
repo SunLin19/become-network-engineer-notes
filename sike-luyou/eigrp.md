@@ -28,7 +28,7 @@ EIGRP路由器了解自己相邻的设备。每当EIGRP使用组播地址244.0.0
 
 ### 收敛新路径机制
 
-* 被通告距离（Advertised Distance）：这台路由器的邻居到目的网络的度量值
+* 被通告距离（Advertised Distance）：这台路由器的邻居到目的网络的度量值（metric）
 * 可行距离（Feasible Distance）：这台路由器自己到目的网络的度量值
 * 后继路由器（Successor）：这台路由器到达目的网络的下一跳路由器
 * 可行后继路由器（Feasible Successor）：这台路由器到达目的网络的备胎
