@@ -69,8 +69,3 @@ EIGRP路由器了解自己相邻的设备。每当EIGRP使用组播地址244.0.0
 ③ 路由毒化：A发现自己所连的某个网段Down后，将自己关于那个网段的路由信息“毒化”，在路由表中表示为“initify”同时，向相邻路有器发送“触发更新”。
 
 ④ 负载均衡：负载平衡是一种计算机技术，用来在多个计算机（计算机集群）、网络连接、CPU、磁盘驱动器或其他资源中分配负载，以达到最优化资源使用、最大化吞吐率、最小化响应时间、同时避免过载的目的。 
-
-
-需要参考的点：
-* https://www.jannet.hk/zh-Hans/post/enhanced-interior-gateway-routing-protocol-eigrp/
-* https://kuaibao.qq.com/s/20180612A1FDKU00?refer=spider
