@@ -43,7 +43,8 @@
   * [静态路由](sike-luyou/静态路由.md)
   * [rip协议配置](sike-luyou/rip协议配置.md)
   * [rip2协议](sike-luyou/rip2.md)
-  * [EIGRP](sike-luyou/eigrp.md) 计划中 17-19
+  * [EIGRP](sike-luyou/eigrp.md)
+  * [EIGRP配置](sike-luyou/eigrp-conf.md) 计划中10.20-10.26
 
 
 
