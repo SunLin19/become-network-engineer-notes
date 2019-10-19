@@ -52,6 +52,7 @@ EIGRP路由器了解自己相邻的设备。每当EIGRP使用组播地址244.0.0
 
 
 
+> 参考 [什么是A值，B值，C值，D值，K值？](https://jingyan.baidu.com/article/e73e26c099304524adb6a705.html)
 
 注：
 
