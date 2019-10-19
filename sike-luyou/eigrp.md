@@ -33,6 +33,8 @@ EIGRP路由器了解自己相邻的设备。每当EIGRP使用组播地址244.0.0
 * 后继路由器（Successor）：这台路由器到达目的网络的下一跳路由器
 * 可行后继路由器（Feasible Successor）：这台路由器到达目的网络的备胎
 
+### 防环机制
+
 如图同理，FD=AD+该路由器到这个邻居路由器的度量值。R1走R3去往10.1.1.0/24的FD值为70，显然R2是R1去往该目的地的后继路由器（successor）。
 
 ![](https://i.postimg.cc/gk0XqWGH/2019-10-19-083931.png)
@@ -42,6 +44,10 @@ EIGRP路由器了解自己相邻的设备。每当EIGRP使用组播地址244.0.0
 ![](https://i.postimg.cc/XvG4Vn9x/931.png)
 
 > 参考自 [wiki-增强型内部网关路由协议](https://zh.wikipedia.org/wiki/%E5%8A%A0%E5%BC%B7%E5%9E%8B%E9%96%98%E9%81%93%E9%96%93%E9%81%B8%E5%BE%91%E5%8D%94%E5%AE%9A)、《趣学CCNA路由与交换》
+
+
+### 路由发现与维护
+
 
 注：
 
