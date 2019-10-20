@@ -46,7 +46,7 @@ R1(config-if)#end
 R1#show ip route
 ```
 
-![]()
+![](https://i.postimg.cc/1R7bWDV3/2019-10-20-172651.png)
 
 
 https://blog.51cto.com/r1cky/1774644
