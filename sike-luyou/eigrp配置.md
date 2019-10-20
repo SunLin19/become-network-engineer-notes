@@ -45,6 +45,7 @@ R1(config-if)#bandwidth 512
 R1(config-if)#end
 R1#show ip route
 ```
+此时只有一条后继路由(Successor)，通往4.4.4.4方向。
 
 ![](https://i.postimg.cc/1R7bWDV3/2019-10-20-172651.png)
 
