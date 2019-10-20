@@ -58,7 +58,7 @@ R1(config)#router eigrp 1
 R1(config-router)#variance 33 //满足条件
 ```
 
-
+![](https://i.postimg.cc/fLS9cPHY/2019-10-20-190902.png)
 
 
 https://blog.51cto.com/r1cky/1774644
