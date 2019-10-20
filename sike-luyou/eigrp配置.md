@@ -6,6 +6,28 @@ autonomous system 自治系统，每个AS之间都相是一个独立的网络。
 
 ![](https://i.postimg.cc/MZRY8dk3/2019-10-20-160605.png)
 
+首先先把所有接口信息以及EIGRP全部启用，并且查看信息；注：其他路由器配置，同理。
+
+```IOS
+Router>
+Router>en
+Router#conf t
+Router(config)#hostname R1
+R1(config)#interface f0/0
+R1(config-if)#ip address 192.168.12.1 255.255.255.0
+R1(config-if)#no sh
+R1(config-if)#ip address 192.168.13.1 255.255.255.0
+R1(config-if)#no sh
+R1(config-if)#exit
+R1(config)#router eigrp 1
+R1(config-router)#no auto-summary
+R1(config-router)#network 192.168.12.0 0.0.0.255
+R1(config-router)#network 192.168.13.0 0.0.0.255
+R1(config-if)#end
+R1#
+```
+
+
 https://blog.51cto.com/r1cky/1774644
 
 https://www.jannet.hk/zh-Hans/post/enhanced-interior-gateway-routing-protocol-eigrp/
