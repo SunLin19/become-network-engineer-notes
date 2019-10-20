@@ -1,4 +1,4 @@
-# eigrp配置
+# eigrp简要配置
 
 ![图-1](https://i.postimg.cc/MZRY8dk3/2019-10-20-160605.png)
 
