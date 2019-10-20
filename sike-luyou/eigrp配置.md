@@ -18,8 +18,11 @@ R1(config-if)#ip address 192.168.13.1 255.255.255.0
 R1(config-if)#no sh
 R1(config-if)#exit
 
-//1即是AS号,自治系统，每个AS之间都相是一个独立的网络。EIGRP建立邻居必须和邻居又相同的AS号，否则邻居建立不成功，无法通信。
-//参考链接：https://zhidao.baidu.com/question/545021403.html?qbl=relate_question_0
+/**
+1即是AS号,自治系统，每个AS之间都相是一个独立的网络。
+EIGRP建立邻居必须和邻居又相同的AS号，否则邻居建立不成功，无法通信。
+参考链接：https://zhidao.baidu.com/question/545021403.html?qbl=relate_question_0
+*/
 R1(config)#router eigrp 1
 R1(config-router)#no auto-summary
 R1(config-router)#network 192.168.12.0 0.0.0.255 //反掩码，即子网掩码二进制取反；如：1为0，0为1
@@ -51,7 +54,7 @@ R1#show ip route
 
 ![](https://i.postimg.cc/1R7bWDV3/2019-10-20-172651.png)
 
-实现非等价负载均衡，(5133056/158720)+1=33。此外，EIGRP默认为4条路由负载分担，使用关键字`maximum-path`可以修改执行分担路径数量，但最大负载分担为16条路由。
+实现非等价负载均衡，(5133056/158720)+1=33。此外，EIGRP默认为4条路由负载分担，使用`maximum-path`可以修改执行分担路径数量，但最大负载分担为16条路由。
 
 ```
 R1(config)#router eigrp 1
