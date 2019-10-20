@@ -19,9 +19,9 @@ R1(config-if)#no sh
 R1(config-if)#ip address 192.168.13.1 255.255.255.0
 R1(config-if)#no sh
 R1(config-if)#exit
-R1(config)#router eigrp 1
+R1(config)#router eigrp 1 //1即是AS号
 R1(config-router)#no auto-summary
-R1(config-router)#network 192.168.12.0 0.0.0.255
+R1(config-router)#network 192.168.12.0 0.0.0.255 //反掩码，即子网掩码二进制取反；如：1为0，0为1
 R1(config-router)#network 192.168.13.0 0.0.0.255
 R1(config-if)#end
 R1#
