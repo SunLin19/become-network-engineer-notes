@@ -39,6 +39,14 @@ R1#
 
 再结合上图-2，只需更改带宽影响度量值，FD也会随之改变，借此完成，非等价负载均衡实验。
 
+```ios
+R1(config)#interface f0/1
+R1(config-if)#bandwidth 512
+R1(config-if)#end
+R1#show ip route
+```
+
+![]()
 
 
 https://blog.51cto.com/r1cky/1774644
