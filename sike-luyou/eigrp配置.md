@@ -31,7 +31,9 @@ R1#
 * **默认情况下，K1和K3是1，其他的K值都是0，通常情况下：度量值=256×（10^7/最小带宽+累积延时/10）**
 * 可行距离(FD)=被通告距离(AD)+该路由器到这个邻居路由器的度量值(metric)
 
+`show ip eigrp topology` 因其FD距离一致，EIGRP自动实现负载均衡
 
+![](https://i.postimg.cc/JngHFy5B/2019-10-20-170008.png)
 
 https://blog.51cto.com/r1cky/1774644
 
