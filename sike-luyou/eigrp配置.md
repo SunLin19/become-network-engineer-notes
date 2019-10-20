@@ -4,6 +4,8 @@
 
 ## eigrp建立
 
+> 实验参考 [eigrp的不等价负载均衡](https://blog.csdn.net/baidu_32452525/article/details/51611019)
+
 首先先把所有接口信息以及EIGRP全部启用，并且查看信息；注：其他路由器配置，同理。
 
 ```IOS
