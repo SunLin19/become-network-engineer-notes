@@ -34,6 +34,7 @@ OSPF(Open Shortest Path First开放式最短路径优先），用于在单一自
 |OSPF路由表|通过链路状态数据库得出 
 |全局路由表|OSPF路由与其他比较得出
 
+> 摘抄自[百度百科-组播扩展](https://baike.baidu.com/item/组播扩展OSPF)并参考 [晴刃-OSPF协议详解](https://www.qingsword.com/qing/596.html)
 
 写作思路
 
