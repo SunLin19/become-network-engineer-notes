@@ -38,6 +38,13 @@ ospf了解自身链路，寻找邻居并与其他路由器建立邻居关系后�
 
 > 摘抄自[百度百科-组播扩展](https://baike.baidu.com/item/组播扩展OSPF)并参考 [晴刃-OSPF协议详解](https://www.qingsword.com/qing/596.html)
 
+## OSPF协议主要优点
+
+
+
+缺点也要有
+
+
 写作思路
 
 * 先用《趣学ccna》的方式作为导读
