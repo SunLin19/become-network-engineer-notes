@@ -61,7 +61,8 @@ gns3使用
   * [rip2协议](sike-luyou/rip2.md)
   * [EIGRP](sike-luyou/eigrp.md)
   * [EIGRP简要配置](sike-luyou/eigrp简要配置.md)
-  * ospf 计划中 22-26
+  * [ospf](sike-luyou/ospf.md)
+  * ospf配置 计划中 10.23-26
 
 
 
