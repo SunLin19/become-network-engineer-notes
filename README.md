@@ -8,11 +8,18 @@
 记录：在理解配置以及深入原理的过程中，发现CCNA还是满足于配置的熟练，但对于更深层次的规划与设计网络（如：路由重发）的细节，要更改原有网络只知道配置还是不行的，没有这类人才公司将花费巨大的成本寻找高资质的外包（招标一年也多是百万级别），NP的价值就已经体现出来了（对比每年外包花个百来万，养员工月来万实在划算得多...）。
 
 
+### 待写作的问题记录
+
 关于时钟频率的问题
 
-https://wenwen.sogou.com/z/q656562104.htm
+* https://wenwen.sogou.com/z/q656562104.htm
+* https://www.cnblogs.com/hopeworld/archive/2009/08/27/1554741.html 
 
-https://www.cnblogs.com/hopeworld/archive/2009/08/27/1554741.html 
+gns3使用
+
+* https://pdf.us/2017/08/27/348.html
+* https://www.sysnettechsolutions.com/en/gns3/gns3-supported-ios-images-download/
+
 
 ### 目录
 
