@@ -9,7 +9,7 @@ IGP又被分为两类：距离矢量路由协议和链路状态路由协议。
 
 > 参考自 [BGP与IGP之间的区别](http://www.voidcn.com/article/p-ojocvzvo-tx.html)、[百度百科-距离矢量路由协议](https://baike.baidu.com/item/%E9%93%BE%E8%B7%AF%E7%8A%B6%E6%80%81%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE)
 
-OSPF(Open Shortest Path First开放式最短路径优先），用于在单一自治系统（autonomous system,AS）内决策路由。是对链路状态路由协议的一种实现，隶属内部网关协议（IGP）。
+OSPF(Open Shortest Path First开放式最短路径优先），用于在单一自治系统（autonomous system,AS）内决策路由。是对链路状态路由协议的一种实现，隶属内部网关协议（IGP）。整个过程使用了五种报文、三个阶段、四张表。
 
 
 
