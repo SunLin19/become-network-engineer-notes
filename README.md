@@ -81,7 +81,7 @@ gns3使用
  * [《IP路由协议疑难解析》](https://cread.jd.com/read/startRead.action?bookId=30383211&readType=1)
  * [Jan Ho 的网络世界](https://www.jannet.hk/zh-Hans/)
  * [思科技术支持](https://www.cisco.com/c/zh_cn/tech/index.html)
-
+ * [H3C交换机 典型配置举例-6W100](http://www.h3c.com/cn/d_201312/807748_30005_0.htm)
 
 <!--
 继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，《从零开始理解网络》？可能吧。。。-->
