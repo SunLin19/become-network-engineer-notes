@@ -15,6 +15,9 @@ DTE与DCE最为明显的区别：DCE一方提供时钟，DTE不提供时钟，�
 > 参考自 [cisco-clock rate Usage Guidelines](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html#wp3930272930)
 
 
+![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)
+
+
 配置
 
 https://jingyan.baidu.com/article/636f38bb4d8ff7d6b84610ba.html
