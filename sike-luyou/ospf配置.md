@@ -14,8 +14,37 @@ DTE与DCE最为明显的区别：DCE一方提供时钟，DTE不提供时钟，�
 
 > 参考自 [cisco-clock rate Usage Guidelines](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html#wp3930272930)
 
+## 实验拓扑
 
 ![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)
+
+> 拓扑参考自 [基于点到点链路的 OSPF 的初始配置](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?dtid=osscdc000357)
+
+Router0
+
+```ios
+Router(config)#interface loopback 0
+Router(config-if)#ip add 3.3.3.3 255.255.255.255
+Router(config-if)#interface s0/1/0
+Router(config-if)#ip add 1.1.1.2 255.255.255.0
+Router(config-if)#no shutdown
+Router(config)#router ospf 1
+Router(config-router)#1.1.1.0 0.0.0.255 area 0
+```
+
+Router1
+
+```ios
+Router(config)#interface loopback 0
+Router(config-if)#ip add 2.2.2.2 255.255.255.255
+Router(config-if)#int s0/1/1
+Router(config-if)#ip add 1.1.1.1 255.255.255.0
+Router(config-if)#clock rate 2000000
+Router(config-if)#router ospf 1
+Router(config-router)#network 1.1.1.0 0.0.0.255 area 0
+Router(config-if)#no shutdown
+```
+
 
 
 配置
