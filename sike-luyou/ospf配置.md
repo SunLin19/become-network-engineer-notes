@@ -39,7 +39,7 @@ Router(config)#interface loopback 0
 Router(config-if)#ip add 2.2.2.2 255.255.255.255
 Router(config-if)#int s0/1/1
 Router(config-if)#ip add 1.1.1.1 255.255.255.0
-Router(config-if)#clock rate 2000000
+Router(config-if)#clock rate 64000
 Router(config-if)#router ospf 1
 Router(config-router)#network 1.1.1.0 0.0.0.255 area 0
 Router(config-if)#no shutdown
