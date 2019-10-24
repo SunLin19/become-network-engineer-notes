@@ -1,6 +1,6 @@
 写作思路
 
-## clock rate
+## clock rate 64000
 
 要想知道配置为什么时钟频率，首先得要知道什么是DCE、DTE？
 
