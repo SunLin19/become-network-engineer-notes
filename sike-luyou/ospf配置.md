@@ -10,6 +10,8 @@
 DTE与DCE最为明显的区别：DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作。btw，路由器既可以作为DCE，也可以作为DTE。
 
 
+关于`Clock rate 64000`的解释：思科建议64000这个值在它默认的信号类型的线上做设置，而更高的值需要其它类型线缆支持，速率设置超过实际物理线缆所能承受的话，可能会发生丢包等问题。
+
 > 参考自 [cisco-clock rate Usage Guidelines](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html#wp3930272930)
 
 
