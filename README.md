@@ -62,7 +62,7 @@ gns3使用
   * [EIGRP](sike-luyou/eigrp.md)
   * [EIGRP简要配置](sike-luyou/eigrp简要配置.md)
   * [ospf](sike-luyou/ospf.md)
-  * ospf配置 计划中 10.23-26
+  * [ospf配置](sike-luyou/ospf配置.md) 计划中 10.23-26
 
 
 
