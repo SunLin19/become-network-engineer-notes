@@ -6,6 +6,7 @@
 
 在了解ospf选举之前，需要了解以下名词：
 
+* DR和BDR
 * nbma网络
 
 ### nbma
