@@ -8,6 +8,7 @@
 
 * DR和BDR
 * nbma网络
+* router id与area
 
 ### DR和BDR
 
