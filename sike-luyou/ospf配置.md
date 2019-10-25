@@ -10,6 +10,11 @@
 
 在配置NBMA的情况下，OSPF在同一时刻向每一个路由器只会周期性发送一个Hello包，用于建立和确定路由间的邻居关系而不是进行多播。
 
+![](https://i.postimg.cc/Hnx97j06/Snipaste-2019-10-25-22-43-06.png)
+
+
+
+
 ## 实验拓扑
 
 ![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)
