@@ -2,6 +2,14 @@
 
 
 
+## ospf选举
+
+### nbma
+
+非广播-多路访问网络（Non-Broadcast Multiple Access，NBMA）是OSPF通信协议中定义的四种网络类型的其中一种。 NBMA用来描述如不具有支持广播和多播能力的多路访问网络。其他OSPF定义的网络类型有：广播网络、点对点网络和点对多点网络。
+
+在配置NBMA的情况下，OSPF在同一时刻向每一个路由器只会发送一个Hello包（Hello包周期性发送，用于建立和确定路由间的邻居关系）而不是进行多播。
+
 ## 实验拓扑
 
 ![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)
