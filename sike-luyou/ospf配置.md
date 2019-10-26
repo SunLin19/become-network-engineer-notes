@@ -28,6 +28,11 @@ Router(config-if)#router ospf 1
 Router(config-router)#network 1.1.1.0 0.0.0.255 area 0	
 Router(config-if)#no shutdown	
 ```
+> 图表摘自 [51cto-OSPF 多区域原理与配置](https://blog.51cto.com/14157628/2392133)
+
+常用的命令（主要用于排错）有：
+
+![](https://i.postimg.cc/1X3Ct3CH/e8e5.png)
 
 
 ## RID、进程、区域
