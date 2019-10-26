@@ -36,6 +36,11 @@
 >参考 [广播类型的ospf网络简介-dr和bdr](https://hexnet.jimdo.com/2012/11/14/%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B%E7%9A%84ospf%E7%BD%91%E7%BB%9C%E7%AE%80%E4%BB%8B-dr%E5%92%8Cbdr/)、[百度百科-NBMA](https://baike.baidu.com/item/NBMA)
 
 
+### DR和BDR选举过程
+
+
+
+
 
 https://blog.51cto.com/14154700/2374461
 
