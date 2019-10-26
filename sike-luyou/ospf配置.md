@@ -17,6 +17,8 @@
 
 为了可以避免这些问题的发生，可以在该网段上选举一个指定路由器（Designated Router）。由DR和网络中的其他路由器建立邻接关系，并负责将网段上的变化告知它们。
 
+![](https://i.postimg.cc/9f43bcd0/Snipaste-2019-10-26-07-14-16.png)
+
 为了实现冗余，当DR失效时，需要有一个新的DR来接替DR的工作，这便是BDR（Backup Designated Router）。网络上所有的路由器将和DR和BDR同时形成邻接关系。DR和BDR之间也将形成邻接关系。
 
 > 参考 [51cto-路由器OSPF的基本概念与工作过程](https://blog.51cto.com/14154700/2374461)
