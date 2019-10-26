@@ -36,6 +36,7 @@ Router(config-if)#no shutdown
 
 ![](https://i.postimg.cc/1X3Ct3CH/e8e5.png)
 
+建议结合[OSPF Neighbor States Explained with Example](https://www.computernetworkingnotes.com/ccna-study-guide/ospf-neighbor-states-explained-with-example.html)文档进行实践及分析。
 
 ## RID、进程、区域
 
