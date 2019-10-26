@@ -10,15 +10,6 @@
 
 ### 待写作的问题记录
 
-关于时钟频率的问题
-
-* https://wenwen.sogou.com/z/q656562104.htm
-* https://www.cnblogs.com/hopeworld/archive/2009/08/27/1554741.html 
-
-选举过程
-
-http://blog.sina.com.cn/s/blog_177e9717f0102yb69.html
-
 gns3使用
 
 * https://pdf.us/2017/08/27/348.html
