@@ -1,46 +1,21 @@
-写作思路
+# ospf配置
+
+## 实验拓扑
+
+> 拓扑参考自 [基于点到点链路的 OSPF 的初始配置](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?dtid=osscdc000357)
+
+
 
 
 ## RID、进程、区域
 
-一台路由器如果要运行OSPF协议，必须存在Router ID。缺省情况下，路由器系统会从当前接口的IP地址中自动选取一个最大值作为Router ID。每个OSPF进程的RID要保证在OSPF网络中唯一，否则会导致邻居不能正常建立、路由信息不正确的问题。
+一台路由器如果要运行OSPF协议，必须存在RID。缺省情况下，路由器系统会从当前接口的IP地址中自动选取一个最大值作为RID。每个OSPF进程的RID要保证在OSPF网络中唯一，否则会导致邻居不能正常建立、路由信息不正确的问题。
 
 路由器支持OSPF多进程，可以根据业务类型划分不同的进程。进程号是本地概念，不影响与其它路由器之间的报文交换。因此，不同的路由器之间，即使进程号不同也可以进行报文交换。
 
 区域是从逻辑上将设备划分为不同的组，每个组用区域号来标识。区域的边界是设备，而不是链路。即一个网段（链路）只能属于一个区域，或者说每个运行OSPF的接口必须指明属于哪一个区域。
 
 > 摘抄自 [曹世宏的博客-OSPF命令行配置](https://cshihong.github.io/2017/10/20/OSPF%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/)
-
-## 实验拓扑
-
-![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)
-
-> 拓扑参考自 [基于点到点链路的 OSPF 的初始配置](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?dtid=osscdc000357)
-
-Router0
-
-```ios
-Router(config)#interface loopback 0
-Router(config-if)#ip add 3.3.3.3 255.255.255.255
-Router(config-if)#interface s0/1/0
-Router(config-if)#ip add 1.1.1.2 255.255.255.0
-Router(config-if)#no shutdown
-Router(config)#router ospf 1
-Router(config-router)#1.1.1.0 0.0.0.255 area 0
-```
-
-Router1
-
-```ios
-Router(config)#interface loopback 0
-Router(config-if)#ip add 2.2.2.2 255.255.255.255
-Router(config-if)#int s0/1/1
-Router(config-if)#ip add 1.1.1.1 255.255.255.0
-Router(config-if)#clock rate 64000
-Router(config-if)#router ospf 1
-Router(config-router)#network 1.1.1.0 0.0.0.255 area 0
-Router(config-if)#no shutdown
-```
 
 ## clock rate 64000
 
