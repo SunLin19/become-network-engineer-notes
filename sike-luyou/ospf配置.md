@@ -2,6 +2,8 @@
 
 ## 实验拓扑
 
+这只是简单示例，关于进阶示例请参考[Cisco-采用多区域邻接配置的 OSPF 示例](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/118879-configure-ospf-00.html?dtid=osscdc000357)
+
 ![](https://i.postimg.cc/50Vmgf6x/Snipaste-2019-10-24-22-34-22.png)	
 
 > 拓扑参考自 [基于点到点链路的 OSPF 的初始配置](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?dtid=osscdc000357)
@@ -58,21 +60,5 @@ DTE与DCE最为明显的区别：DCE一方提供时钟，DTE不提供时钟，�
 关于`Clock rate 64000`的解释：思科建议64000这个值在它默认的信号类型的线上做设置，而更高的值需要其它类型线缆支持，速率设置超过实际物理线缆所能承受的话，可能会发生丢包等问题。
 
 > 参考自 [cisco-clock rate Usage Guidelines](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html#wp3930272930)
-
-改进
-
-https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/47862-ospfdb3.html
-
-
-配置
-
-https://jingyan.baidu.com/article/636f38bb4d8ff7d6b84610ba.html
-
-https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/118879-configure-ospf-00.html?dtid=osscdc000357
-
-https://blog.51cto.com/14157628/2392133
-
-https://blog.51cto.com/yangshufan/1961182
-
 
 
