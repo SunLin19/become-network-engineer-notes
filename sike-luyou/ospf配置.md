@@ -35,7 +35,6 @@
 
 >参考 [广播类型的ospf网络简介-dr和bdr](https://hexnet.jimdo.com/2012/11/14/%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B%E7%9A%84ospf%E7%BD%91%E7%BB%9C%E7%AE%80%E4%BB%8B-dr%E5%92%8Cbdr/)、[百度百科-NBMA](https://baike.baidu.com/item/NBMA)
 
-
 ### DR和BDR选举过程
 
 OSPF使用优先级值选择DR和BDR。优先级最高的OSPF路由器将成为DR。具有第二高优先级的路由器成为BDR。如果有平局，将选择具有最高RID的路由器。
@@ -77,10 +76,7 @@ R3不会与R4建立邻接关系，因此在这种关系下，它们将仅被视�
 ![](https://i.postimg.cc/fLrWfq4x/ospf-adjacent-adjacency.png)
 
 
-
-
-https://blog.51cto.com/14154700/2374461
-
+> 摘抄自 [OSPF Neighbor States Explained with Example](https://www.computernetworkingnotes.com/ccna-study-guide/ospf-neighbor-states-explained-with-example.html)
 
 
 ## 实验拓扑
