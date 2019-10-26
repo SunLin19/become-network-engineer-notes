@@ -2,7 +2,8 @@
 
 ## 实验拓扑
 
-> 拓扑参考自 [基于点到点链路的 OSPF 的初始配置](https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?dtid=osscdc000357)
+
+> 拓扑参考自 [OSPF Routers Connected by a Point-to-Multipoint Link](https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/47862-ospfdb3.html)
 
 
 
