@@ -46,7 +46,7 @@ OSPF使用优先级值选择DR和BDR。优先级最高的OSPF路由器将成为D
 
 例如，下图说明了一个简单的OPSF网络。在这个网络中，我们有五个路由器。我们不希望R3成为DR或BDR。因此，我们将其默认优先级值更改为0。现在让我们看看这些路由器如何选择DR和BDR
 
-
+![](https://i.postimg.cc/prL8p6fz/ospf-dr-bdr.png)
 
 https://blog.51cto.com/14154700/2374461
 
