@@ -50,7 +50,6 @@ gns3使用
   * [组播](supplement/组播.md) 
   
 * 网络路由
-  * [核心层、汇聚层、接入层](supplement/核心层、汇聚层、接入层.md)
   * [静态路由](sike-luyou/静态路由.md)
   * [rip协议配置](sike-luyou/rip协议配置.md)
   * [rip2协议](sike-luyou/rip2.md)
@@ -58,6 +57,11 @@ gns3使用
   * [EIGRP简要配置](sike-luyou/eigrp简要配置.md)
   * [ospf](sike-luyou/ospf.md)
   * [ospf配置](sike-luyou/ospf配置.md)
+
+* 网络交换
+  * [核心层、汇聚层、接入层](supplement/核心层、汇聚层、接入层.md)
+  * 交换式lan （计划中）
+
 
 
 ## 相关资源分享
