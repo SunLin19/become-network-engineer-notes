@@ -88,6 +88,7 @@ gns3使用
  * [H3C交换机 典型配置举例-6W100](http://www.h3c.com/cn/d_201312/807748_30005_0.htm)
  * [computernetworkingnotes](https://www.computernetworkingnotes.com/ccna-study-guide/ospf-neighbor-states-explained-with-example.html)
  * [红茶三杯ccietea](http://ccietea.com/)
+ * [omnisecu知识库](http://www.omnisecu.com/cisco-certified-network-associate-ccna/what-is-ospf-metric-value-cost-and-ospf-default-cost-reference-bandwidth.php)
 
 <!--
 继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，《从零开始理解网络》？可能吧。。。-->
