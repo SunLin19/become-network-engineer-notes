@@ -11,7 +11,9 @@
 
 ![](https://i.postimg.cc/qRQCHSJW/57-31.png)
 
-## dot1q
+## trunk
+
+### dot1q
 
 dot1q就是802.1q，dot就是点的意思，就简写为dot1q了。**IEEE 802.1q以及VLAN Tagging属于互联网下IEEE 802.1的标准规范**，允许多个网桥(Bridge)在信息不被外泄的情况下公开的共享同一个实体网上。IEEE 802.1q-英文缩写写为dot1q，经常在实现以太网封装协议的架构下被提及。
 
