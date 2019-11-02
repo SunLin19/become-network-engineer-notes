@@ -9,4 +9,4 @@
 
 大多数企业同一子网内的网络也都会把不同部门人员传输访问进行隔离，确保部门分工明确的运作及资料保密性提高，又可以把故障和错误控制在更小的范围内。
 
-![https://i.postimg.cc/3xyQHvBB/Snipaste-2019-11-02-10-29-01.png](https://i.postimg.cc/pXp69tFV/32-53.png)
+![](https://i.postimg.cc/D0yLWFp2/57-31.png)
