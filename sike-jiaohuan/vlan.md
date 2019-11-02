@@ -19,4 +19,4 @@ IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成
 
 > 摘抄自 [百度百科-802.1q](https://baike.baidu.com/item/802.1q)
 
-关于dot1q协议具体的运作实现方式请看：[cnblogs-VLAN IEEE802.1Q](https://www.cnblogs.com/OceanF/p/9230299.html)
+关于dot1q协议具体的运作实现方式请看：[OceanF-VLAN IEEE802.1Q](https://www.cnblogs.com/OceanF/p/9230299.html)
