@@ -7,4 +7,4 @@
 
 > 摘抄 [百度百科-虚拟局域网](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91/419962?fromtitle=VLAN)
 
-![](https://i.postimg.cc/3xyQHvBB/Snipaste-2019-11-02-10-29-01.png)
+![https://i.postimg.cc/3xyQHvBB/Snipaste-2019-11-02-10-29-01.png](https://i.postimg.cc/pXp69tFV/32-53.png)
