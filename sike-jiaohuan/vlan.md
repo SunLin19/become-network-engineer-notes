@@ -16,3 +16,5 @@
 dot1q就是802.1q，dot就是点的意思，就简写为dot1q了。**IEEE 802.1q以及VLAN Tagging属于互联网下IEEE 802.1的标准规范**，允许多个网桥(Bridge)在信息不被外泄的情况下公开的共享同一个实体网上。IEEE 802.1q-英文缩写写为dot1q，经常在实现以太网封装协议的架构下被提及。
 
 IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成树协议的具体概念模型。**这个模型允许各个独立的VLAN与以太网交换机的数据链路层或路由器互相连接。**
+
+> 摘抄自 [百度百科-802.1q](https://baike.baidu.com/item/802.1q)、[cnblogs-VLAN IEEE802.1Q](https://www.cnblogs.com/OceanF/p/9230299.html)
