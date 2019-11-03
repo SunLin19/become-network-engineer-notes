@@ -64,4 +64,8 @@ SW1(config-if)#switchport access vlan 10
 SW1(config)#int f0/3
 SW1(config-if)#switchport mode trunk
 ```
-vlan间路由
+
+vlan间路由 (开启R3路由功能，重置为路由器)
+
+
+
