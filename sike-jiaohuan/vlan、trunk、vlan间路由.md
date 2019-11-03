@@ -58,13 +58,13 @@ SW1(config-if)#switchport mode access
 //指定专属的vlan编号
 SW1(config-if)#switchport access vlan 10
 ```
-在双方交换机上共同配置trunk模式。
+在SW1、SW2交换机上共同配置trunk模式。
 
 ```ios
 //2950只支持dot1q，所以不用写switchport trunk encapsulation dot1q/isl命令
 //3560以上才支持dot1q和isl，才有encapsulation的命令
-SW1(config)#int f0/3
-SW1(config-if)#switchport mode trunk
+SW(config)#int f0/3
+SW(config-if)#switchport mode trunk
 ```
 
 ## vlan间路由 
