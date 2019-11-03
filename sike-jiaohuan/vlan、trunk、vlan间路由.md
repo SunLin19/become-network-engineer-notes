@@ -71,23 +71,22 @@ SW1(config-if)#switchport mode trunk
 
 **在配置实验基础之上进行跨vlan通信**。单臂路由通过一条物理链路实现VLAN间路由，但Trunk链路需选择带宽较高的链路。最好使用三层交换机实现VLAN划分、VLAN内部二层交换和VLAN间路由的功能。单臂路由造成的延迟、带宽和路由器运算压力，使用三层交换机可以得到解决。
 
-![](https://i.postimg.cc/wMJXvgjs/27-05.png)
+![](https://i.postimg.cc/jdQyGjm9/45-36.png)
 
 在交换机将PC地址划分置相应vlan并分配给交换机相应端口，在与路由交接的链路端口开启trunk模式。
 
 ```ios
-Switch(config-if)#vlan 2
-Switch(config-vlan)#int f0/2
-Switch(config-if)#switchport access vlan 2
+Switch(config)#vlan 10
+Switch(config-vlan)#int f0/1
+Switch(config-if)#switchport access vlan 10
 Switch(config-if)#exit
+
+Switch(config-vlan)#vlan 20
+Switch(config)#int f0/2
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#exit
+
 Switch(config)#int f0/3
-
-Switch(config-if)#vlan 3
-Switch(config-vlan)#int f0/3
-Switch(config-if)#switchport access vlan 3
-Switch(config-if)#exit
-
-Switch(config)#int f0/1
 Switch(config-if)#switchport mode trunk 
 ```
 路由器开启接口，配置通信协议，添加相应IP地址即可。
@@ -98,14 +97,14 @@ Router(config-if)#no shutdown
 Router(config-if)#exit
 
 //子接口 f0/x.y为开启x的编号y的子接口
-Router(config)#int fa0/0.1
+Router(config)#int fa0/0.10
 //配置vlan的trunk链路的通信协议
-Router(config-subif)#encapsulation dot1Q 2
+Router(config-subif)#encapsulation dot1Q 10
 Router(config-subif)#ip address 192.168.1.1 255.255.255.0
 Router(config-subif)#exit
 
-Router(config)#int fa0/0.2
-Router(config-subif)#encapsulation dot1q 3
+Router(config)#int fa0/0.20
+Router(config-subif)#encapsulation dot1q 20
 Router(config-subif)#ip address 192.168.2.1 255.255.255.0
 Router(config-subif)#end
 ```
