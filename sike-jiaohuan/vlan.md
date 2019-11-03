@@ -69,7 +69,7 @@ SW1(config-if)#switchport mode trunk
 
 **在配置实验基础之上进行跨vlan通信**。单臂路由通过一条物理链路实现VLAN间路由，但Trunk链路需选择带宽较高的链路。最好使用三层交换机实现VLAN划分、VLAN内部二层交换和VLAN间路由的功能。单臂路由造成的延迟、带宽和路由器运算压力，使用三层交换机可以得到解决。
 
-
+![](https://i.postimg.cc/wMJXvgjs/27-05.png)
 
 
 
