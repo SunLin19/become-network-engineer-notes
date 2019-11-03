@@ -56,7 +56,7 @@ SW1(config-if)#switchport mode access
 //指定专属的vlan编号
 SW1(config-if)#switchport access vlan 10
 ```
-在双方交换机上共同配置trunk模式
+在双方交换机上共同配置trunk模式。
 
 ```ios
 //2950只支持dot1q，所以不用写switchport trunk encapsulation dot1q/isl命令
@@ -88,7 +88,7 @@ Switch(config-if)#exit
 Switch(config)#int f0/1
 Switch(config-if)#switchport mode trunk 
 ```
-路由器开启接口，配置通信协议，添加相应IP地址即可
+路由器开启接口，配置通信协议，添加相应IP地址即可。
 
 ```ios
 Router(config)#int fa0/0
@@ -107,3 +107,11 @@ Router(config-subif)#encapsulation dot1q 3
 Router(config-subif)#ip address 192.168.2.1 255.255.255.0
 Router(config-subif)#end
 ```
+
+## 笔记
+
+回顾 [静态路由](sike-luyou/静态路由.md)，加深印象以及`ip route`配置命令的理解；需要用到的辅助查看命令：
+
+* `show ip route` 查看IP路由
+* `show ip interface brief` 查看端口IP及开启状态
+* `show vlan brief ` 查看配置vlan的端口状态
