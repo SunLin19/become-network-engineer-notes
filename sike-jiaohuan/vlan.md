@@ -65,7 +65,9 @@ SW1(config)#int f0/3
 SW1(config-if)#switchport mode trunk
 ```
 
-vlan间路由 (开启R3路由功能，`default int f0/0`重置为路由器)
+vlan间路由 (开启R3路由功能，`default int f0/0`重置为路由器)，在将SW2的f0/2配置成承载多链路的trunk模式
+
+
 
 
 
