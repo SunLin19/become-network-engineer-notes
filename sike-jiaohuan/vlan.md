@@ -31,5 +31,5 @@ IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成
 
 ## 配置实验
 
-![](https://i.postimg.cc/TYHybbbn/21-59-20.png)
+![](https://i.postimg.cc/rwkDjWNv/38-59.png)
 
