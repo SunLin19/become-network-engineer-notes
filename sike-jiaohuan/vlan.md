@@ -67,7 +67,7 @@ SW1(config-if)#switchport mode trunk
 
 ## vlan间路由 
 
-**在配置实验基础之上进行跨vlan通信**，首先开启R3`ip routing`路由功能，`default int f0/0`重置为路由器)，在将SW2的f0/1配置成承载多链路的trunk模式
+**在配置实验基础之上进行跨vlan通信**。单臂路由通过一条物理链路实现VLAN间路由，但Trunk链路需选择带宽较高的链路。最好使用三层交换机实现VLAN划分、VLAN内部二层交换和VLAN间路由的功能。单臂路由造成的延迟、带宽和路由器运算压力，使用三层交换机可以得到解决。
 
 
 
