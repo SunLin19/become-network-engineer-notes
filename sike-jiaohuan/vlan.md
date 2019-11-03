@@ -45,4 +45,9 @@ R1(config-if)#no shutdown
 R1(config)#ip default-gateway 192.168.1.254
 ```
 
+在交换机将PC划分置相应vlan
+
+
+```ios
+```
 
