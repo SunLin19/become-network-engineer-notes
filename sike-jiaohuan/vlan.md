@@ -33,3 +33,16 @@ IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成
 
 ![](https://i.postimg.cc/rwkDjWNv/38-59.png)
 
+首先将路由器模拟成一台PC，R2、R3也是如此。
+
+```ios
+//关闭路由功能，用于模拟pc
+R1(config)#no ip routing
+R1(config)#int f0/0
+R1(config-if)#ip add 192.168.1.1 255.255.255.0
+R1(config-if)#no shutdown
+//不涉及不同的CIDR互访，默认网关可配可不配
+R1(config)#ip default-gateway 192.168.1.254
+```
+
+
