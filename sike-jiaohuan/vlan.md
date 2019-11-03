@@ -29,7 +29,7 @@ IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成
 
 关于dot1q协议具体的运作实现方式请看：[OceanF-VLAN IEEE802.1Q](https://www.cnblogs.com/OceanF/p/9230299.html)
 
-## 配置实验
+### 配置实验
 
 ![](https://i.postimg.cc/LsJ4HWvw/21-46.png)
 
@@ -108,7 +108,7 @@ Router(config-subif)#ip address 192.168.2.1 255.255.255.0
 Router(config-subif)#end
 ```
 
-## 笔记
+### 笔记
 
 回顾 [静态路由](sike-luyou/静态路由.md)，加深印象以及`ip route`配置命令的理解；需要用到的辅助查看命令：
 
