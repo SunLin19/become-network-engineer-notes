@@ -117,3 +117,5 @@ Router(config-subif)#end
 * `show ip route` 查看IP路由
 * `show ip interface brief` 查看端口IP及开启状态
 * `show vlan brief ` 查看配置vlan的端口状态
+
+网关地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器（实质上相当于一台路由器）、代理服务器（也相当于一台路由器）。
