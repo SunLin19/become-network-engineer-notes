@@ -88,7 +88,7 @@ Switch(config-if)#exit
 Switch(config)#int f0/1
 Switch(config-if)#switchport mode trunk 
 ```
-路由器
+路由器开启接口，配置通信协议，添加相应IP地址即可
 
 ```ios
 Router(config)#int fa0/0
