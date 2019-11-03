@@ -31,7 +31,7 @@ IEEE 802.1q定义一个关于VLAN连接介质访问控制层和IEEE 802.1D生成
 
 ## 配置实验
 
-![](https://i.postimg.cc/rwkDjWNv/38-59.png)
+![](https://i.postimg.cc/JzzfbkwW/21-46.png)
 
 首先将路由器模拟成一台PC，R2、R3也是如此。
 
