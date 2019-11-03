@@ -45,9 +45,15 @@ R1(config-if)#no shutdown
 R1(config)#ip default-gateway 192.168.1.254
 ```
 
-在交换机将PC划分置相应vlan
+在交换机将PC地址划分置相应vlan并分配给交换机相应端口，其他SW同理。
 
 
 ```ios
+SW1(config)#vlan 10
+SW1(config-vlan)#int f0/1
+// 在f0/1口内配置二层接入接口访问模式
+SW1(config-if)#switchport mode access 
+//指定专属的vlan编号
+SW1(config-if)#switchport access vlan 10
 ```
 
