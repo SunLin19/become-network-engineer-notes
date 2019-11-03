@@ -71,5 +71,39 @@ SW1(config-if)#switchport mode trunk
 
 ![](https://i.postimg.cc/wMJXvgjs/27-05.png)
 
+在交换机将PC地址划分置相应vlan并分配给交换机相应端口，在与路由交接的链路端口开启trunk模式。
 
+```ios
+Switch(config-if)#vlan 2
+Switch(config-vlan)#int f0/2
+Switch(config-if)#switchport access vlan 2
+Switch(config-if)#exit
+Switch(config)#int f0/3
 
+Switch(config-if)#vlan 3
+Switch(config-vlan)#int f0/3
+Switch(config-if)#switchport access vlan 3
+Switch(config-if)#exit
+
+Switch(config)#int f0/1
+Switch(config-if)#switchport mode trunk 
+```
+路由器
+
+```ios
+Router(config)#int fa0/0
+Router(config-if)#no shutdown 
+Router(config-if)#exit
+
+//子接口 f0/x.y为开启x的编号y的子接口
+Router(config)#int fa0/0.1
+//配置vlan的trunk链路的通信协议
+Router(config-subif)#encapsulation dot1Q 2
+Router(config-subif)#ip address 192.168.1.1 255.255.255.0
+Router(config-subif)#exit
+
+Router(config)#int fa0/0.2
+Router(config-subif)#encapsulation dot1q 3
+Router(config-subif)#ip address 192.168.2.1 255.255.255.0
+Router(config-subif)#end
+```
