@@ -56,4 +56,10 @@ SW1(config-if)#switchport mode access
 //指定专属的vlan编号
 SW1(config-if)#switchport access vlan 10
 ```
+配置trunk模式
+
+```ios
+
+
+```
 
