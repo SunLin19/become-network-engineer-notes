@@ -53,4 +53,6 @@ VTP Version1及2都存在一个缺陷，让网络管理人员闻之色变。问�
 
 使用`vtp version 3`即可升级协议，因为我们必需把Server升级成Primary Server才有权更改VLAN，升级的指令是`vtp primary vlan`，若Primary ID与本机 Device ID一致，则代表本机正是Primary Server。
 
+## vtp pruning
+
 
