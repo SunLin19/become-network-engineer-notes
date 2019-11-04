@@ -50,3 +50,7 @@ S2(config-if)#switchport mode trunk
 VTP Version1及2都存在一个缺陷，让网络管理人员闻之色变。问题在於无论Server Mode或是 Client Mode，只要收到较自己新的VLAN资讯都会更新自己的VLAN Database，这会造成错误更新的风险。经典的例子是一只在网络上的Switch因为某些原因而被关机下线了，然後拿去用作其他用途例如放在测试环境中，经过一番折腾之後，这只Switch又放回到网络之中。虽然网络人员已相当醒目地把Switch的Configuration清掉 (write erase)，但由於 VTP 资讯不是记录在 Configuration 而是记录Flash Memory之中，就算Configuration清掉，VTP设定仍然存在，如果这时Switch的VTP Configuration Revision较新的话，一插进网络中就会意外地把错误的 VLAN Database更新到网络的Switch之中，造成灾难性後果！
 
 > 摘抄自 [Jan Ho-虚拟区域网络中继协定](https://www.jannet.hk/zh-Hans/post/vlan-trunking-protocol-vtp)
+
+使用`vtp version 3`即可升级协议，因为我们必需把Server升级成Primary Server才有权更改VLAN，升级的指令是`vtp primary vlan`，若Primary ID与本机 Device ID一致，则代表本机正是Primary Server。
+
+
