@@ -5,4 +5,4 @@
 
 * vtps  vtp 概念
 
-* https://blog.csdn.net/tyrantu1989/article/details/73435633/  vtp实例
+* https://blog.csdn.net/hexinblog/article/details/15498965  vtp实例
