@@ -11,6 +11,12 @@
 
 * vtps  vtp 概念
 
+
+## vtp模式
+
+
+![](https://i.postimg.cc/m2C3Kxpc/2019-11-04-101337.png)
+
 * https://blog.csdn.net/hexinblog/article/details/15498965  vtp实例
 
 
