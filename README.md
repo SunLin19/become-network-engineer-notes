@@ -65,7 +65,7 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
 * 网络交换
   * [核心层、汇聚层、接入层](supplement/核心层、汇聚层、接入层.md)
   * [vlan、trunk、vlan间路由](sike-jiaohuan/vlan、trunk、vlan间路由.md)
-  * vtp 、rspan 计划中 5-8
+  * [vtp](sike-jiaohuan/vtp.md)
   * [交换机过程、冗余、生成树](sike-jiaohuan/交换机过程、冗余、生成树.md)
   
 
