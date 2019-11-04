@@ -55,4 +55,4 @@ VTP Version1及2都存在一个缺陷，让网络管理人员闻之色变。问�
 
 ## vtp pruning
 
-
+VTP修剪很简单，只要在VTP Server用`vtp pruning`即可，整个VTP域里的交换机都会启用VTP Pruning模式。
