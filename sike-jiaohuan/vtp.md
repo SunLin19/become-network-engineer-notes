@@ -29,6 +29,7 @@ S1(config-if)#switchport mode trunk
 配置S2客户端
 
 ```ios
+//VLAN Database保持同步，必须Server与Client的Domain要相同
 S2(config)#vtp domain net3141
 S2(config)#vtp mode client 
 S2(config)#int f0/1
@@ -36,5 +37,6 @@ S2(config-if)#switchport mode trunk
 ```
 在server中(S1)创建vlan 10、20、30后，在到client(S2)使用`show vtp staus`查看vtp状态信息
 
+![](https://i.postimg.cc/XNBSZk7K/40-58.png)
 
-
+其中Configuration Revision是VLAN Database的版本流水号，每次Server的VLAN Database有更新，此流水号就会加1。
