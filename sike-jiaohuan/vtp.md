@@ -19,5 +19,7 @@
 
 * https://blog.csdn.net/hexinblog/article/details/15498965  vtp实例
 
+https://baijiahao.baidu.com/s?id=1597438756537946544&wfr=spider&for=pc
+
 
 `int range` 是进入一组端口，这组端口具要进行相同的配置，同时在这组端口上生效。
