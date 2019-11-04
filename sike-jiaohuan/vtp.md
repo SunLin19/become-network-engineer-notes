@@ -1,7 +1,5 @@
 
-写作思路
-
-## vtp
+# vtp
 
 首先说明下vlan的配置方式：
 
@@ -15,23 +13,28 @@
 
 > 摘抄自 [百度百科-vtp](https://baike.baidu.com/item/VTP)
 
-### vtp模式
+## vtp模式
 
 ![](https://i.postimg.cc/m2C3Kxpc/2019-11-04-101337.png)
 
+### vtp配置
+
+由于交换机默认为server模式，S1这里就未做重复配置了。
+
+```ios
+S1(config)#vtp domain net3141
+S1(config)#int f0/1
+S1(config-if)#switchport mode trunk 
+```
+配置S2客户端
+
+```ios
+S2(config)#vtp domain net3141
+S2(config)#vtp mode client 
+S2(config)#int f0/1
+S2(config-if)#switchport mode trunk 
+```
+在server中(S1)创建vlan 10、20、30后，在到client(S2)使用`show vtp staus`查看vtp状态信息
 
 
-http://www.07net01.com/r_s/12669.html
 
-https://www.bilibili.com/video/av45970613/
-
-* https://blog.csdn.net/hexinblog/article/details/15498965  vtp实例
-
-* https://baijiahao.baidu.com/s?id=1597438756537946544&wfr=spider&for=pc
-
-* https://jingyan.baidu.com/article/5552ef47e6728e518ffbc9cc.html
-
-
-
-
-`int range` 是进入一组端口，这组端口具要进行相同的配置，同时在这组端口上生效。
