@@ -1,7 +1,13 @@
 
 写作思路
 
-* vlan的配置方式
+## vlan的配置方式
+
+* 静态vlan：交换机上的端口以手动分配给vlan
+* 动态vlan：使用vmps可以根据连接到交换机端口的源mac地址，动态分配vlan
+* 电话vlan：将端口配置到语音模式可以使端口支持连接到端口的IP电话
+
+![](https://i.postimg.cc/Hx6X4dLK/2019-11-04-101116.png)
 
 * vtps  vtp 概念
 
