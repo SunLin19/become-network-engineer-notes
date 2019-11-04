@@ -15,7 +15,11 @@
 
 ## vtp模式
 
+推荐结合[Jan Ho-虚拟区域网络中继协定](https://www.jannet.hk/zh-Hans/post/vlan-trunking-protocol-vtp)观看
+
 ![](https://i.postimg.cc/m2C3Kxpc/2019-11-04-101337.png)
+
+> 以上两图截选自[红茶三杯-交换基础 VLAN TRUNK VTP](http://v.youku.com/v_show/id_XMzY4ODQwNDI4.html)
 
 ### vtp配置
 
@@ -40,3 +44,5 @@ S2(config-if)#switchport mode trunk
 ![](https://i.postimg.cc/XNBSZk7K/40-58.png)
 
 其中Configuration Revision是VLAN Database的版本流水号，每次Server的VLAN Database有更新，此流水号就会加1。
+
+
