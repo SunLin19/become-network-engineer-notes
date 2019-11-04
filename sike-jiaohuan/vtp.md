@@ -47,6 +47,6 @@ S2(config-if)#switchport mode trunk
 
 ### V3
 
-VTP Version 1 及 2 都存在一个缺陷，让网络管理人员闻之色变。问题在於无论 Server Mode 或是 Client Mode，只要收到较自己新的 VLAN 资讯都会更新自己的 VLAN Database，这会造成错误更新的风险。经典的例子是一只在网络上的 Switch 因为某些原因而被关机下线了，然後拿去用作其他用途例如放在测试环境中，经过一番折腾之後，这只 Switch 又放回到网络之中。虽然网络人员已相当醒目地把 Switch 的 Configuration 清掉 (<write erase)，但由於 VTP 资讯不是记录在 Configuration 而是记录 Flash Memory 之中，就算 Configuration 清掉，VTP 设定仍然存在，如果这时 Switch 的 VTP Configuration Revision 较新的话，一插进网络中就会意外地把错误的 VLAN Database 更新到网络的 Switch 之中，造成灾难性後果！在这里会用一个实验说明。
+VTP Version1及2都存在一个缺陷，让网络管理人员闻之色变。问题在於无论Server Mode或是 Client Mode，只要收到较自己新的VLAN资讯都会更新自己的VLAN Database，这会造成错误更新的风险。经典的例子是一只在网络上的Switch因为某些原因而被关机下线了，然後拿去用作其他用途例如放在测试环境中，经过一番折腾之後，这只Switch又放回到网络之中。虽然网络人员已相当醒目地把Switch的Configuration清掉 (write erase)，但由於 VTP 资讯不是记录在 Configuration 而是记录Flash Memory之中，就算Configuration清掉，VTP设定仍然存在，如果这时Switch的VTP Configuration Revision较新的话，一插进网络中就会意外地把错误的 VLAN Database更新到网络的Switch之中，造成灾难性後果！
 
 > 摘抄自 [Jan Ho-虚拟区域网络中继协定](https://www.jannet.hk/zh-Hans/post/vlan-trunking-protocol-vtp)
