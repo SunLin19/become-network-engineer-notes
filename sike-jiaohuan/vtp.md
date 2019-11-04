@@ -21,7 +21,7 @@
 
 > 以上两图截选自[红茶三杯-交换基础 VLAN TRUNK VTP](http://v.youku.com/v_show/id_XMzY4ODQwNDI4.html)
 
-### vtp配置
+### vtp示例
 
 由于交换机默认为server模式，S1这里就未做重复配置了。
 
@@ -45,4 +45,6 @@ S2(config-if)#switchport mode trunk
 
 其中Configuration Revision是VLAN Database的版本流水号，每次Server的VLAN Database有更新，此流水号就会加1。
 
+### V3
 
+之前VTP都存在一个缺陷，也就是现在的版本2，无论Server或是Client只要收到较自己新的VLAN资讯都会更新自己的VLAN Database，这会造成错误更新的风险。经典的例子是一只在网络上的Switch因为某些原因而被关机下线了，然後拿去用作其他用途例如放在测试环境中。虽然网络人员已相当醒目地把 Switch 的配置清掉，但由於 VTP 资讯不是记录在 Configuration 而是记录 Flash Memory 之中，就算 Configuration 清掉，VTP 设定仍然存在，如果这时 Switch 的 VTP Configuration Revision 较新的话，一插进网络中就会意外地把错误的 VLAN Database 更新到网络的 Switch 之中，造成灾难性后果。
