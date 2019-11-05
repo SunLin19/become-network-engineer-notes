@@ -16,3 +16,5 @@ MSTP生成树分为4种：
 2. CST（Common Spanning Tree）即连接交换网络内所有MST域的一棵生成树。
 3. IST（Internal Spanning Tree）即各个MST域内的一棵生成树。
 4. SST即运行STP/RSTP的交换设备只能属于一个生成树或者MST域中只有一个交换设备构成的单生成树。
+
+> 参考 [生成树协议（STP PVST CST RSTP MSTP）解析](https://blog.51cto.com/cdlaowang/1758103)
