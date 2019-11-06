@@ -70,8 +70,8 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
 
 
 * 生成树专题
- * [生成树协议概览](stp/生成树协议概览.md)
- * rstp、mstp、pvtp配置 计划中 7-9
+  * [生成树协议概览](stp/生成树协议概览.md)
+  * rstp、mstp、pvtp配置 计划中 7-9
 
 
 ## 相关资源分享
