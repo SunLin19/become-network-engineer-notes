@@ -67,11 +67,11 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
   * [vlan、trunk、vlan间路由](sike-jiaohuan/vlan、trunk、vlan间路由.md)
   * [虚拟局域网干道协议](sike-jiaohuan/vtp.md)
   * [交换机过程、冗余、生成树](sike-jiaohuan/交换机过程、冗余、生成树.md)
-  * [生成树协议概览](sike-jiaohuan/生成树协议概览.md)
-  * rstp、mstp、pvtp配置 计划中 7-9
+
 
 * 生成树专题
  * [生成树协议概览](stp/生成树协议概览.md)
+ * rstp、mstp、pvtp配置 计划中 7-9
 
 
 ## 相关资源分享
