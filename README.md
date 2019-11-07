@@ -12,11 +12,6 @@
 
 ### 待写作的问题记录
 
-gns3使用
-
-* https://pdf.us/2017/08/27/348.html
-* https://www.sysnettechsolutions.com/en/gns3/gns3-supported-ios-images-download/
-
 网络规划问题
 
 https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9811919299638948526%22%7D&n_type=1&p_from=4
