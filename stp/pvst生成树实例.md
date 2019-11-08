@@ -28,7 +28,14 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 Switch Priority = 32768(默认优先值)+vlan id
 ![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
-
-接下来，我们再创建一个vlan，并更改他们的默认priority；注意如图，更改优先级必须是4096倍数。
+ 
+接下来，我们再创建一个vlan，并更改他们的默认priority；注意如图，更改优先级必须是4096整倍数。
 ![](https://i.postimg.cc/Sxk9rGLR/45-46.png)
+
+```
+SW1(config)#spanning-tree vlan 1 priority 40960
+SW1(config)#spanning-tree vlan 10 priority 8192
+```
+
+
 
