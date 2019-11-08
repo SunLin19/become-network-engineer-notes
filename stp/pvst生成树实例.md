@@ -44,6 +44,6 @@ SW1(config)#do show sp
 
 ### 选举RP（Root Port）
 
-交换机都会选择一个Root Port，Root Port是最接近Root Switch 的端口
+交换机都会选择一个Root Port，Root Port是最接近Root Switch 的端口。“最近”按照网口带宽的开销值大小比较。
 
 ![](https://i.postimg.cc/qMQjgCBC/49-17.png)
