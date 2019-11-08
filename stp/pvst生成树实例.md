@@ -46,4 +46,4 @@ SW1(config)#do show sp
 
 交换机都会选择一个Root Port，Root Port是最接近Root Switch 的端口
 
-![]()
+![](https://i.postimg.cc/qMQjgCBC/49-17.png)
