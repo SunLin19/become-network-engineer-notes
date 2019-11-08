@@ -44,10 +44,10 @@ SW1(config)#do show sp
 
 ### 选举RP（Root Port）
 
-交换机都会选择一个Root Port，Root Port是最接近Root Switch 的端口。“最近”按照网口带宽的开销值大小比较。
+除根交换机外，交换机都会选择一个Root Port，Root Port是最接近Root Switch的端口。“最近”按照网口带宽的开销值大小比较。
 
 ![](https://i.postimg.cc/qMQjgCBC/49-17.png)
 
-SW2 用 Fa0/1 要经过 1 条 100Mb Link (Cost: 19)，而用 Fa0/2 要经过 2 条 100Mb Link (Cost = 19+19=38)，因此 SW2 选用 Fa0/1 为 Root Port。
+SW2用f0/1要经过如1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38)，因此SW2选用f0/1 为Root Port，SW3同理。
 
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
