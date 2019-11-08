@@ -4,7 +4,7 @@
 
 PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个无环路的拓扑。各交换会按程序完成以下步骤：
 
-1. 在整个网络里选举一只 Root Switch（Switch Priority或称Bridge Priority）
+1. 在整个网络里选举一个Root Switch（Switch Priority或称Bridge Priority）
 2. 除了 Root Switch 外的其他各 Switch 都选择一个 Root Port
 3. 所有网段选择一个 Designated Port
 4. 把没成为Root Port或Designated Port的端口成为Non-Desiganted Port，这些端口会被禁用，以去防止环路发生
@@ -18,5 +18,11 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ### 拓扑展示
 
+我们先将各个交换机端口置为trunk模式进行互通，以便直观展示生成树实例，拓扑如下：
+
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
+首先在拓扑中选举Root Switch，执行规则1，比**Bridge ID**，小的胜出
+
+Switch Priority = 32768(默认优先值)+vlan id
+![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
