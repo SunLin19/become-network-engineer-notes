@@ -24,9 +24,9 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
-### 比Bridge ID小的胜出
+### 选举BP（Bridge Priority）
 
-首先在拓扑中选举Root Switch，执行规则1，比**Bridge ID**，小的胜出
+**首先在拓扑中选举Root Switch，执行规则1，比Bridge ID，小的胜出**
 
 Switch Priority = 32768(默认优先值)+vlan id
 ![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
@@ -42,4 +42,5 @@ SW1(config)#do show sp
 
 ![](https://i.postimg.cc/pLYsJHrF/07-17.png)
 
+### 选举RP（Root Port）
 
