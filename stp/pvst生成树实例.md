@@ -42,6 +42,8 @@ SW1(config)#do show sp
 
 ![](https://i.postimg.cc/pLYsJHrF/07-17.png)
 
+我们再将vlan1 `spanning-tree vlan 1 root primary`
+
 ### 选举RP（Root Port）
 
 除根交换机外，交换机都会选择一个Root Port，Root Port是最接近Root Switch的端口。“最近”按照网口带宽的开销值大小比较。
