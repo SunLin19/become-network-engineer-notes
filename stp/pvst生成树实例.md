@@ -35,6 +35,7 @@ Switch Priority = 32768(默认优先值)+vlan id
 ```
 SW1(config)#spanning-tree vlan 1 priority 40960
 SW1(config)#spanning-tree vlan 10 priority 8192
+SW1(config)#do show sp
 ```
 
 ![](https://i.postimg.cc/pLYsJHrF/07-17.png)
