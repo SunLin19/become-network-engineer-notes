@@ -37,5 +37,6 @@ SW1(config)#spanning-tree vlan 1 priority 40960
 SW1(config)#spanning-tree vlan 10 priority 8192
 ```
 
+![](https://i.postimg.cc/pLYsJHrF/07-17.png)
 
 
