@@ -47,3 +47,7 @@ SW1(config)#do show sp
 交换机都会选择一个Root Port，Root Port是最接近Root Switch 的端口。“最近”按照网口带宽的开销值大小比较。
 
 ![](https://i.postimg.cc/qMQjgCBC/49-17.png)
+
+SW2 用 Fa0/1 要经过 1 条 100Mb Link (Cost: 19)，而用 Fa0/2 要经过 2 条 100Mb Link (Cost = 19+19=38)，因此 SW2 选用 Fa0/1 为 Root Port。
+
+![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
