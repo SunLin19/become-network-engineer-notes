@@ -1,6 +1,6 @@
 # pvst生成树实例
 
-## 选举实例
+## 选举说明
 
 PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个无环路的拓扑。各交换会按程序完成以下步骤：
 
@@ -16,13 +16,17 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 * 规则3：比对方的 Bridge ID，小的胜出
 * 规则4：比对方的 Port ID，小的胜出
 
-### 拓扑展示
+## 拓扑展示
 
 我们先将各个交换机端口置为trunk模式进行互通，以便直观展示生成树实例，拓扑如下：
 
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
+### 比Bridge ID小的胜出
+
 首先在拓扑中选举Root Switch，执行规则1，比**Bridge ID**，小的胜出
 
 Switch Priority = 32768(默认优先值)+vlan id
 ![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
+
+接下来，我们再创建一个vlan，并更改他们的默认 priority
