@@ -68,6 +68,9 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 ![](https://i.postimg.cc/1590mFw3/a19.png)
 
 
+https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
+
+
 ## 参考链接
 
 * [Jan Ho-Spanning Tree Protocol (STP) 生成树协定](https://www.jannet.hk/zh-Hans/post/spanning-tree-protocol-stp/#stp)
