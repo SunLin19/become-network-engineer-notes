@@ -38,6 +38,8 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ![](https://i.postimg.cc/Sxk9rGLR/45-46.png)
 
+有一点需要注意的是：当前交换机修改vlan id(如vlan10)的优先级后的数值比其他交换机数值低后，那么它就会成为该vlan id（vlan10）的根网桥。
+
 ### 选举RP（Root Port）
 
 除Bridge Priority胜出的Root Switch，其他交换机都会选择一个RP，根端口是最接近Root Switch的端口，“最近”按网口带宽的开销值大小比较。
