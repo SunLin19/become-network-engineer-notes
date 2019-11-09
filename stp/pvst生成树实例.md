@@ -30,6 +30,11 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 Switch Priority = 32768(默认优先值)+vlan id
 ![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
+
+Bridge ID 即优先级和交换机mac地址共同构成的一组数值。
+
+
+<!--
  
 接下来，我们再创建一个vlan，并更改他们的默认priority；注意如图，更改优先级必须是4096整倍数。
 ![](https://i.postimg.cc/Sxk9rGLR/45-46.png)
@@ -43,6 +48,8 @@ SW1(config)#do show sp
 ![](https://i.postimg.cc/pLYsJHrF/07-17.png)
 
 我们再将vlan1 `spanning-tree vlan 1 root primary`
+
+-->
 
 ### 选举RP（Root Port）
 
