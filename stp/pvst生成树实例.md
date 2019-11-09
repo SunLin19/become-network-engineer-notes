@@ -26,12 +26,22 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ### 选举BP（Bridge Priority）
 
-首先在拓扑中选举Root Switch，执行规则1，比Bridge ID，小的胜出，Bridge ID 即优先级和交换机mac地址共同构成的一组数值。
+首先在拓扑中选举Root Switch执行规则1，比Bridge ID小的胜出，Bridge ID 即优先级和交换机mac地址共同构成的一组数值。
 
 Switch Priority = 32768(默认优先值)+vlan id
 ![](https://i.postimg.cc/Qd00hcBV/Snipaste-2019-11-08-21-19-12.png)
 
-图中bridge id处的address即为交换机的MAC地址，默认优先级等同情况下再比较mac地址选出Root Switch。
+图中bridge id处的address即为交换机的MAC地址，默认优先级等同情况下再比较mac地址选出Root Switch（根交换机）。
+
+### 选举RP（Root Port）
+
+除根交换机外，交换机都会选择一个Root Port，Root Port是最接近Root Switch的端口。“最近”按照网口带宽的开销值大小比较。
+
+![](https://i.postimg.cc/qMQjgCBC/49-17.png)
+
+SW2用f0/1要经过如1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38)，因此SW2选用f0/1 为Root Port，SW3同理。
+
+![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
 
 <!--
@@ -51,12 +61,3 @@ SW1(config)#do show sp
 
 -->
 
-### 选举RP（Root Port）
-
-除根交换机外，交换机都会选择一个Root Port，Root Port是最接近Root Switch的端口。“最近”按照网口带宽的开销值大小比较。
-
-![](https://i.postimg.cc/qMQjgCBC/49-17.png)
-
-SW2用f0/1要经过如1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38)，因此SW2选用f0/1 为Root Port，SW3同理。
-
-![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
