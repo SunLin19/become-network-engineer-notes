@@ -68,4 +68,7 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 ![](https://i.postimg.cc/1590mFw3/a19.png)
 
 
+## 参考链接
 
+* [Spanning Tree Protocol (STP) 生成树协定](https://www.jannet.hk/zh-Hans/post/spanning-tree-protocol-stp/#stp)
+* [STP生成树协议之根端口/指定端口的手工选举](http://www.slyar.com/blog/stp-port-election.html)
