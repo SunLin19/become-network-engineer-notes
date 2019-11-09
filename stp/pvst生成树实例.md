@@ -26,13 +26,13 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ### 选举BP（Bridge Priority）
 
-首先在拓扑中选举Root Switch，由Bridge ID小的胜出，Bridge ID即优先级和交换机mac地址共同构成的一组数值。默认优先级等同情况下再比较mac地址选出Root Switch。还有个显著的特征根网桥端口全为指定端口，如图：
-
-![](https://i.postimg.cc/Y9xB9bpS/11-02.png)
+首先在拓扑中选举Root Switch，由Bridge ID小的胜出，Bridge ID即优先级和交换机mac地址共同构成的一组数值。默认优先级等同情况下再比较mac地址选出Root Switch。还有个显著的特征根网桥端口全为指定端口。
 
 * Switch Priority = 32768(默认优先值)+vlan id
 * 图中bridge id处的address即为交换机的mac地址
 * 默认情况下，所有交换机端口都隶属vlan 1
+
+![](https://i.postimg.cc/Y9xB9bpS/11-02.png)
 
 可通过修改交换机vlan1的优先级，让其他交换机成为BP（Root Switch），注意更改优先级必须是4096整倍数。
 
