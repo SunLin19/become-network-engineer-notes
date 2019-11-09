@@ -65,4 +65,4 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 SW2 的 Priority 为 32769，SW3 的 Priority 也是 32769，不过 SW2 的 MAC Address 较小，因此SW2的Fa0/2会成为 Designated Port传送信息(Forwarding) ，而 SW3 的 Fa0/2 则会成为 Non-Designated Port，不传送也不接收讯息 (Blocking)，这样就避免了环路。
 
-注：Non-Designated Port 会被颢示为 Altn (Alternate Port) 或 Back (Backup Port)，总之状态都是 Blocking 就是了。
+注：Non-Designated Port 会被显示为 Altn (Alternate Port) 或 Back (Backup Port)，总之状态都是 Blocking 就是了。
