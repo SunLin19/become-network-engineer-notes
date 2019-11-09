@@ -35,7 +35,7 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 
 ### 选举RP（Root Port）
 
-除Bridge Priority胜出的Root Switch，其他交换机都会选择一个RP，根端口是最接近Root Switch的端口，“最近”按照网口带宽的开销值大小比较。
+除Bridge Priority胜出的Root Switch，其他交换机都会选择一个RP，根端口是最接近Root Switch的端口，“最近”按网口带宽的开销值大小比较。
 
 ![](https://i.postimg.cc/qMQjgCBC/49-17.png)
 
