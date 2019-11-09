@@ -51,9 +51,9 @@ spanning-tree vlan [id] priority [num]
 
 ![](https://i.postimg.cc/qMQjgCBC/49-17.png)
 
-SW2用f0/1要经过如1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38)，因此SW2选用f0/1 为Root Port，SW3同理。
+SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38)，因此SW2选用f0/1为RP根端口，SW2同理。
 
-![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
+![](https://i.postimg.cc/RhcPdw1y/40-28.png)
 
 当然，我们可以用`sp vlan cost`来增加f0/1的cost，致使f0/2成为RP。
 
