@@ -55,21 +55,6 @@ SW2用f0/1要经过如1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
+当然，我们可以用`sp vlan cost`来增加f0/1的cost，致使f0/2成为RP。
 
-<!--
- 
-接下来，我们再创建一个vlan，并更改他们的默认priority，注意更改优先级必须是4096整倍数。
-
-
-```
-SW1(config)#spanning-tree vlan 1 priority 40960
-SW1(config)#spanning-tree vlan 10 priority 8192
-SW1(config)#do show sp
-```
-
-![](https://i.postimg.cc/pLYsJHrF/07-17.png)
-
-我们再将vlan1 `spanning-tree vlan 1 root primary`
-
--->
 
