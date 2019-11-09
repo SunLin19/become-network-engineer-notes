@@ -59,7 +59,7 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 ![](https://i.postimg.cc/4N6Qnz1H/Snipaste-2019-11-09-23-02-08.png)
 
-### 选举DP(Designated Port)
+### 选举DP(Designated Port)与阻塞非指定端口
 
 每一段网段只容许一个端口成为Designated Port，网段里面最接近Root Switch (Cost 最少) 的Port成为 Designated Port。如果网段里只有两个 Port，在别无选择下，与Root Port 相对的 Port 必然成为 Designated Port，因此 SW1 的 Fa0/1 与 Fa0/2 成为 Designated Port。问题在於 SW2 与 SW3 的连线，那一个 Port 成为 Designated Port 呢？在 Designated Port 的选择与选择 Root Switch 相似，同样用 Switch Priority 较小者成为 Designated Port，如果 Switch Priority 相同，则 MAC Address 较小者胜出。
 
