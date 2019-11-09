@@ -61,8 +61,4 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 ### 选举DP(Designated Port)与阻塞非指定端口
 
-每一段网段只容许一个端口成为Designated Port，网段里面最接近Root Switch (Cost 最少) 的Port成为 Designated Port。如果网段里只有两个 Port，在别无选择下，与Root Port 相对的 Port 必然成为 Designated Port，因此 SW1 的 Fa0/1 与 Fa0/2 成为 Designated Port。问题在於 SW2 与 SW3 的连线，那一个 Port 成为 Designated Port 呢？在 Designated Port 的选择与选择 Root Switch 相似，同样用 Switch Priority 较小者成为 Designated Port，如果 Switch Priority 相同，则 MAC Address 较小者胜出。
-
-SW2 的 Priority 为 32769，SW3 的 Priority 也是 32769，不过 SW2 的 MAC Address 较小，因此SW2的Fa0/2会成为 Designated Port传送信息(Forwarding) ，而 SW3 的 Fa0/2 则会成为 Non-Designated Port，不传送也不接收讯息 (Blocking)，这样就避免了环路。
-
-注：Non-Designated Port 会被显示为 Altn (Alternate Port) 或 Back (Backup Port)，总之状态都是 Blocking 就是了。
+成为DP的条件，首先比较链路开销cost，如果开销相同，则比较bridge id（优先级+mac地址）。剩下落选的端口，也就是非指派端口(Non-Designated Port)会被显示为 Altn (Alternate Port) 或 Back (Backup Port)，作为Root Port的备份端口，以提供该交换机从其他交换机的DP到根桥的另一条可切换路径。
