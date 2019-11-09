@@ -61,7 +61,7 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 ### 选举DP(Designated Port)与阻塞非指定端口
 
-在每组相连交换机端口选一个作为指定端口，先比较链路开销cost，如果开销相同，则后比较bridge id（priority+mac）。剩下落选的端口，也就是非指派端口(Non-Designated Port)会被显示为 Altn (Alternate Port) 或 Back (Backup Port)，作为Root Port的备份端口，以提供该交换机从其他交换机的DP到根桥的另一条可切换路径。
+在每组相连交换机端口选一个作为指定端口，先比较链路开销cost，如果开销相同，则后比较bridge id（priority+mac）。剩下落选的端口，也就是非指派端口(Non-Designated Port)，作为Root Port的备份端口，以提供该交换机从其他交换机的DP到根桥的另一条可切换路径。
 
 注：两个交换机相连为一组，没有网段一词的原因，参考[百度百科-网段](https://baike.baidu.com/item/%E7%BD%91%E6%AE%B5)
 
