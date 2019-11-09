@@ -55,6 +55,6 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 
 ![](https://i.postimg.cc/RhcPdw1y/40-28.png)
 
-当然，我们可以用`sp vlan cost`来增加f0/1的cost，致使f0/2成为RP。
+当然，我们可以进入f0/1接口用`spanning-tree vlan [id] cost [number]`来增加cost，致使f0/2成为RP。
 
-
+![](https://i.postimg.cc/4N6Qnz1H/Snipaste-2019-11-09-23-02-08.png)
