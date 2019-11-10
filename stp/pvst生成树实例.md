@@ -131,7 +131,7 @@ Directly Fail），所以依旧会等待已与Root Switch中断的交换机传�
 
 ### Root Guard、BPDU Guard
 
-Root Guard可以保护STP现有的bridge priority，避免出现了priority值小的交换机挤下了现有的Root Switch。
+当有比现有的Root Switch优先级还小的交换机出现时，Root Guard将插入该交换机的端口扳掉，而不会让其传送或接收数据帧，以保护STP现有的bridge priority
 
 ```
  SW(config-if)#spanning-tree guard root
