@@ -93,7 +93,7 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 如果一个端口在选举时成功成为RP或DP，它便会进入Learning，端口会收发BPDU，而且会开始留意传过来的数据帧，把MAC地址记录到 MAC Address Table，但仍然不会传送数据帧，这样做的目的是希望这个端口在开始工作之前，先记录mac地址，以尽量避免泛洪所有端口产生不必要的流量。这个状态会维持一个Forward Delay的时间 (预设15秒)。
 
-![]()
+![](https://i.postimg.cc/65THcH5q/43569.jpg)
 
 ## 参考链接
 
