@@ -95,6 +95,8 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 ![](https://i.postimg.cc/65THcH5q/43569.jpg)
 
+## 拓扑变更
+
 ## 参考链接
 
 https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
