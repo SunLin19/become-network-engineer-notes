@@ -127,6 +127,17 @@ Directly Fail），所以依旧会等待已与Root Switch中断的交换机传�
 
 ## STP topology防护
 
+有时候，我们搭建好的网络拓扑会被新接入的网络设备影响，甚至打乱正常的网络运作顺序，产生一系列不必要的麻烦事端。
+
+### Root Guard、BPDU Guard
+
+Root Guard可以保护STP现有的bridge priority，避免出现了priority值小的交换机挤下了现有的Root Switch。
+
+```
+ SW(config-if)#spanning-tree guard root
+```
+
+
 
 ## 参考链接
 
