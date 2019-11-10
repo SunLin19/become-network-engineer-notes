@@ -95,7 +95,7 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 ![](https://i.postimg.cc/65THcH5q/43569.jpg)
 
-## 拓扑变更
+## 拓扑变更问题
 
 ### PortFast
 
