@@ -1,6 +1,8 @@
 # pvst生成树实例
 
-## 选举说明
+## PVST+选举
+
+### 选举说明
 
 PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个无环路的拓扑。各交换会按程序完成以下步骤：
 
@@ -18,7 +20,7 @@ PVST+ 是Cisco交换机预设的STP，通过PVST+，交换机可以建立一个�
 * 规则3：比对方的 Bridge ID，小的胜出
 * 规则4：比对方的 Port ID，小的胜出
 
-## 拓扑展示
+### 拓扑展示
 
 我们先将各个交换机端口置为trunk模式进行互通，以便直观展示生成树实例，拓扑如下：
 
@@ -68,7 +70,16 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 ![](https://i.postimg.cc/1590mFw3/a19.png)
 
 
+## PVST+端口状态
+
+Bridge Protocol Data Unit (BPDU) 是交换机间用来传送STP信息的帧，BPDU包含所有STP选举所需要的信息。一个网络中应该只有Root Switch发放BPDU，不过当任何一台交换机刚启动时，它都会认为自己是Root Switch而发放BPDU，直至它收到一个包含Bridge ID较小的BPDU (称为 Superior BPDU) 时，它才知道自己在Root Switch选举中落败了而停止发放BPDU。
+
+
+
 https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
+
+
+
 
 
 ## 参考链接
