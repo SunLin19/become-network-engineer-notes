@@ -117,8 +117,11 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 ### BackboneFast
 
 Root Switch与两台相连的交换机中的其中一台交换机连接产生中断，虽然这一台交换机会识别出，但与它相连的另一台交换机是无法察觉的（这种情况被称为
-Directly Fail），所以依旧会等待已与Root Switch中断的交换机传来得的BPDU，Max Age过去了都收不到的话才会把BPDU弃掉，然后选择把Altn Port转成Root Port再进行连接。不过等待BPDU用了20秒，加之端口由Blocking至Forwarding又用了30秒，为此的解决方案就是BackboneFast。
+Directly Fail），所以依旧会等待已与Root Switch中断的交换机传来得的BPDU，Max Age过去了都收不到的话才会把BPDU弃掉，然后选择把Altn Port转成Root Port再进行连接。
 
+不过等待BPDU用了20秒，加之端口由Blocking至Forwarding又用了30秒，为此的解决方案就是BackboneFast。
+
+`SW(config)#spanning-tree backbonefast`
 
 
 
