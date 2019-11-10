@@ -139,7 +139,7 @@ Root Guard：防止新加入的交换机(有更低根网桥ID)影响一个已经
  SW(config-if)#spanning-tree guard root
 ```
 
-bpdu guard是使具备PortFast特性的端口在接收到BPDU时进入err-disable状态来，避免桥接环路。其可在全局或接口下进行配置（默认关闭），可使用`errdisable recovery cause bpduguar`d命令开启端口状态的自动恢复。
+bpdu guard是使具备PortFast特性的端口在接收到BPDU时进入err-disable状态来，避免桥接环路。其可在全局或接口下进行配置（默认关闭），可使用`errdisable recovery cause bpduguard`命令开启端口状态的自动恢复。
 
 `SW1(config-if)#spanning-tree bpduguard enable`
 
