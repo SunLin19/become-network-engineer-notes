@@ -84,6 +84,7 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 在STP中，一个Port由Down变成Up，中间经历了几个状态，了解这些状态是学习STP重要的一环。
 
+![](https://i.postimg.cc/PxrsKmR4/6-03.png)
 
 ## 参考链接
 
