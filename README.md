@@ -68,7 +68,10 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
 
 * 生成树专题
   * [生成树协议概览](stp/生成树协议概览.md)
-  * pvtp配置 计划中 7-9
+  * [pvst生成树实例](stp/pvst生成树实例.md) （写完但需要休息）
+
+* 广域网
+  * 帧中继 （计划中12-15 放松时写作）
 
 
 ## 相关资源分享
