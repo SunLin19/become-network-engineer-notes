@@ -110,9 +110,9 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 
 ### uplinkfast
 
-当
+当某台交换机Root Port因某些原因中断，此时该交换机的Alternate Port由blocking转到forwarding也需要30秒时间，这个对于一个网络来说可谓完全不能接受，启动了UplinkFast的交换机会选1个 Blocking Port设为Standby，当Root Port死掉时，就绪的端口立刻转成Forwarding，省掉30秒等候时间。
 
-开启UplinkFast的指令为`spanning-tree uplinkfast`,请注意，此指令不应在Root Switch执行。
+**开启UplinkFast的指令为`spanning-tree uplinkfast`,请注意，此指令不应在Root Switch执行。**
 
 ## 参考链接
 
