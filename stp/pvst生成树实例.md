@@ -97,13 +97,18 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 ## 拓扑变更
 
+### PortFast
+
 这个是用于接入口的，一个正常的交换接口从down到up要经过:Down、listening、learning、fowarding几个状态，一共耗时为30秒，从而决定此端口是blocking还是fowarding的，也是交换机的防止环路的机制。但是对于直接接入PC这样的终端设备的接口就没有必要经过这几步了，也就是从down直接进入fowarding的状态。基本的配置方法：
 
 ```
-Sw1(config)#spanning-tree portfast default// （所有接口启用）全局下用
-Sw1(config-if)#spanning-tree portfast //接口下单独启用
-Sw1(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接另一台交换机的口
+Sw(config)#spanning-tree portfast default// （所有接口启用）全局下用
+Sw(config-if)#spanning-tree portfast //接口下单独启用
+Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接另一台交换机的口
 ```
+> 摘抄[百度知道-Cisco 交换机 spaning-tree portfast 什么意思？](https://zhidao.baidu.com/question/170494428.html)
+
+### uplinkfast
 
 ## 参考链接
 
