@@ -147,9 +147,24 @@ bpdu guard是使具备PortFast特性的端口在接收到BPDU时进入err-disabl
 
 BPDU Filtering能够防止交换机向启用了PortFast特性的接口上发送BPDU。PortFast特性的接口上发送BPDU。PortFast特性的端口通常连接主机设备而且这些主机不需要参与STP，所以它不需要接收BPDU。注意当在一个接口上同时配置了BPDU Guard和BPDU Filtering时，由于BPDU Filtering的优先级比较高，所以BPDU Guard将不起作用。
 
+如果是在interface启动的话，它会无视BPDU Message。当这个端口变成Forwarding后就会有机会造成交换机环路，务必特别注意！如果是配合 PortFast 在 Global 启动的话，这个 Port 会依正常情序进行 STP，依次进入 Listening 、 Learning 和 Forwarding 状态。配合 PortFast 启动方法如下：
+
+```
+SW(config)#spanning-tree portfast bpdufilter default
+SW(config)#interface GigabitEthernet [num]/[num]
+SW(config-if)#spanning-tree portfast
+```
+
 ### Loop Guard
 
 Loop Guard能够对STP环路提供额外的保护，当STP冗余链路中的阻塞端口错误地过渡到转发状态的时候，就将发生桥接环路情况。注意当在一个端口上同时配置Root guard和loop guard时，root guard将不起作用。
+
+```
+//在Global把所有Port预设开启Loop Guard
+SW(config)#spanning-tree loopguard default
+//某一端口启用
+SW(config-if)#spanning-tree guard loop
+```
 
 
 ## 参考链接
