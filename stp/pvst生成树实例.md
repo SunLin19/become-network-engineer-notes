@@ -91,7 +91,7 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 当交换机知道某个端口需要启动时，就会把端口由Blocking转到Listening，在这个状态下端口会传送及接收BPDU，但仍不会传送数据帧，它会参与Root Switch 选举、Root Port选举和Designated Port 选举。这个状态会维持一个Forward Delay的时间 (预设15秒)。
 
-如果一个端口在选举时成功成为RP或DP，它便会进入Learning，端口会收发BPDU，而且会开始留意传过来的数据帧，把MAC地址记录到 MAC Address Table，但仍然不会传送数据帧，这样做的目的是希望这个端口在开始工作之前，先记录mac地址，以尽量避免泛洪所有端口产生不必要的流量。这个状态会维持一个Forward Delay的时间 (预设15秒)。
+如果一个端口在选举时成功成为RP或DP，它便会进入Learning，端口会收发BPDU，而且会开始留意传过来的数据帧，把MAC地址记录到MAC-Address Table，但仍然不会传送数据帧，这样做的目的是希望这个端口在开始工作之前，先记录MAC地址以尽量避免泛洪所有端口产生不必要的流量。这个状态会维持一个Forward Delay的时间 (预设15秒)。
 
 ![](https://i.postimg.cc/65THcH5q/43569.jpg)
 
