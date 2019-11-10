@@ -70,16 +70,16 @@ SW3用f0/1经过SW1需1条100Mb的链路，而用f0/2要经过2条(Cost=19+19=38
 ![](https://i.postimg.cc/1590mFw3/a19.png)
 
 
-## PVST+端口状态
+  ## 桥协议数据单元
 
 Bridge Protocol Data Unit (BPDU) 是交换机间用来传送STP信息的帧，BPDU包含所有STP选举所需要的信息。一个网络中应该只有Root Switch发放BPDU，不过当任何一台交换机刚启动时，它都会认为自己是Root Switch而发放BPDU，直至它收到一个包含Bridge ID较小的BPDU (称为 Superior BPDU) 时，它才知道自己在Root Switch选举中落败了而停止发放BPDU。
 
-BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的BPDU只会被储存20 秒 (Max-age)，即是说如果交换机过了20秒没有收 BPDU，也没有在其他端口收到BPDU的话，就会判断Root Switch已经死了，它又会再次认定自己是RS，再次发放BPDU了。STP 还有另一个Timer（定时器）称为 Forward Delay，是用作调校Listening和Learning状态的时间。
+BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的BPDU只会被储存20秒 (Max-age)，即是说如果交换机过了20秒没有收BPDU，也没有在其他端口收到BPDU的话，就会判断Root Switch已经死了，它又会再次认定自己是RS，再次发放BPDU了。STP还有另一个Timer（定时器）称为Forward Delay，是用作调校Listening和Learning状态的时间。
 
 https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
 
 
-
+## PVST+端口状态
 
 
 ## 参考链接
