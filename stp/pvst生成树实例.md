@@ -168,8 +168,21 @@ SW(config-if)#spanning-tree guard loop
 
 UDLD （UniDirectional Link Detection 单向链路检测）：是个Cisco私有的二层协议，用于监听利用光纤或双绞线连接的以太链路的物理配置，当出现单向链路（只能向一个方向传输，比如我能把数据发给你，你也能收到，但是你发给我的数据我收不到）时，UDLD可以检测出这一状况，关闭相应接口并发送警告信息。单向链路可能引起很多问题，尤其是生成树，可能会造成回环。注意：UDLD需要链路两端设备都支持才能正常运行。
 
-* 在Normal Mode中，端口不会被Disable，但会标记成Undetermined State
+* 在Normal Mode中，端口仅会标记成Undetermined State
 * 在Aggressive Mode中，端口被变成 Error Disable
+
+```
+---
+//全局启用Normal Mode
+SW(config)#udld enable
+//某一端口使用
+SW(config-if)#udld port
+---
+//在Global把所有端口设置Aggressive Mode
+SW(config)#udld aggressive
+//在为某个Interface Port设定成Aggressive Mode
+SW(config-if)#udld port aggressive
+```
 
 
 ## 参考文献
