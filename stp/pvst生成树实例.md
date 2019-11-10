@@ -76,13 +76,19 @@ Bridge Protocol Data Unit (BPDU) 是交换机间用来传送STP信息的帧，BP
 
 BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的BPDU只会被储存20秒 (Max-age)，即是说如果交换机过了20秒没有收BPDU，也没有在其他端口收到BPDU的话，就会判断Root Switch已经死了，它又会再次认定自己是RS，再次发放BPDU了。STP还有另一个Timer（定时器）称为Forward Delay，是用作调校Listening和Learning状态的时间。
 
-https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
+由于更改STP的Timer有一定风险，如果设定值不理想会导致整个网络瘫痪，因此不建议更改，就算要更改都请尽量使用Diameter指令，这样可以使用Cisco的建议值，对照表如下：
+
+![](https://i.postimg.cc/59gcTFmQ/56-10.png)
+
 
 
 ## PVST+端口状态
 
 
 ## 参考链接
+
+https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
+
 
 * [Jan Ho-Spanning Tree Protocol (STP) 生成树协定](https://www.jannet.hk/zh-Hans/post/spanning-tree-protocol-stp/#stp)
 * [大S博客-STP生成树协议之根端口/指定端口的手工选举](http://www.slyar.com/blog/stp-port-election.html)
