@@ -143,6 +143,14 @@ bpdu guard是使具备PortFast特性的端口在接收到BPDU时进入err-disabl
 
 `SW1(config-if)#spanning-tree bpduguard enable`
 
+### BPDU Filtering
+
+BPDU Filtering能够防止交换机向启用了PortFast特性的接口上发送BPDU。PortFast特性的接口上发送BPDU。PortFast特性的端口通常连接主机设备而且这些主机不需要参与STP，所以它不需要接收BPDU。注意当在一个接口上同时配置了BPDU Guard和BPDU Filtering时，由于BPDU Filtering的优先级比较高，所以BPDU Guard将不起作用。
+
+### Loop Guard
+
+Loop Guard能够对STP环路提供额外的保护，当STP冗余链路中的阻塞端口错误地过渡到转发状态的时候，就将发生桥接环路情况。注意当在一个端口上同时配置Root guard和loop guard时，root guard将不起作用。
+
 
 ## 参考链接
 
