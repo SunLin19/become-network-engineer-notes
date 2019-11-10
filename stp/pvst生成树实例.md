@@ -116,7 +116,10 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 
 ### BackboneFast
 
-Directly Fail 可用 UplinkFast 解决，现在讨论一下 Indirectly Fail 会出现什麽状况。
+
+![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
+
+Root Switch
 
 ## 参考链接
 
