@@ -110,6 +110,8 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 
 ### uplinkfast
 
+开启 UplinkFast 的指令为`spanning-tree uplinkfast`,请注意，此指令不应在Root Switch执行。
+
 ## 参考链接
 
 https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
