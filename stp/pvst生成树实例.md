@@ -125,8 +125,7 @@ Directly Fail），所以依旧会等待已与Root Switch中断的交换机传�
 
 原理简说就是：当开启BackboneFast的交换机发现收不到BPDU，它就会在Root Port发送用于Root Switch确认的请求包，如果Root Switch没收到，该交换机会马上进行STP运算寻找新的Root Port去往Root Switch。
 
-## STP topology保护
-
+## STP topology防护
 
 
 ## 参考链接
