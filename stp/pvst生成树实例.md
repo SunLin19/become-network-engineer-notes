@@ -131,12 +131,17 @@ Directly Fail），所以依旧会等待已与Root Switch中断的交换机传�
 
 ### Root Guard、BPDU Guard
 
-当有比现有的Root Switch优先级还小的交换机出现时，Root Guard将插入该交换机的端口扳掉，而不会让其传送或接收数据帧，以保护STP现有的bridge priority
+Root Guard：防止新加入的交换机(有更低根网桥ID)影响一个已经稳定了（已经存在根网桥）的交换网络,阻止未经授权的交换机成为根网桥。
+
+工作原理：当一个端口启动了此特性，当它收到了一个比根网桥优先值更优的BPDU包，则它会立即阻塞该端口，使之不能形成环路等情况。这个端口特性是动态的，当没有收到更优的包时，则此端口又会自己变成转发状态了。ROOT Guard在DP(designated port)指定端口上做，该端口就不会改变了，只会是DP了，这样可以防止新加入的交换机成为root，该端口就变成了永久的DP了，（show spanning-tree inconsistentport），若新加入的交换机想成为root，则它的端口不能工作，直到这个新交换机委曲求全做RP为止。
 
 ```
  SW(config-if)#spanning-tree guard root
 ```
 
+bpdu guard是使具备PortFast特性的端口在接收到BPDU时进入err-disable状态来，避免桥接环路。其可在全局或接口下进行配置（默认关闭），可使用`errdisable recovery cause bpduguar`d命令开启端口状态的自动恢复。
+
+`SW1(config-if)#spanning-tree bpduguard enable`
 
 
 ## 参考链接
