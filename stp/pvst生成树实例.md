@@ -154,7 +154,6 @@ SW(config)#spanning-tree portfast bpdufilter default
 SW(config)#interface GigabitEthernet [num]/[num]
 SW(config-if)#spanning-tree portfast
 ```
-
 ### Loop Guard
 
 Loop Guard能够对STP环路提供额外的保护，当STP冗余链路中的阻塞端口错误地过渡到转发状态的时候，就将发生桥接环路情况。注意当在一个端口上同时配置Root guard和loop guard时，root guard将不起作用。
@@ -165,6 +164,13 @@ SW(config)#spanning-tree loopguard default
 //某一端口启用
 SW(config-if)#spanning-tree guard loop
 ```
+### UDLD 
+
+UDLD （UniDirectional Link Detection 单向链路检测）：是个Cisco私有的二层协议，用于监听利用光纤或双绞线连接的以太链路的物理配置，当出现单向链路（只能向一个方向传输，比如我能把数据发给你，你也能收到，但是你发给我的数据我收不到）时，UDLD可以检测出这一状况，关闭相应接口并发送警告信息。单向链路可能引起很多问题，尤其是生成树，可能会造成回环。注意：UDLD需要链路两端设备都支持才能正常运行。
+
+* 在Normal Mode中，端口不会被Disable，但会标记成Undetermined State
+* 在Aggressive Mode中，端口被变成 Error Disable
+
 
 ## 参考文献
 
