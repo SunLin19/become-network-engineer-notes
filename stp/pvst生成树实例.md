@@ -108,11 +108,15 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 ```
 > 摘抄[百度知道-Cisco 交换机 spaning-tree portfast 什么意思？](https://zhidao.baidu.com/question/170494428.html)
 
-### uplinkfast
+### UplinkFast
 
-当某台交换机Root Port因某些原因中断，此时该交换机的Alternate Port由blocking转到forwarding也需要30秒时间，这个对于一个网络来说可谓完全不能接受，启动了UplinkFast的交换机会选1个 Blocking Port设为Standby，当Root Port死掉时，就绪的端口立刻转成Forwarding，省掉30秒等候时间。
+当某台交换机Root Port与Bridge Priority连接中断造成***Directly Fail***，此时该交换机的Alternate Port由blocking转到forwarding也需要30秒时间，这个对于一个网络来说可谓完全不能接受，启动了UplinkFast的交换机会选1个 Blocking Port设为Standby，当Root Port死掉时，就绪的端口立刻转成Forwarding，省掉30秒等候时间。
 
-**开启UplinkFast的指令为`spanning-tree uplinkfast`,请注意，此指令不应在Root Switch执行。**
+**开启UplinkFast的指令为`spanning-tree uplinkfast`,请注意，此指令不应在Root Switch执行，优先级及开销数值也会发生变化。**
+
+### BackboneFast
+
+Directly Fail 可用 UplinkFast 解决，现在讨论一下 Indirectly Fail 会出现什麽状况。
 
 ## 参考链接
 
