@@ -80,9 +80,9 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 ![](https://i.postimg.cc/59gcTFmQ/56-10.png)
 
-
-
 ## PVST+端口状态
+
+在STP中，一个Port由Down变成Up，中间经历了几个状态，了解这些状态是学习STP重要的一环。
 
 
 ## 参考链接
