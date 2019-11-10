@@ -86,6 +86,10 @@ BPDU预设每2秒发放一次，称为BPDU Hello Time，而交换机接收到的
 
 ![](https://i.postimg.cc/PxrsKmR4/6-03.png)
 
+
+阻断状态不会传送或接收数据帧，但仍会接收BPDU，目的是Blocking Port有需要知道时时生成树的状态，当有需要时可以跳到Listening。为了防止环路发生，一台交换机启动时，所有端口都会先进入Blocking。
+
+
 ## 参考链接
 
 https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
