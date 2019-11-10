@@ -116,6 +116,8 @@ Sw(config-if)#spanning-tree portfast disable //某个口禁用，通常是连接
 
 ### BackboneFast
 
+Root Switch与两台相连的交换机中的其中一台交换机连接产生中断，虽然这一台交换机会识别出，但与它相连的另一台交换机是无法察觉的。这种情况被称为
+Directly Fail 可用 UplinkFast 解决，现在讨论一下Indirectly Fail会出现什麽状况。
 
 ![](https://i.postimg.cc/ZKC1Nyj2/Snipaste-2019-11-08-20-57-25.png)
 
