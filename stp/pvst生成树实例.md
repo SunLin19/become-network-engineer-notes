@@ -166,11 +166,7 @@ SW(config)#spanning-tree loopguard default
 SW(config-if)#spanning-tree guard loop
 ```
 
-
 ## 参考链接
-
-https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html?
-
 
 * [Jan Ho-Spanning Tree Protocol (STP) 生成树协定](https://www.jannet.hk/zh-Hans/post/spanning-tree-protocol-stp/#stp)
 * [大S博客-STP生成树协议之根端口/指定端口的手工选举](http://www.slyar.com/blog/stp-port-election.html)
