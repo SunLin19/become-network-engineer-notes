@@ -6,6 +6,10 @@
 
 ## 加速的改进
 
+### 
+
+https://baike.baidu.com/item/RSTP/2235256?fr=aladdin
+
 ### 从监听到学习的时间 
 
 STP预设Listening和Learning为15秒 (Forward Delay)，端口由Down至Up，一共等待30秒。而RSTP则使用同步的概念，交换机并非被动地等待bridge priority传来的BPDU讯息再判断拓扑，取而代之的是主动去跟相邻的交换机沟通，尽快把网络拓扑传开去。这就能省却那30秒的被动学习时间，稍後详述。
