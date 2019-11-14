@@ -8,7 +8,7 @@
 
 ### 从监听到学习的时间 
 
-STP 预设 Listening 和 Learning 为 15 秒 (Forward Delay)，Port 由 Down 至 Up 一共等待 30 秒。而 RSTP 则使用 Synchronization 的概念，Switch 并非被动地等待 Root Switch 传来的 BPDU 讯息在判断 Topology，取而代之的是主动去跟相邻的 Switch 沟通，尽快把网络 Topology 传开去。这就能省却那 30 秒的被动学习时间，稍後详述。
+STP预设Listening和Learning为15秒 (Forward Delay)，端口由Down至Up，一共等待30秒。而RSTP则使用同步的概念，交换机并非被动地等待bridge priority传来的BPDU讯息再判断拓扑，取而代之的是主动去跟相邻的交换机沟通，尽快把网络拓扑传开去。这就能省却那30秒的被动学习时间，稍後详述。
 
 
 
