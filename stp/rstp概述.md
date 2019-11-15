@@ -6,7 +6,9 @@
 
 想法：
 
-只要我能说清楚rstp整合了backbonefast port fast uplinkfast 机制，rstp就清晰了许多
+* 只要我能说清楚rstp整合了backbonefast port fast uplinkfast 机制，rstp就清晰了许多
+* 先上手rstp配置观察备份端口状态
+
 
 ## 加速的改进
 
