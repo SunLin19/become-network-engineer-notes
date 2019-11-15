@@ -6,6 +6,11 @@
 
 ## 加速的改进
 
+* STP定义了5种不同的端口状态：disable、Listening、Learning、Blocking、Forwarding
+* 在RSTP中只有三种端口状态，Discarding、Learning和Forwarding。
+
+Discarding：将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，肯定是接受但不发送BPDU。
+
 RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有5种角色）：禁用端口（Disabled Port）、根端口（Root Port）、指定端口（Designated Port）、**为支持RSTP的快速特性规定的替代端口（Alternate Port）和备份端口（Backup Port）**。
 
 ### alternate port
@@ -23,6 +28,8 @@ RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有
 > 摘抄自-[百度百科RSTP](https://baike.baidu.com/item/RSTP)
 
 ### 端口状态与过程的改良
+
+
 
 ![](https://i.postimg.cc/65THcH5q/43569.jpg)
 
