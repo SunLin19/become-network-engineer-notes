@@ -20,6 +20,7 @@ RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有
 
 ![](https://i.postimg.cc/5Np81RKx/a15.jpg)
 
+> 摘抄自-[百度百科RSTP](https://baike.baidu.com/item/RSTP)
 
 ### 端口状态与过程的改良
 
