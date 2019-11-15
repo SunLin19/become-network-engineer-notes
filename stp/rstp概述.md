@@ -6,9 +6,19 @@
 
 ## 加速的改进
 
+### 端口状态与过程的改良
+
+![](https://i.postimg.cc/65THcH5q/43569.jpg)
+
+![](https://i.postimg.cc/kGhGhvZN/57-35.png)
+
+
+
+
+
 RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有5种角色）：禁用端口（Disabled Port）、根端口（Root Port）、指定端口（Designated Port）、**为支持RSTP的快速特性规定的替代端口（Alternate Port）和备份端口（Backup Port）**。
 
-RSTP有五种端口类型。根端口和指定端口这两个角色在RSTP中被保留，阻断端口分成备份和替换端口角色。生成树算法（STA）使用BPDU来决定端口的角色，端口。
+STP定义了5种不同的端口状态，关闭(disable)，监听（Listening），学习（Learning），阻断（Blocking）和转发（Forwarding）;在RSTP中只有三种端口状态，Discarding、Learning和Forwarding。802.1D中的禁止端口，监听端口，阻塞端口在802.1W中统一合并为禁止端口。
 
 RSTP的主要功能可以归纳如下：
 
