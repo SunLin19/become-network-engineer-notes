@@ -4,6 +4,10 @@
 
 我觉得Jan Ho的说明例子很明确：高延迟的网络用来提供证券交易服务 (所谓秒秒钟几十万上落)，或者用作紧急电话通讯，会容易导致因时效性过低，投入资金过多，集体资金流失的不满动荡。
 
+想法：
+
+只要我能说清楚rstp整合了backbonefast port fast uplinkfast 机制，rstp就清晰了许多
+
 ## 加速的改进
 
 * STP定义了5种不同的端口状态：disable、Listening、Learning、Blocking、Forwarding
