@@ -44,7 +44,7 @@ Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to P
 
 ### edge port
 
-即是接驳 Host 的 Port，亦即承传了在 STP 中的 Portfast，Edge Port 设定容许该 Port 由 Discarding 直接进入 Forwarding，并假设不会引致 Loop 而不产生 TCN (Topology Change Notification) 讯息，这就避免了 Switch 清空 Mac Address Table。Edge Port 需要用指令去设定，RSTP 源用了 
+即是接驳 Host 的 Port，亦即承传了在 STP 中的 Portfast，Edge Port 设定容许该 Port 由 Discarding 直接进入 Forwarding，并假设不会引致 Loop 而不产生 TCN (Topology Change Notification) 讯息，这就避免了 Switch 清空 Mac Address Table。Edge Port 需要用指令去设定，RSTP 源用了 spanning-tree portfast 这个指令，设定完成後可用 show spanning-tree 去验證。
 
 ### Point to Point Non-edge Port
 
