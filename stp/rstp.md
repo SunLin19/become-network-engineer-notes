@@ -13,10 +13,15 @@
 * 集成uplinkfast、backbonefast，但也只保留了配置port fast（edge port）命令功能
 * 根端口和指定端口在原有基础上不变，闭塞端口非为两种:Alternate、Backup
 
-在RSTP中将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU。
 
+在传统STP中，BPDU只会Root Switch每2秒(Hello Time) 发放一次，然后用一个传一个的方式，散播到网络上所有所有的交换机；而在RSTP中每台交换机都会发放BPDU，同样每2秒发放一次，RSTP中的BPDU有Keepalive的作用，如果Root Port过了6秒钟都收不到对放的BPDU (3 个Hello Time)，则会作出以下应变：
+
+* 如有 Alternate Port，立刻把 Alternate Port 升级成为 Root Port
+* 如没有 Alternate Port，则把自己成为 Root Switch 启动 Synchronization Process
 
 ## Port State
+
+在RSTP中将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU。
 
 ![](https://i.postimg.cc/85dbWyM2/81223.png)
 
