@@ -50,11 +50,15 @@ Link Type是RSTP新增的概念，RSTP把Link分为Edge Port、Point to Point No
 
 ### Point to Point Non-edge Port
 
-RSTP会把Full Duplex Port定性为Point to Point Non-edge Port，并会用 RSTP 与对方进行沟通 (Synchronization Process)。
+RSTP会把Full Duplex Port定性为Point to Point Non-edge Port，并会用RSTP与对方进行沟通 (Synchronization Process)。
+
+全双工（Full Duplex）是通讯传输的一个术语。通信允许数据在两个方向上同时传输
 
 #### Shared Non-edge Port
 
 而Half Duplex Port则会成为Shared Non-edge Port，只能用传统STP方法沟通。不过Half Duplex Port在现今网络世界已经比较难找到了，除非网络中仍有使用旧式的HUB。
+
+半双工（Half Duplex），所谓半双工就是指一个时间段内只有一个动作发生，举个简单例子，一条窄窄的马路，同时只能有一辆车通过，当目前有两辆车对开，这种情况下就只能一辆先过，等到头儿后另一辆再开。
 
 ### 总结
 
