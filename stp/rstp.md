@@ -38,6 +38,8 @@
 
 ## link type
 
+写作思路全双工、半双工
+
 Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to Point Non-edge Port 及 Shared Non-edge Port。
 
 ### edge port
