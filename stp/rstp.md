@@ -9,7 +9,8 @@
 
 ## 加速的改进
 
-* 在RSTP中只有三种端口状态，Discarding、Learning和Forwarding。
+* 在RSTP中只有三种端口状态，Discarding、Learning和Forwarding
+  * Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU
 * 集成uplinkfast、backbonefast，但也只保留了配置port fast（edge port）命令功能
 * 根端口和指定端口在原有基础上不变，闭塞端口非为两种:Alternate、Backup
 
@@ -20,8 +21,6 @@
 * 如没有 Alternate Port，则把自己成为 Root Switch 启动 Synchronization Process
 
 ## Port State
-
-在RSTP中将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU。
 
 ![](https://i.postimg.cc/85dbWyM2/81223.png)
 
