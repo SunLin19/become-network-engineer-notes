@@ -73,6 +73,10 @@ RSTP的主要功能可以归纳如下：
 1. 发现并生成局域网的一个最佳树型拓扑结构
 2. 发现拓扑故障并随之进行恢复，自动更新网络拓扑结构，启用备份链路，同时保持最佳树型结构
 
-### 
+参考资料：
 
-https://baike.baidu.com/item/RSTP/2235256?fr=aladdin
+* [cnblogs-STP理论基础](https://www.cnblogs.com/diyudewudao/p/11773535.html)
+* [百度百科-RSTP](https://baike.baidu.com/item/RSTP)
+* [Jan Ho-RSTP快速生成树协定](https://www.jannet.hk/zh-Hans/post/rapid-spanning-tree-protocol-rstp)
+
+
