@@ -30,12 +30,9 @@ RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有
 
 ### BackboneFast
 
-当开启BackboneFast的交换机发现收不到BPDU，它就会在Root Port发送用于Root Switch确认的请求包，如果Root Switch没收到，该交换机会马上进行STP运算寻找新的Root Port去往Root Switch。
-
-SW(config)#spanning-tree backbonefast
+Root Switch与两台互联的交换机相连，而两台互联的交换机其中一台因故障与Root Switch连接中断，虽然这一台交换机会识别出，但与它互联的另一台交换机是无法察觉的，所以依旧会等待已与Root Switch中断的交换机传来得的BPDU，Max Age过去了都收不到的话才会把BPDU弃掉，然后选择把Altn Port转成Root Port再进行连接。不过等待BPDU用了20秒，加之端口由Blocking至Forwarding又用了30秒，为此的解决方案就是BackboneFast。
 
 原理简说就是：当开启BackboneFast的交换机发现收不到BPDU，它就会在Root Port发送用于Root Switch确认的请求包，如果Root Switch没收到，该交换机会马上进行STP运算寻找新的Root Port去往Root Switch。
-
 
 ### alternate port
 
