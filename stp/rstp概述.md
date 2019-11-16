@@ -18,18 +18,6 @@
 
 这个是用于接入口的，一个正常的交换接口从down到up要经过:Down、listening、learning、fowarding几个状态，一共耗时为30秒，从而决定此端口是blocking还是fowarding的，也是交换机的防止环路的机制。但是对于直接接入PC这样的终端设备的接口就没有必要经过这几步了，也就是从down直接进入fowarding的状态。
 
-
-
-### UplinkFast
-
-当某台交换机Root Port与Bridge Priority连接中断造成Directly Fail，此时该交换机的Alternate Port由blocking转到forwarding也需要30秒时间，这个对于一个网络来说可谓完全不能接受，启动了UplinkFast的交换机会选1个 Blocking Port设为Standby，当Root Port死掉时，就绪的端口立刻转成Forwarding，省掉30秒等候时间。
-
-### BackboneFast
-
-Root Switch与两台互联的交换机相连，而两台互联的交换机其中一台因故障与Root Switch连接中断，虽然这一台交换机会识别出，但与它互联的另一台交换机是无法察觉的，所以依旧会等待已与Root Switch中断的交换机传来得的BPDU，Max Age过去了都收不到的话才会把BPDU弃掉，然后选择把Altn Port转成Root Port再进行连接。不过等待BPDU用了20秒，加之端口由Blocking至Forwarding又用了30秒，为此的解决方案就是BackboneFast。
-
-原理简说就是：当开启BackboneFast的交换机发现收不到BPDU，它就会在Root Port发送用于Root Switch确认的请求包，如果Root Switch没收到，该交换机会马上进行STP运算寻找新的Root Port去往Root Switch。
-
 ### alternate port
 
 如果一个端口收到**另外一个网桥**的更好的BPDU，但不是最好的，那么这个端口成为替换端口，如图所示。对于SW-2来说，端口P3收到的BPDU比自己优先，自己为次优先，P3为替换端口。
@@ -58,16 +46,6 @@ Root Switch与两台互联的交换机相连，而两台互联的交换机其中
 ![](https://i.postimg.cc/kGhGhvZN/57-35.png)
 
 
-
-
-
-RSTP根据端口在活动拓扑中的作用，定义了3种端口角色（STP有5种角色）：禁用端口（Disabled Port）、根端口（Root Port）、指定端口（Designated Port）、**为支持RSTP的快速特性规定的替代端口（Alternate Port）和备份端口（Backup Port）**。
-
-
-
-
-STP定义了5种不同的端口状态，关闭(disable)，监听（Listening），学习（Learning），阻断（Blocking）和转发（Forwarding）;在RSTP中只有三种端口状态，Discarding、Learning和Forwarding。802.1D中的禁止端口，监听端口，阻塞端口在802.1W中统一合并为禁止端口。
-
 RSTP的主要功能可以归纳如下：
 
 1. 发现并生成局域网的一个最佳树型拓扑结构
@@ -76,15 +54,3 @@ RSTP的主要功能可以归纳如下：
 ### 
 
 https://baike.baidu.com/item/RSTP/2235256?fr=aladdin
-
-### 从监听到学习的时间 
-
-STP预设Listening和Learning为15秒 (Forward Delay)，端口由Down至Up，一共等待30秒。而RSTP则使用同步的概念，交换机并非被动地等待bridge priority传来的BPDU讯息再判断拓扑，取而代之的是主动去跟相邻的交换机沟通，尽快把网络拓扑传开去。这就能省却那30秒的被动学习时间，稍後详述。
-
-
-
-写作思路
-
-端口状态的时间转变过程
-
-再述uplinkfast与backbonefast
