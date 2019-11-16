@@ -36,17 +36,21 @@
 
 ## link type
 
-Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to Point Non-edge Port 及 Shared Non-edge Port 叁种。
+Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to Point Non-edge Port 及 Shared Non-edge Port。
 
+### edge port
 
-### 端口状态与过程的改良
+即是接驳 Host 的 Port，亦即承传了在 STP 中的 Portfast，Edge Port 设定容许该 Port 由 Discarding 直接进入 Forwarding，并假设不会引致 Loop 而不产生 TCN (Topology Change Notification) 讯息，这就避免了 Switch 清空 Mac Address Table。Edge Port 需要用指令去设定，RSTP 源用了 
 
+### Point to Point Non-edge Port
 
+RSTP 会把 Full Duplex Port 定性为 Point to Point Non-edge Port，并会用 RSTP 与对方进行沟通 (Synchronization Process)。
 
-![](https://i.postimg.cc/65THcH5q/43569.jpg)
+#### Shared Non-edge Port
 
-![](https://i.postimg.cc/kGhGhvZN/57-35.png)
+而 Half Duplex Port 则会成为 Shared Non-edge Port，只能用传统 STP 方法沟通。不过 Half Duplex Port 在现今网络世界已经比较难找到了，除非网络中仍有使用旧式的 HUB。
 
+### 总结
 
 RSTP的主要功能可以归纳如下：
 
