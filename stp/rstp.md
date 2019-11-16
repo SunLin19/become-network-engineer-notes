@@ -78,6 +78,6 @@ RSTP的主要功能可以归纳如下：
 * [cnblogs-STP理论基础](https://www.cnblogs.com/diyudewudao/p/11773535.html)
 * [百度百科-RSTP](https://baike.baidu.com/item/RSTP)
 * [Jan Ho-RSTP快速生成树协定](https://www.jannet.hk/zh-Hans/post/rapid-spanning-tree-protocol-rstp)
-* [Portfast /Uplinkfast/BackboneFast与RSTP的关系](https://blog.51cto.com/7658423/1663403)
+* [51cto-Portfast /Uplinkfast/BackboneFast与RSTP的关系](https://blog.51cto.com/7658423/1663403)
 
 
