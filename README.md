@@ -69,7 +69,7 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
 * 生成树专题
   * [生成树协议概览](stp/生成树协议概览.md)
   * [pvst生成树实例](stp/pvst生成树实例.md) 
-  * rstp 计划中 14-16
+  * [rstp](stp/rstp.md) 
 
 * 广域网
   * 帧中继 （一次失败的未写作，需总结原因）
