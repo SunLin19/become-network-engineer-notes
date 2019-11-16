@@ -40,11 +40,11 @@
 
 写作思路全双工、半双工
 
-Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to Point Non-edge Port 及 Shared Non-edge Port。
+Link Type是RSTP新增的概念，RSTP把Link分为Edge Port、Point to Point Non-edge Port、Shared Non-edge Port。
 
 ### edge port
 
-即是接驳 Host 的 Port，亦即承传了在 STP 中的 Portfast，Edge Port 设定容许该 Port 由 Discarding 直接进入 Forwarding，并假设不会引致 Loop 而不产生 TCN (Topology Change Notification) 讯息，这就避免了 Switch 清空 Mac Address Table。Edge Port 需要用指令去设定，RSTP 源用了 spanning-tree portfast 这个指令，设定完成後可用 show spanning-tree 去验證。
+即是接驳主机设备的端口，沿袭了在STP中的Portfast，Edge Port设定容许该端口由Discarding直接进入Forwarding，并假设不会引致Loop而不产生TCN (Topology Change Notification)，这就避免了交换机清空mac地址表。Edge Port需要用`spanning-tree portfast`指令去设定。
 
 ### Point to Point Non-edge Port
 
