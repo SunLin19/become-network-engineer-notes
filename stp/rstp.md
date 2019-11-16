@@ -44,15 +44,17 @@ Link Type是RSTP新增的概念，RSTP把Link分为Edge Port、Point to Point No
 
 ### edge port
 
-即是接驳主机设备的端口，沿袭了在STP中的Portfast，Edge Port设定容许该端口由Discarding直接进入Forwarding，并假设不会引致Loop而不产生TCN (Topology Change Notification)，这就避免了交换机清空mac地址表。Edge Port需要用`spanning-tree portfast`指令去设定。
+即是接驳主机设备的端口，沿袭了在STP中的Portfast，Edge Port设定容许该端口由Discarding直接进入Forwarding，并假设不会引致Loop而不产生TCN (Topology Change Notification)，这就避免了交换机清空mac地址表。
+
+* Edge Port需要用`spanning-tree portfast`指令去设定。
 
 ### Point to Point Non-edge Port
 
-RSTP 会把 Full Duplex Port 定性为 Point to Point Non-edge Port，并会用 RSTP 与对方进行沟通 (Synchronization Process)。
+RSTP会把Full Duplex Port定性为Point to Point Non-edge Port，并会用 RSTP 与对方进行沟通 (Synchronization Process)。
 
 #### Shared Non-edge Port
 
-而 Half Duplex Port 则会成为 Shared Non-edge Port，只能用传统 STP 方法沟通。不过 Half Duplex Port 在现今网络世界已经比较难找到了，除非网络中仍有使用旧式的 HUB。
+而Half Duplex Port则会成为Shared Non-edge Port，只能用传统STP方法沟通。不过Half Duplex Port在现今网络世界已经比较难找到了，除非网络中仍有使用旧式的HUB。
 
 ### 总结
 
