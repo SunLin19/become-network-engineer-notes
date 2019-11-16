@@ -14,6 +14,7 @@
 
 * STP定义了5种不同的端口状态：disable、Listening、Learning、Blocking、Forwarding
 * 在RSTP中只有三种端口状态，Discarding、Learning和Forwarding。
+* 内置uplinkfast、backbonefast功能
 
 在RSTP中将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU。
 
