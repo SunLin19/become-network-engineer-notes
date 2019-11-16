@@ -14,9 +14,7 @@
 在RSTP中将Disabled、Blocking、Listening结合为Discarding状态，不学习MAC地址，不转发数据包，接收但不发送BPDU。
 
 
-### PortFast
-
-这个是用于接入口的，一个正常的交换接口从down到up要经过:Down、listening、learning、fowarding几个状态，一共耗时为30秒，从而决定此端口是blocking还是fowarding的，也是交换机的防止环路的机制。但是对于直接接入PC这样的终端设备的接口就没有必要经过这几步了，也就是从down直接进入fowarding的状态。
+## Port State
 
 ### alternate port
 
@@ -35,6 +33,10 @@
 ![](https://i.postimg.cc/5Np81RKx/a15.jpg)
 
 > 摘抄自-[百度百科RSTP](https://baike.baidu.com/item/RSTP)
+
+## link type
+
+Link Type 是 RSTP 新增的概念，RSTP 把 Link 分为 Edge Port，Point to Point Non-edge Port 及 Shared Non-edge Port 叁种。
 
 
 ### 端口状态与过程的改良
