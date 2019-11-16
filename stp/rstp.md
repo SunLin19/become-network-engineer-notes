@@ -1,4 +1,4 @@
-# rstp概述
+# rstp
 
 ## 传统STP的问题
 
@@ -15,6 +15,8 @@
 
 
 ## Port State
+
+![](https://i.postimg.cc/85dbWyM2/81223.png)
 
 ### alternate port
 
