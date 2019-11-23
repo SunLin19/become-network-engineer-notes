@@ -97,6 +97,7 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
  * [omnisecu知识库](http://www.omnisecu.com/cisco-certified-network-associate-ccna/what-is-ospf-metric-value-cost-and-ospf-default-cost-reference-bandwidth.php)
  * [Java，IT运维，服务器架设](http://www.davis-wiki.com/doku.php?id=Start)
  * [CCNAイージス CCNA Web教科書更新](https://www.infraexpert.com/)
+ * [网络设备配置技术](http://183.167.250.28:9020/Website/index.html)
 
 <!--
 继《这本书能让你连接互联网》又一新书，同时也是回归互联网之作，持续更新，等到较为完善之时，考虑docsify归纳成书，书名《？？？？》还没想好，《从零开始理解网络》？可能吧。。。-->
