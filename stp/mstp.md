@@ -15,4 +15,11 @@ RSTP构建的生成树就是一整个的网络拓扑而非区域自治化管理�
 ## mstp简单实例
 
 
+## mstp笔记
+
+用路由器模拟交换机，还是有一些问题：
+
+* [三层交换机 no switchport 命令](https://blog.csdn.net/chengxiug/article/details/88902274)
+
+回想起[GNS3用路由器模拟PC的几个误区](https://bbs.hh010.com/thread-457308-1-1.html?_dsign=774775df)
 
