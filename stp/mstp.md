@@ -6,4 +6,4 @@ Multiple Spanning Tree Protocol (MSTP)又名 802.1s。从传统STP至RSTP是速�
 
 ### 消耗硬件资源
 
-RSTP根据vlan数目而生成等量的生成树拓扑，这些生成树拓扑运作对整个网络的交换机的CPU和RAM资源都会造成压力。
+RSTP根据vlan数目而生成等量的生成树拓扑，这些生成树拓扑运作对整个网络的交换机的CPU和RAM资源都会造成很大的负担。
