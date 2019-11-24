@@ -18,6 +18,13 @@ GNS3中的交换机是用路由器镜像模拟的，因此需要将端口降级�
 
 ![]()
 
+```ios
+SW1(config)#int range e0/0-1
+SW1(config-if-range)#switchport 
+SW1(config-if-range)#switchport trunk encapsulation dot1q 
+SW1(config-if-range)#switchport mode trunk
+```
+
 
 ## mstp笔记
 
