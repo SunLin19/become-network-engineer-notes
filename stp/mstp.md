@@ -26,6 +26,7 @@ SW1(config)#int range e0/0-1
 SW1(config-if-range)#switchport 
 SW1(config-if-range)#switchport trunk encapsulation dot1q 
 SW1(config-if-range)#switchport mode trunk
+```
 
 用路由器模拟交换机，还是有一些问题：
 
@@ -33,3 +34,6 @@ SW1(config-if-range)#switchport mode trunk
 
 回想起[GNS3用路由器模拟PC的几个误区](https://bbs.hh010.com/thread-457308-1-1.html?_dsign=774775df)
 
+* [spanning-tree的type是指的什么？](https://zhidao.baidu.com/question/562426439.html)
+
+此根据其他参考文章配置出现问题，没有达到预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是我连生成实例的前提都没有创建怎么可能会出现相应的生成效果**。
