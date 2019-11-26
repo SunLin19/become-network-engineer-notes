@@ -96,4 +96,6 @@ SW1(config-if-range)#switchport mode trunk
 
 todo：
 
-* [ ] 242页 《ccna实验指南》
+* [x] 242页 《ccna实验指南》
+* [ ] vtp3的整合
+
