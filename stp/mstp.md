@@ -29,17 +29,6 @@ SW1(config)#int range e0/0-1
 SW1(config-if-range)#switchport 
 SW1(config-if-range)#switchport trunk encapsulation dot1q 
 SW1(config-if-range)#switchport mode trunk
-
-
-## mstp笔记
-
-GNS3中的交换机是用路由器镜像模拟的，因此需要将端口降级为二层交换端口，并手动配置dot1Q协议再进行连通。
-
-```ios
-SW1(config)#int range e0/0-1
-SW1(config-if-range)#switchport 
-SW1(config-if-range)#switchport trunk encapsulation dot1q 
-SW1(config-if-range)#switchport mode trunk
 ```
 
 用路由器模拟交换机，还是有一些问题：
