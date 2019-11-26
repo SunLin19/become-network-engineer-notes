@@ -14,7 +14,7 @@ RSTP构建的生成树就是一整个的网络拓扑而非区域自治化管理�
 
 ### mstp简单实例
 
-![]()
+![](https://i.postimg.cc/Pr2Z1v8w/Snipaste-2019-11-26-23-05-37.png)
 
 ## Region 区域
 
