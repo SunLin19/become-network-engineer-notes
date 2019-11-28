@@ -22,7 +22,6 @@ MSTP中各个区域的生成树互不影响各自的网络拓扑结构。同一R
 
 ### 配置
 
-
 **GNS3中的交换机是用路由器镜像模拟的，因此需要将端口降级为二层交换端口，并手动配置dot1Q协议再进行连通。** 以SW1为例：
 
 ```ios
@@ -72,6 +71,10 @@ SW3(config-mst)#ins 2 vl 3-4
 SW3(config-mst)#exit
 SW3(config)#do sh sp ms
 ```
+
+## MSTP配合VTP V3
+
+
 
 ## mstp笔记
 
