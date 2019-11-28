@@ -87,7 +87,9 @@ SW3(config)#do sh sp ms
 
 ## mstp笔记
 
-GNS3中的交换机是用路由器镜像模拟的，因此需要将端口降级为二层交换端口，并手动配置dot1Q协议再进行连通。
+用路由器模拟交换机，还是有一些问题：三层端口不能使用二层端口配置
+
+解决：查看了[三层交换机 no switchport 命令](https://blog.csdn.net/chengxiug/article/details/88902274)，降级并手动配置dot1Q协议再进行连通。
 
 ```ios
 SW1(config)#int range e0/0-1
@@ -95,19 +97,7 @@ SW1(config-if-range)#switchport
 SW1(config-if-range)#switchport trunk encapsulation dot1q 
 SW1(config-if-range)#switchport mode trunk
 ```
+配置生成树实例没有出现预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
 
-用路由器模拟交换机，还是有一些问题：
 
-* [三层交换机 no switchport 命令](https://blog.csdn.net/chengxiug/article/details/88902274)
-
-回想起[GNS3用路由器模拟PC的几个误区](https://bbs.hh010.com/thread-457308-1-1.html?_dsign=774775df)
-
-* [spanning-tree的type是指的什么？](https://zhidao.baidu.com/question/562426439.html)
-
-此根据其他参考文章配置出现问题，没有达到预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是我连生成实例的前提都没有创建怎么可能会出现相应的生成效果**。
-
-todo：
-
-* [x] 242页 《ccna实验指南》
-* [ ] vtp3的整合
 
