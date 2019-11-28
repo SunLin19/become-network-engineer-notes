@@ -72,7 +72,7 @@ SW3(config-mst)#exit
 SW3(config)#do sh sp ms
 ```
 
-## MSTP配合VTP v3
+## VTP v3配合MSTP
 
 如果我们有百来台大量的交换机，以及百来个过多的vlan需要配置，显然在交换机一个个去添加是很不现实的，，因此，就需要结合前面所学的[虚拟局域网干道协议（VTP）](sike-jiaohuan/vtp.md)配合MSTP相互协作来进行组网。
 
@@ -87,6 +87,8 @@ SW3(config)#do sh sp ms
 
 ## mstp笔记
 
+### base
+
 用路由器模拟交换机，还是有一些问题：三层端口不能使用二层端口配置
 
 解决：查看了[三层交换机 no switchport 命令](https://blog.csdn.net/chengxiug/article/details/88902274)，降级并手动配置dot1Q协议再进行连通。
@@ -99,5 +101,4 @@ SW1(config-if-range)#switchport mode trunk
 ```
 配置生成树实例没有出现预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
 
-
-
+### vtp v3
