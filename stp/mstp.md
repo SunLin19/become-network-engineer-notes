@@ -74,6 +74,8 @@ SW3(config)#do sh sp ms
 
 ## VTP v3配合MSTP
 
+![](https://i.postimg.cc/vZR5rZHf/04-51.png)
+
 如果我们有百来台大量的交换机，以及百来个过多的vlan需要配置，显然在交换机一个个去添加是很不现实的，，因此，就需要结合前面所学的[虚拟局域网干道协议（VTP）](sike-jiaohuan/vtp.md)配合MSTP相互协作来进行组网。
 
 以下，结合之前的MSTP拓扑进行VTP v3，用VTP发放MSTP有以下几点需要注意的：
@@ -103,7 +105,7 @@ SW1(config-if-range)#switchport mode trunk
 
 ### vtp v3
 
-![]()
+由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个级联交换机网络，所以先设定mstp，再配置vtp。
 
 参考，()
 
