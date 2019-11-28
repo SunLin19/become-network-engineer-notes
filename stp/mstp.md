@@ -102,3 +102,10 @@ SW1(config-if-range)#switchport mode trunk
 配置生成树实例没有出现预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
 
 ### vtp v3
+
+![]()
+
+参考，()
+
+
+
