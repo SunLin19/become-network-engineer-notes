@@ -109,5 +109,7 @@ SW1(config-if-range)#switchport mode trunk
 
 进行创建及自动下发vlan时，需升级成主服务器并在配置时，`do vtp primary`。
 
-
+* [VTP error - VTP VLAN configuration not allowed](https://learningnetwork.cisco.com/thread/128488)
+* [configuration not allowed when device is not the primary server for vlan database.](https://www.petenetlive.com/KB/Article/0001127)
+* [Catalyst 3750 Switch Software Configuration Guide, 12.2(52)SE-Chapter: Configuring VTP](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg/swvtp.html)
 
