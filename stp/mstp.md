@@ -74,7 +74,9 @@ SW3(config)#do sh sp ms
 
 ## MSTP配合VTP V3
 
+如果我们有百来台大量的交换机，以及百来个过多的vlan需要配置，显然在交换机一个个去添加是很不现实的，，因此，就需要结合前面所学的[虚拟局域网干道协议（VTP）](sike-jiaohuan/vtp.md)配合MSTP相互协作来进行组网。
 
+![](https://i.postimg.cc/Pr2Z1v8w/Snipaste-2019-11-26-23-05-37.png)
 
 ## mstp笔记
 
