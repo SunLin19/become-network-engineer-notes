@@ -105,7 +105,9 @@ SW1(config-if-range)#switchport mode trunk
 
 ### vtp v3
 
-由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个网络所有配置了trunk模式的交换机，所以先设定mstp，再配置vtp。
+由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个网络所有配置了trunk模式的交换机，所以先设定mstp，再配置vtp，防止vtp破坏mstp的隔离。？
+
+进行创建及自动下发vlan时，需升级成主服务器并在配置时，`do vtp primary`。
 
 
 
