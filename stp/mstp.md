@@ -81,6 +81,8 @@ SW3(config)#do sh sp ms
 * 由于每一个MST Region的设定是不相同的，因此每个区域都需要放于不同的VTP Domain之中
 * region、revision、instance-vlan（key-value）均等同才算同一个MST Region
 
+参考示例：[VTP Version 3 and MSTP Walkthrough.](http://sabotage-networks.blogspot.com/2010/02/vtp-version-3-and-mstp.html)
+
 ## mstp笔记
 
 GNS3中的交换机是用路由器镜像模拟的，因此需要将端口降级为二层交换端口，并手动配置dot1Q协议再进行连通。
