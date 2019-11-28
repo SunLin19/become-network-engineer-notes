@@ -105,7 +105,7 @@ SW1(config-if-range)#switchport mode trunk
 
 ### vtp v3
 
-由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个网络所有配置了trunk模式的交换机，所以先设定mstp，再配置vtp，防止vtp破坏mstp的隔离。？
+由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个网络所有配置了trunk模式的交换机，所以先设定mstp，再配置vtp，防止vtp破坏mstp的隔离。？猜想 ？（29证实，睡了）
 
 进行创建及自动下发vlan时，需升级成主服务器并在配置时，`do vtp primary`。
 
@@ -113,3 +113,4 @@ SW1(config-if-range)#switchport mode trunk
 * [configuration not allowed when device is not the primary server for vlan database.](https://www.petenetlive.com/KB/Article/0001127)
 * [Catalyst 3750 Switch Software Configuration Guide, 12.2(52)SE-Chapter: Configuring VTP](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg/swvtp.html)
 
+解决问题查资料，没想到居然深入到IE，意料之外。
