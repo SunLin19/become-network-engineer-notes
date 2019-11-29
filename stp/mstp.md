@@ -94,7 +94,7 @@ SW1(config)#vtp mode server mst
 
 * 进行创建及更新vlan或mst，需升级成`(config)#do vtp primary vlan/mst`主服务器
 * 如做实验的话，改用transparent模式，这样创建vlan也不会影响整个拓扑。
-* 更新完成完vlan或mst设定后，建议把其免去Primary Server，避免发生意外更新。方法是把VTP mode改成Transparent再改回Server。
+* 更新完成完相关设定后，建议取消Primary Server，避免发生意外更新，方法是把vtp mode改成Transparent，再改回Server。
 
 ## 参考文献
 
