@@ -92,7 +92,7 @@ SW1(config)#vtp mode server vlan
 SW1(config)#vtp mode server mst
 ```
 
-进行创建及更新vlan，需升级成`(config)#do vtp primary`主服务器；如做实验的话，改用transparent模式，这样创建vlan也不会影响整个拓扑。
+进行创建及更新vlan或mst，需升级成`(config)#do vtp primary vlan/mst`主服务器；如做实验的话，改用transparent模式，这样创建vlan也不会影响整个拓扑。
 
 * [VTP error - VTP VLAN configuration not allowed](https://learningnetwork.cisco.com/thread/128488)
 * [configuration not allowed when device is not the primary server for vlan database.](https://www.petenetlive.com/KB/Article/0001127)
