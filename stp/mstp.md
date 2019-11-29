@@ -81,9 +81,7 @@ SW3(config)#do sh sp ms
 * 由于每一个MST Region的设定是不相同的，因此每个区域都需要放于不同的VTP Domain之中
 * region、revision、instance-vlan（key-value）均等同才算同一个MST Region
 
-为了不引起混乱，在整个网络中只设置一个server，如果网络中有新的交换机加入的话，最好也把它改为非server模式。
-
-SW2、SW3设定为client即可，
+为了不引起混乱，在整个网络中只设置一个server，如果网络中有新的交换机加入的话，最好也把它改为非server模式。SW2、SW3跟SW1设定类似，将SW2、SW3变更为client即可
 
 ```
 SW1(config)#vtp domain net123
