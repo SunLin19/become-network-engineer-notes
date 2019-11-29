@@ -73,7 +73,7 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
   * [mstp](stp/mstp.md)
 
 * 广域网
-  * 帧中继 计划中
+  * 帧中继 （计划中 30 1天）
 
 
 ## 相关资源分享
