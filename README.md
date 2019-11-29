@@ -71,8 +71,9 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
   * [pvst](stp/pvst.md) 
   * [rstp](stp/rstp.md) 
   * [mstp](stp/mstp.md)
+
 * 广域网
-  * 帧中继 （一次失败的未写作，需总结原因）
+  * 帧中继 计划中
 
 
 ## 相关资源分享
