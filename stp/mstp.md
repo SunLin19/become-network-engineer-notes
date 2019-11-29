@@ -81,8 +81,16 @@ SW3(config)#do sh sp ms
 * 由于每一个MST Region的设定是不相同的，因此每个区域都需要放于不同的VTP Domain之中
 * region、revision、instance-vlan（key-value）均等同才算同一个MST Region
 
-为了不引起混乱，在整个网络中只设置一个server。如果网络中有新的交换机加入的话，最好也吧它改为非server模式，防止vtp混乱！
+为了不引起混乱，在整个网络中只设置一个server，如果网络中有新的交换机加入的话，最好也把它改为非server模式。
 
+SW2、SW3设定为client即可，
+
+```
+SW1(config)#vtp domain net123
+SW1(config)#vtp version 3
+SW1(config)#vtp mode server vlan
+SW1(config)#vtp mode server mst
+```
 
 
 参考示例：[VTP Version 3 and MSTP Walkthrough.](http://sabotage-networks.blogspot.com/2010/02/vtp-version-3-and-mstp.html)、[jan ho - 多重生成树协定](https://www.jannet.hk/zh-Hans/post/multiple-spanning-tree-protocol-mstp/)
