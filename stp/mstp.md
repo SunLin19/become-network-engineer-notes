@@ -34,7 +34,9 @@ SW1(config-if-range)#switchport trunk encapsulation dot1q
 SW1(config-if-range)#switchport mode trunk
 ```
 
-创建vlan2~4，以及各个交换机配置trunk模式命令重合，这里就仅做篇幅省略。以下结合上方拓扑对各个交换机的配置
+配置MSTP曾出现过一个问题：配置生成树实例没有出现预期效果。我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
+
+创建vlan2~4，以及各个交换机配置trunk模式命令重合，这里就仅做篇幅省略。以下结合上方拓扑对各个交换机的配置。
 
 ```
 SW1(config)#sp mo mst
@@ -90,29 +92,10 @@ SW1(config)#vtp mode server vlan
 SW1(config)#vtp mode server mst
 ```
 
-
-参考示例：[VTP Version 3 and MSTP Walkthrough.](http://sabotage-networks.blogspot.com/2010/02/vtp-version-3-and-mstp.html)、[jan ho - 多重生成树协定](https://www.jannet.hk/zh-Hans/post/multiple-spanning-tree-protocol-mstp/)
-
-## mstp笔记
-
-### base
-
-用路由器模拟交换机，还是有一些问题：三层端口不能使用二层端口配置
-
-解决：查看了[三层交换机 no switchport 命令](https://blog.csdn.net/chengxiug/article/details/88902274)，降级并手动配置dot1Q协议再进行连通。
-
-```ios
-SW1(config)#int range e0/0-1
-SW1(config-if-range)#switchport 
-SW1(config-if-range)#switchport trunk encapsulation dot1q 
-SW1(config-if-range)#switchport mode trunk
-```
-配置生成树实例没有出现预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
-
-### vtp v3
-
-进行创建及自动下发vlan时，需升级成主服务器并在配置时，`do vtp primary`；当然实验的话改用transparent模式，这样创建vlan也不会影响整个拓扑。
+进行创建及自动下发vlan时，需升级成主服务器并在配置时，do vtp primary；当然实验的话改用transparent模式，这样创建vlan也不会影响整个拓扑。
 
 * [VTP error - VTP VLAN configuration not allowed](https://learningnetwork.cisco.com/thread/128488)
 * [configuration not allowed when device is not the primary server for vlan database.](https://www.petenetlive.com/KB/Article/0001127)
 * [Catalyst 3750 Switch Software Configuration Guide, 12.2(52)SE-Chapter: Configuring VTP](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg/swvtp.html)
+* [VTP Version 3 and MSTP Walkthrough.](http://sabotage-networks.blogspot.com/2010/02/vtp-version-3-and-mstp.html)
+* [jan ho - 多重生成树协定](https://www.jannet.hk/zh-Hans/post/multiple-spanning-tree-protocol-mstp/)
