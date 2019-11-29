@@ -85,6 +85,8 @@ SW3(config)#do sh sp ms
 
 为了不引起混乱，在整个网络中只设置一个server。如果网络中有新的交换机加入的话，最好也吧它改为非server模式，防止vtp混乱！
 
+
+
 参考示例：[VTP Version 3 and MSTP Walkthrough.](http://sabotage-networks.blogspot.com/2010/02/vtp-version-3-and-mstp.html)、[jan ho - 多重生成树协定](https://www.jannet.hk/zh-Hans/post/multiple-spanning-tree-protocol-mstp/)
 
 ## mstp笔记
@@ -104,8 +106,6 @@ SW1(config-if-range)#switchport mode trunk
 配置生成树实例没有出现预期效果，我认为是工具功能过低部分效果不能完全模拟，**但真正原因是mst instance基于vlan而形成的，我连vlan都没有创建怎么可能出现相应实例**。
 
 ### vtp v3
-
-由于有段时间没复习vtp，印象不深。到底是先设定mstp还是vtp，犯了难；但经过一次实验，发现vtp会影响整个网络所有配置了trunk模式的交换机，所以先设定mstp，再配置vtp，防止vtp破坏mstp的隔离。？猜想 ？（29证实，睡了）
 
 进行创建及自动下发vlan时，需升级成主服务器并在配置时，`do vtp primary`。
 
