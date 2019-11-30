@@ -16,8 +16,8 @@ Frame Relay（帧中继）是一个较经济的WAN配置办法。以下有一个
 
 DTE与DCE的概念与区别：
 
-* DTE(Data Terminal Equipment)代表著用户端的设备，数字终端设备，指一般的终端或是计算机，也可能是一台只接收数据的打印机。
-* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备。
+* DTE(Data Terminal Equipment)数字终端设备，指一般的终端或是计算机、打印机等用户端设备
+* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
 * DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
 
 
