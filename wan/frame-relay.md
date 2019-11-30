@@ -9,8 +9,10 @@
 Frame Relay（帧中继）是一个较经济的WAN配置办法。以下有一个例子，假设一间公司有两个办公室，最简单的方法就是用 Dedicated Line (专线) 把两个 Site 连起来。如果这家公司未来增加多一个 Site，就要再增加两条专线将其接通，但一条专线价值不菲，而且每个 Router 也要增加 Interface Port 亦增加了成本，除非钱并不是考虑因素，否则，专线显然并非理想的解决办法。
 
 
->参考 [知乎-大公司是怎么接入网络服务的？](https://www.zhihu.com/question/318806738)
+参考文献
 
+* [知乎-大公司是怎么接入网络服务的？](https://www.zhihu.com/question/318806738)
+* [googlebook-电子商务概论](https://books.google.nl/books?hl=zh-CN&id=OuF0DwAAQBAJ&q=frame+relay)
 
 
 
