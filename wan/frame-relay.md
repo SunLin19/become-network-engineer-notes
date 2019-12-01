@@ -75,6 +75,13 @@ R1(config-if)#no sh
 
 ## 模拟运营商
 
+DTE与DCE的概念与区别：
+
+* DTE(Data Terminal Equipment)数字终端设备，指一般的终端或是计算机、打印机等用户端设备
+* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
+* DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
+
+多台帧中继组成的云需要变更为[NNI](https://baike.baidu.com/item/NNI/5234091)接口类型传输。
 
 
 
@@ -87,12 +94,4 @@ R1(config-if)#no sh
 * [理解并演示：帧中继的逆向解析功能（frame-relay inverse-arp）](https://blog.51cto.com/7658423/1294309)
 
 
-DTE与DCE的概念与区别：
 
-* DTE(Data Terminal Equipment)数字终端设备，指一般的终端或是计算机、打印机等用户端设备
-* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
-* DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
-
-
-
-多台帧中继组成的云需要变更为[NNI](https://baike.baidu.com/item/NNI/5234091)接口类型传输。
