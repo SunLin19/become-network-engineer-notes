@@ -84,7 +84,7 @@ R1(config-if)#no sh
 * [知乎-大公司是怎么接入网络服务的？](https://www.zhihu.com/question/318806738)
 * [googlebook-电子商务概论](https://books.google.nl/books?hl=zh-CN&id=OuF0DwAAQBAJ&q=frame+relay)
 * [张曾科-计算机网络](https://books.google.nl/books?id=gUmThRY3RHEC&pg=PA178&lpg=PA178&dq=%E5%B8%A7%E4%B8%AD%E7%BB%A7%E6%A0%BC%E5%BC%8F+%E5%9B%BE%E8%A7%A3)
-
+* [理解并演示：帧中继的逆向解析功能（frame-relay inverse-arp）](https://blog.51cto.com/7658423/1294309)
 
 
 DTE与DCE的概念与区别：
