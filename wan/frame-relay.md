@@ -31,6 +31,7 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 ![](https://i.postimg.cc/h4J56PD1/14-03.png)
 
+R2同理。
 
 ```
 //进入（serial）串口设定IP地址
@@ -40,6 +41,7 @@ R1(config-if)#ip add 192.168.10.2 255.255.255.0
 R1(config-if)#enc frame-relay 
 //serial restart-delay 连续重启延时，0代表不重启，比如30代表30秒后重启路由器
 R1(config-if)#serial restart-delay 0
+//在GNS3中配置Frame relay switch发送方端口与DLCL
 R1(config-if)#frame-relay interface-dlci 101
 //思科默认是关闭接口的，给它开启
 R1(config-if)#no sh
