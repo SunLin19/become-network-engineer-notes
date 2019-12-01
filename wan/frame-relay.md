@@ -25,6 +25,8 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 正由于具备这两个必要条件，使得帧中继交换机可省去纠错控制等功能，从而使其操作简单，即降低了费用又减少了时延，提高了信息传输效率又能保证传输质量。
 
 
+
+
 ## 帧中继实例
 
 
@@ -32,6 +34,7 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 * [知乎-大公司是怎么接入网络服务的？](https://www.zhihu.com/question/318806738)
 * [googlebook-电子商务概论](https://books.google.nl/books?hl=zh-CN&id=OuF0DwAAQBAJ&q=frame+relay)
+* [张曾科-计算机网络](https://books.google.nl/books?id=gUmThRY3RHEC&pg=PA178&lpg=PA178&dq=%E5%B8%A7%E4%B8%AD%E7%BB%A7%E6%A0%BC%E5%BC%8F+%E5%9B%BE%E8%A7%A3)
 
 
 
