@@ -60,7 +60,7 @@ R1(config-if)#no sh
 
 帧中继实际上不支持广播，属于NBMA(Non-Broadcast Multi-Access )网络。所谓的broadcast实际上是伪广播，并不是一次性的向多个PVC发送分组，而是以单播的形式向邻居发送分组的副本。再一测试下ping所在路由的ip地址却不联通。
 
-![]()
+![](https://i.postimg.cc/LszWG5kb/13-04.png)
 
 
 
