@@ -31,21 +31,23 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 ![](https://i.postimg.cc/63rR8mC3/05-21.png)
 
-R2同理。
+DLCI(data link connection identifier)为数据链路标识，DLCI只有本地意义，它是标识两个相邻结点之间逻辑连接，一条端到端的虚电路可能通过多个节点，相邻节点之间每段虚电路都有自己的DLCI。
 
 ```
 //进入（serial）串口设定IP地址
 R1(config)#int s1/1
-R1(config-if)#ip add 192.168.10.2 255.255.255.0
+R1(config-if)#ip add 192.168.10.1 255.255.255.0
 //封装帧中继格式来让接口知道使用frame-relay协定
 R1(config-if)#enc frame-relay 
 //serial restart-delay 连续重启延时，0代表不重启，比如30代表30秒后重启路由器
 R1(config-if)#serial restart-delay 0
-//在GNS3中配置Frame relay switch发送方端口与DLCL
+//在GNS3中配置Frame relay switch发送方端口与DLCI
 R1(config-if)#frame-relay interface-dlci 101
 //思科默认是关闭接口的，给它开启
 R1(config-if)#no sh
 ```
+
+R2配置同理，`do ping R1的ip地址`。
 
 参考文献
 
