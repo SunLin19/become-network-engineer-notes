@@ -62,7 +62,9 @@ R1(config-if)#no sh
 
 ![](https://i.postimg.cc/LszWG5kb/13-04.png)
 
+实际上是所在路由ip地址与自身的DLCI标识建立映射，`frame-relay map ip 192.168.10.2 202 bro`，图中忘了加上broadcast关键字经PVC通告给其他路由器了。
 
+![](https://i.postimg.cc/DzZ94n1j/20-22.png)
 
 
 
