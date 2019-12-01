@@ -54,13 +54,13 @@ R1(config-if)#frame-relay interface-dlci 101
 R1(config-if)#no sh
 ```
 
+### NBMA
+
 `show frame-relay map`可以看到IP与DLCI的映射，`do ping 对方的ip地址`查看是否连通。
 
 ![](https://i.postimg.cc/4xGBnvCY/9-44.png)
 
-### NBMA
-
-帧中继实际上不支持广播，属于NBMA(Non-Broadcast Multi-Access )网络，上图实际上是伪广播。
+帧中继实际上不支持广播，属于NBMA(Non-Broadcast Multi-Access )网络。所谓的broadcast实际上是伪广播，并不是一次性的向多个PVC发送分组，而是以单播的形式向邻居发送分组的副本。
 
 逆向ARP解析在思科的设备上默认是启动，但是当您已配置帧中继的静态映射，那么逆向ARP解析将自动关闭！
 
