@@ -29,7 +29,8 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 ## 帧中继实例
 
-![](https://i.postimg.cc/h4J56PD1/14-03.png)
+![](https://i.postimg.cc/pXWqxWxS/26-29.png)
+
 
 
 参考文献
