@@ -42,8 +42,6 @@ PVC由网管预先定义，维持路由器恒定连接，载波信号为各用�
 
 R2配置同理，`do ping R1的ip地址`。
 
-![](https://i.postimg.cc/4xGBnvCY/9-44.png)
-
 ```
 //进入（serial）串口设定IP地址
 R1(config)#int s1/1
@@ -57,6 +55,10 @@ R1(config-if)#frame-relay interface-dlci 101
 //思科默认是关闭接口的，给它开启
 R1(config-if)#no sh
 ```
+
+![](https://i.postimg.cc/4xGBnvCY/9-44.png)
+
+
 
 
 
