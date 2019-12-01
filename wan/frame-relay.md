@@ -41,6 +41,7 @@ R1(config-if)#enc frame-relay
 //serial restart-delay 连续重启延时，0代表不重启，比如30代表30秒后重启路由器
 R1(config-if)#serial restart-delay 0
 R1(config-if)#frame-relay interface-dlci 101
+//思科默认是关闭接口的，给它开启
 R1(config-if)#no sh
 ```
 
