@@ -40,7 +40,7 @@ PVC由网管预先定义，维持路由器恒定连接，载波信号为各用�
 
 ![](https://i.postimg.cc/63rR8mC3/05-21.png)
 
-R2配置同理，`do ping R1的ip地址`。
+R2配置同理
 
 ```
 //进入（serial）串口设定IP地址
@@ -55,6 +55,8 @@ R1(config-if)#frame-relay interface-dlci 101
 //思科默认是关闭接口的，给它开启
 R1(config-if)#no sh
 ```
+
+`show frame-relay map`可以看到IP与DLCI的映射，`do ping 对方的ip地址`查看是否连通。
 
 ![](https://i.postimg.cc/4xGBnvCY/9-44.png)
 
