@@ -62,15 +62,9 @@ R1(config-if)#no sh
 
 ![](https://i.postimg.cc/LszWG5kb/13-04.png)
 
-实际上是所在路由ip地址与自身的DLCI标识建立映射，`frame-relay map ip 192.168.10.2 202 bro`，图中忘了加上broadcast关键字经PVC通告给其他路由器了。
+实际上是所在路由ip地址与自身的DLCI标识建立映射，`frame-relay map ip 192.168.10.2 202 bro`，加上broadcast关键字才能使用伪广播进行通告。逆向ARP解析在思科的设备上默认是启动，但是当您已配置帧中继的静态映射，那么逆向ARP解析将自动关闭！
 
-![](https://i.postimg.cc/DzZ94n1j/20-22.png)
-
-
-
-逆向ARP解析在思科的设备上默认是启动，但是当您已配置帧中继的静态映射，那么逆向ARP解析将自动关闭！
-
-
+![](https://i.postimg.cc/rpRdTdfM/2-02.png)
 
 
 参考文献
