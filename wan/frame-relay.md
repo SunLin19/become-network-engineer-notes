@@ -29,9 +29,20 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 ## 帧中继实例
 
-![](https://i.postimg.cc/pXWqxWxS/26-29.png)
+![](https://i.postimg.cc/h4J56PD1/14-03.png)
 
 
+```
+//进入（serial）串口设定IP地址
+R1(config)#int s1/1
+R1(config-if)#ip add 192.168.10.2 255.255.255.0
+//封装帧中继格式来让接口知道使用frame-relay协定
+R1(config-if)#enc frame-relay 
+//serial restart-delay 连续重启延时，0代表不重启，比如30代表30秒后重启路由器
+R1(config-if)#serial restart-delay 0
+R1(config-if)#frame-relay interface-dlci 101
+R1(config-if)#no sh
+```
 
 参考文献
 
