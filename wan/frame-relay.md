@@ -42,6 +42,8 @@ PVC由网管预先定义，维持路由器恒定连接，载波信号为各用�
 
 R2配置同理，`do ping R1的ip地址`。
 
+![](https://i.postimg.cc/4xGBnvCY/9-44.png)
+
 ```
 //进入（serial）串口设定IP地址
 R1(config)#int s1/1
