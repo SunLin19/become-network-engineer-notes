@@ -67,6 +67,12 @@ R1(config-if)#no sh
 ![](https://i.postimg.cc/rpRdTdfM/2-02.png)
 
 
+## 模拟运营商
+
+
+
+
+
 参考文献
 
 * [知乎-大公司是怎么接入网络服务的？](https://www.zhihu.com/question/318806738)
