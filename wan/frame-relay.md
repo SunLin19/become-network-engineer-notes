@@ -89,7 +89,10 @@ DTE与DCE的概念与区别：
 * DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
 * DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
 
-时钟的配置可参考：[百度经验-路由器RIP动态路由配置](https://jingyan.baidu.com/article/c74d6000a349090f6a595db6.html)
+时钟的配置可参考：
+* [百度经验-路由器RIP动态路由配置](https://jingyan.baidu.com/article/c74d6000a349090f6a595db6.html)
+* [Cisco IOS Interface and Hardware Component Command Reference](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html#wp3930272930)
+* [clock rate和bandwidth](https://bbs.51cto.com/archiver/tid-621568.html)
 
 
 ### 帧中继云
