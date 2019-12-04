@@ -92,6 +92,7 @@ FRSW1(config-if)#no ip add
 FRSW1(config-if)#enc frame-relay 
 FRSW1(config-if)#serial restart-delay 0
 FRSW1(config-if)#frame-relay intf-type dce
+//将R1的DLCI 101与本帧中继DLCI 555对应端口连接起来
 FRSW1(config-if)#frame-relay route 101 int s1/0 555
 FRSW1(config-if)#no sh
 FRSW1(config-if)#
@@ -101,7 +102,7 @@ FRSW1(config-if)#enc frame-relay
 FRSW1(config-if)#serial restart-delay 0
 //接口类型为NNI，帧中继交换机相连要使用NNI类型接口
 FRSW1(config-if)#frame-relay intf-type nni
-//将本帧中继上555的DLCI口的信息路由到101的口上,就是将两个口连起来
+//告知S1/1接口，本帧中继上555的DLCI口的信息路由到101的口上
 FRSW1(config-if)#frame-relay route 555 int s1/0 101
 FRSW1(config-if)#no sh
 ```
