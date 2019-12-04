@@ -75,13 +75,51 @@ R1(config-if)#no sh
 
 ### 帧中继云
 
-多台帧中继组成的云需要变更为[NNI(网络结点接口)](https://baike.baidu.com/item/NNI/5234091)接口类型传输。
+多台帧中继组成的云需要变更为[NNI(网络结点接口)](https://baike.baidu.com/item/NNI/5234091)接口类型传输。网络结点可分为两类：
+* 转结点：即支持网络连接性能的结点，通过通信线路转接和传递信息，如终端控制器，集中器等
+* 访问结点：信息交换的源结点和目标结点，它起到信源和信宿的作用，如终端、主计算机
 
 ![](https://i.postimg.cc/3xQ7CXMc/8-53.png)
 
-网络结点可分为两类：
-* 转结点：即支持网络连接性能的结点，通过通信线路转接和传递信息，如终端控制器，集中器等
-* 访问结点：信息交换的源结点和目标结点，它起到信源和信宿的作用，如终端、主计算机
+路由器模拟帧中继交换机（云）配置
+
+```
+FRSW1(config)#frame-relay switching
+FRSW1(config)#int s1/0    
+FRSW1(config-if)#no ip add
+FRSW1(config-if)#enc frame-relay 
+FRSW1(config-if)#serial restart-delay 0
+FRSW1(config-if)#frame-relay intf-type dce
+FRSW1(config-if)#frame-relay route 101 int s1/0 555
+FRSW1(config-if)#no sh
+FRSW1(config-if)#
+FRSW1(config-if)#int s1/1
+FRSW1(config-if)#no ip add
+FRSW1(config-if)#enc frame-relay 
+FRSW1(config-if)#serial restart-delay 0
+FRSW1(config-if)#frame-relay intf-type nni
+FRSW1(config-if)#frame-relay route 555 int s1/0 101
+FRSW1(config-if)#no sh
+```
+
+```
+FRSW2(config)#int s1/0
+FRSW2(config-if)#no ip add
+FRSW2(config-if)#enc frame-relay 
+FRSW2(config-if)#serial restart-delay 0
+FRSW2(config-if)#frame-relay intf-type nni
+FRSW2(config-if)#frame-relay route 555 interface s1/1 202
+FRSW2(config-if)#no sh
+FRSW2(config-if)#
+FRSW2(config-if)#int s1/1
+FRSW2(config-if)#no ip add
+FRSW2(config-if)#enc frame-relay 
+FRSW2(config-if)#serial restart-delay 0
+FRSW2(config-if)#frame-relay intf-type dce
+FRSW2(config-if)#frame-relay route 202 int s1/0 555
+FRSW2(config-if)#no sh
+```
+
 
 ## 模拟运营商
 
