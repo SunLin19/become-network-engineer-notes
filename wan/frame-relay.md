@@ -90,6 +90,7 @@ FRSW1(config)#int s1/0
 //帧中继不设置IP是因为他不需要用到IP,他是靠DICI寻找目标不是靠IP寻找
 FRSW1(config-if)#no ip add
 FRSW1(config-if)#enc frame-relay 
+//设置路由器在出现故障时尝试启动串行接口之前等待的时间
 FRSW1(config-if)#serial restart-delay 0
 FRSW1(config-if)#frame-relay intf-type dce
 //将R1的DLCI 101与本帧中继DLCI 555之间的传输S1/1端口连接起来
