@@ -31,6 +31,12 @@ Frame Relay（帧中继）是一个比专线经济的配置办法。假设一家
 
 ![](https://i.postimg.cc/QMKSnGyC/150413306.png)
 
+### 帧中继特征
+
+* 帧中继网络是NBMA（非广播多路访问）的二层网络技术协议用于交换数据
+* 帧中继基于PVC技术（虚拟通道），通过DLCI号标示PVC（DLCI号用于转发数据）
+* 帧中继是面向连接的网络协议，它通过LMI用于控制和判断链路的状态
+
 ## 帧中继实例
 
 DLCI(data link connection identifier)为数据链路标识，DLCI只有本地意义，它是标识两个相邻结点之间逻辑连接，一条端到端的虚电路可能通过多个节点，相邻节点之间每段虚电路都有自己的DLCI。
@@ -73,11 +79,22 @@ R1(config-if)#no sh
 ![](https://i.postimg.cc/rpRdTdfM/2-02.png)
 
 
-### 帧中继云
+### NNI、DTE、DCE
 
 多台帧中继组成的云需要变更为[NNI(网络结点接口)](https://baike.baidu.com/item/NNI/5234091)接口类型传输。网络结点可分为两类：
 * 转结点：即支持网络连接性能的结点，通过通信线路转接和传递信息，如终端控制器，集中器等
 * 访问结点：信息交换的源结点和目标结点，它起到信源和信宿的作用，如终端、主计算机
+
+DTE与DCE的概念与区别：
+
+* DTE(Data Terminal Equipment)数字终端设备，指一般的终端或是计算机、打印机等用户端设备
+* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
+* DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
+
+时钟的配置可参考：[百度经验-路由器RIP动态路由配置](https://jingyan.baidu.com/article/c74d6000a349090f6a595db6.html)
+
+
+### 帧中继云
 
 ![](https://i.postimg.cc/3xQ7CXMc/8-53.png)
 
@@ -129,37 +146,9 @@ FRSW2(config-if)#no sh
 ```
 
 
-,而且还要记得帧中继是一台交换机,交换机除了方便远程管理外IP没其他作用,所以都不设置.
+## 概念
 
 
-
-## 模拟运营商
-
-DTE与DCE的概念与区别：
-
-* DTE(Data Terminal Equipment)数字终端设备，指一般的终端或是计算机、打印机等用户端设备
-* DCE(DataCircuit-terminatingEquipment)，数字通信设备，通常指调制解调器，多路复用器或数字设备
-* DCE一方提供时钟，DTE不提供时钟，但它依靠DCE提供的时钟工作，比如PC与MODEM的连接
-
-多台帧中继组成的云需要变更为[NNI](https://baike.baidu.com/item/NNI/5234091)接口类型传输。
-
-
-
-# n
-
-概念
-
-1.帧中继网络的默认类型是NBMA（非广播多路访问）
-
-2.帧中继网络是一种二层网络技术协议用于交换数据
-
-3.帧中继通过DLCI号标示PVC（DLCI号用于转发数据）
-
-4.帧中继基于PVC技术（虚拟通道）
-
-5.帧中继是面向连接的网络协议（通过LMI）
-
-6.LMI 本地管理接口 （用于控制和判断链路的状态）
 
 
 ## 参考文献
