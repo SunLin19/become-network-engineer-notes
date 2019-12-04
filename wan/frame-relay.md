@@ -52,7 +52,7 @@ R1(config)#int s1/1
 R1(config-if)#ip add 192.168.10.1 255.255.255.0
 //封装帧中继格式来让接口知道使用frame-relay协定
 R1(config-if)#enc frame-relay 
-//serial restart-delay 连续重启延时，0代表不重启，比如30代表30秒后重启路由器
+//设置路由器在出现故障时尝试启动串行接口之前等待的时间
 R1(config-if)#serial restart-delay 0
 //在GNS3中配置Frame relay switch发送方端口与DLCI
 R1(config-if)#frame-relay interface-dlci 101
