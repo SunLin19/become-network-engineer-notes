@@ -75,7 +75,7 @@ R1(config-if)#no sh
 
 ### 帧中继云
 
-![]()
+![](https://i.postimg.cc/3xQ7CXMc/8-53.png)
 
 
 ## 模拟运营商
