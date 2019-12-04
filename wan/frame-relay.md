@@ -84,8 +84,10 @@ R1(config-if)#no sh
 路由器模拟帧中继交换机（云）配置
 
 ```
+//成为帧中继交换机
 FRSW1(config)#frame-relay switching
-FRSW1(config)#int s1/0    
+FRSW1(config)#int s1/0   
+//帧中继不设置IP是因为他不需要用到IP,他是靠DICI寻找目标不是靠IP寻找
 FRSW1(config-if)#no ip add
 FRSW1(config-if)#enc frame-relay 
 FRSW1(config-if)#serial restart-delay 0
@@ -99,6 +101,7 @@ FRSW1(config-if)#enc frame-relay
 FRSW1(config-if)#serial restart-delay 0
 //接口类型为NNI，帧中继交换机相连要使用NNI类型接口
 FRSW1(config-if)#frame-relay intf-type nni
+//将本帧中继上555的DLCI口的信息路由到101的口上,就是将两个口连起来
 FRSW1(config-if)#frame-relay route 555 int s1/0 101
 FRSW1(config-if)#no sh
 ```
@@ -121,6 +124,10 @@ FRSW2(config-if)#frame-relay intf-type dce
 FRSW2(config-if)#frame-relay route 202 int s1/0 555
 FRSW2(config-if)#no sh
 ```
+
+
+,而且还要记得帧中继是一台交换机,交换机除了方便远程管理外IP没其他作用,所以都不设置.
+
 
 
 ## 模拟运营商
