@@ -97,12 +97,14 @@ FRSW1(config-if)#int s1/1
 FRSW1(config-if)#no ip add
 FRSW1(config-if)#enc frame-relay 
 FRSW1(config-if)#serial restart-delay 0
+//接口类型为NNI，帧中继交换机相连要使用NNI类型接口
 FRSW1(config-if)#frame-relay intf-type nni
 FRSW1(config-if)#frame-relay route 555 int s1/0 101
 FRSW1(config-if)#no sh
 ```
 
 ```
+//FRSW2主要起中转作用，所以并未配置frame-relay switching
 FRSW2(config)#int s1/0
 FRSW2(config-if)#no ip add
 FRSW2(config-if)#enc frame-relay 
