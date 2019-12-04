@@ -73,6 +73,11 @@ R1(config-if)#no sh
 ![](https://i.postimg.cc/rpRdTdfM/2-02.png)
 
 
+### 帧中继云
+
+![]()
+
+
 ## 模拟运营商
 
 DTE与DCE的概念与区别：
