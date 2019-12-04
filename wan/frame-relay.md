@@ -93,7 +93,7 @@ FRSW1(config-if)#enc frame-relay
 FRSW1(config-if)#serial restart-delay 0
 FRSW1(config-if)#frame-relay intf-type dce
 //将R1的DLCI 101与本帧中继DLCI 555对应端口连接起来
-FRSW1(config-if)#frame-relay route 101 int s1/0 555
+FRSW1(config-if)#frame-relay route 101 int s1/1 555
 FRSW1(config-if)#no sh
 FRSW1(config-if)#
 FRSW1(config-if)#int s1/1
