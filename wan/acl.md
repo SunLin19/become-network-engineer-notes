@@ -84,6 +84,6 @@ R3(config-if)#ip access-group 1 in
 R3(config-if)#end
 ```
 
-
+此时双方的IP地址已经ping超时了，接着试试编辑acl
 
 
