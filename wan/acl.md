@@ -29,6 +29,9 @@ ACL语序与层层的`if-else`结构顺序一致，出站流程同理。
 
 ![](https://i.postimg.cc/Qdjr4fmJ/5-01-47.png)
 
+
+<details><summary> click me! </summary>
+
 ```
 R1(config)#int s1/0 
 R1(config-if)#ip add 192.168.1.2 255.255.255.0
@@ -55,6 +58,9 @@ R3(config-if)#no sh
 R3(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.10.3
 R3(config)#do ping 192.168.1.1
 ```
+</details>
+
+
 
 ### acl测试
 
