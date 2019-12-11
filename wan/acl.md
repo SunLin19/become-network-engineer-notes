@@ -77,7 +77,7 @@ R3(config)#access-list 1 permit any
 
 /**
  * 将编号是1的标准ACL应用到路由器的s0/1接口上
- * 方向是in，即进入的方向
+ * 方向是in，即进入的方向；反之，out则为出去的方向
  */
 R3(config)#int s1/0
 R3(config-if)#ip access-group 1 in
