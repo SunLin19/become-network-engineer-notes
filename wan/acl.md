@@ -24,3 +24,17 @@ ACL语序与层层的`if-else`结构顺序一致，出站流程同理。
 * 通配符即反掩码，掩码位取反
 
 扩展版：`access-list {100-199} {permit | deny} protocol source-addr [source-wildcard] [operator operand] destination-addr [destination-wildcard] [operator operand] [established]`
+
+## acl实例构建
+
+![]()
+
+```
+R1(config)#int s1/0 
+R1(config-if)#ip add 192.168.1.2 255.255.255.0
+R1(config-if)#no sh
+                      
+R1(config-if)#int s1/1
+R1(config-if)#ip add 192.168.10.3 255.255.255.0
+R1(config-if)#no sh
+```
