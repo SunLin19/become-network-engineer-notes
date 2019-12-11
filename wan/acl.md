@@ -93,7 +93,7 @@ Standard IP access list 1 //ACL类型和编号
     20 permit any (30 matches) //matches表示匹配的次数
 ```
 
-可以使用下面的命令来删除标准ACL中对应的条目，但标准ACL配置完成后，如不需要复用可使用`no access-list 1`直接取消配置效果并删除ACL1。
+可以使用下面的命令来删除标准ACL中对应的条目，如不需复用，可使用`no access-list 1`直接取消配置效果并删除ACL1。
 
 ```
 /*首先进入标准ACL 1的编辑模式*/
