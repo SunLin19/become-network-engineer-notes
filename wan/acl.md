@@ -53,4 +53,5 @@ R3(config)#int s1/0
 R3(config-if)#ip add 192.168.10.4 255.255.255.0
 R3(config-if)#no sh
 R3(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.10.3
+R3(config)#do ping 192.168.1.1
 ```
