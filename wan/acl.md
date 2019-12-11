@@ -7,7 +7,7 @@ ACL的作用及意义：控制数据流量经过路径的准入准出，以达�
 
 ACL语序与层层的`if-else`结构顺序一致
 
-![]()
+![](https://i.postimg.cc/zGhKPvQr/10-21-55.png)
 
 
 acl配置命令的语法规则
