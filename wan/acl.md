@@ -17,5 +17,5 @@ ACL语序与层层的`if-else`结构顺序一致，出站流程同理。
 
 `access-list {1-99} {permit | deny} source-addr [source-wildcard]`
 
-也需要注意
+标准acl所使用的编号，
 
