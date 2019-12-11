@@ -55,3 +55,16 @@ R3(config-if)#no sh
 R3(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.10.3
 R3(config)#do ping 192.168.1.1
 ```
+
+### acl测试
+
+创建编号为1的ACL标准版，阻止192.168.1.1连接到192.168.10.4
+
+```
+R3(config)#access-list 1 deny host 192.168.1.1
+R3(config)#access-list 1 permit any
+```
+
+
+
+
