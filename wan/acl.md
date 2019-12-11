@@ -43,6 +43,8 @@ R1(config-if)#no sh
 R2(config)#int s1/0
 R2(config-if)#ip add 192.168.1.1 255.255.255.0
 R2(config-if)#no sh
+//0.0.0.0 代表的是所有任意的意思
+//所有网络到达路径经过192.168.1.2转发
 R2(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.1.2 
 ```
 
