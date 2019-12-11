@@ -67,7 +67,12 @@ R3(config)#do ping 192.168.1.1
 创建编号为1的ACL标准版，阻止192.168.1.1连接到192.168.10.4
 
 ```
+/**
+两个指令顺序不能颠倒，如果将允许任何IP地址放在第一条，
+那么由于每个IP地址都能匹配，第二条将永远不会被执行到
+*/
 R3(config)#access-list 1 deny host 192.168.1.1
+//所有acl在尾处都隐藏拒绝所有项，若没有permit any将拒绝所有流量
 R3(config)#access-list 1 permit any
 ```
 
