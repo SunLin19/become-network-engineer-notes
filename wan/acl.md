@@ -93,5 +93,21 @@ Standard IP access list 1 //ACL类型和编号
     20 permit any (30 matches) //matches表示匹配的次数
 ```
 
+可以使用下面的命令来删除标准ACL中对应的条目，但标准ACL配置完成后，如不需要了可使用`no access-list 1`
 
+```
+/*首先进入标准ACL 1的编辑模式*/
+R3(config)#ip access-list standard 1
+R3(config-std-nacl)#no 10  /*删除行号是10的这一行*/
+R3(config-std-nacl)#do sh access-li
+Standard IP access list 1
+    20 permit any (30 matches)
+```
+
+取消接口上调用的acl
+
+```
+R3(config)#int s1/0
+R3(config-if)#no ip access-group 1 in
+```
 
