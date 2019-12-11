@@ -74,6 +74,14 @@ R3(config)#do ping 192.168.1.1
 R3(config)#access-list 1 deny host 192.168.1.1
 //所有acl在尾处都隐藏拒绝所有项，若没有permit any将拒绝所有流量
 R3(config)#access-list 1 permit any
+
+/**
+ * 将编号是1的标准ACL应用到路由器的s0/1接口上
+ * 方向是in，即进入的方向
+ */
+R3(config)#int s 0/1
+R3(config-if)#ip access-group 1 in
+R3(config-if)#end
 ```
 
 
