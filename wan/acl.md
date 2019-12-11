@@ -17,5 +17,10 @@ ACL语序与层层的`if-else`结构顺序一致，出站流程同理。
 
 `access-list {1-99} {permit | deny} source-addr [source-wildcard]`
 
-标准acl所使用的编号，
+acl使用编号:
+
+* 标准版：1~99与1300~1999
+* 扩展版：100~199和2000~2699
+
+关键字：***permit*** 允许流量进出；***deny*** 拒绝流量进出。
 
