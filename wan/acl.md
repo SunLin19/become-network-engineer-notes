@@ -38,3 +38,17 @@ R1(config-if)#int s1/1
 R1(config-if)#ip add 192.168.10.3 255.255.255.0
 R1(config-if)#no sh
 ```
+
+```
+R2(config)#int s1/0
+R2(config-if)#ip add 192.168.1.1 255.255.255.0
+R2(config-if)#no sh
+R2(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.1.2 
+```
+
+```
+R3(config)#int s1/0
+R3(config-if)#ip add 192.168.10.4 255.255.255.0
+R3(config-if)#no sh
+R3(config-if)#ip route 0.0.0.0 0.0.0.0 192.168.10.3
+```
