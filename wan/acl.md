@@ -27,7 +27,7 @@ ACL语序与层层的`if-else`结构顺序一致，出站流程同理。
 
 ## acl实例构建
 
-![]()
+![](https://i.postimg.cc/Qdjr4fmJ/5-01-47.png)
 
 ```
 R1(config)#int s1/0 
