@@ -84,6 +84,17 @@ R3(config-if)#ip access-group 1 in
 R3(config-if)#end
 ```
 
-此时双方的IP地址已经ping超时了，接着试试编辑acl
+此时双方的IP地址已经ping超时了，接着查看acl条目
+
+```
+ * 每一行是一个条目,其中"10"是行号，
+ * 后面是执行的操作，（22 matches）表示匹配的次数。
+ */
+
+R3(config)#do sh access-li
+Standard IP access list 1 //ACL类型和编号
+    10 deny   192.168.1.1 (30 matches) //1行为1条目,其中"10"是行号
+    20 permit any (30 matches) //matches表示匹配的次数
+```
 
 
