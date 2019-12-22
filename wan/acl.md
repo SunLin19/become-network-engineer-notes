@@ -133,7 +133,7 @@ R1(config)#access-list 100 deny tcp host 192.168.1.1 host 192.168.10.4 eq telnet
 R1(config)#access-list 100 permit ip any any
 
 //启用ACL
-R1(config)#int s 0/0
+R1(config)#int s 1/0
 R1(config-if)#ip access-group 100 in
 R1(config-if)#end
 
