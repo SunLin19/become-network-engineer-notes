@@ -110,7 +110,7 @@ R3(config-if)#no ip access-group 1 in
 
 ### 扩展acl
 
-
+路由器上有5个VTY口，分别0、1、2、3、4，如果想同时配置这5口，就`line vty 0 4`
 
 
 
