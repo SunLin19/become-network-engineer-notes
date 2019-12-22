@@ -110,6 +110,15 @@ R3(config-if)#no ip access-group 1 in
 
 ### 扩展acl
 
+在R3上配置VTY
+
+```
+R3(config)#line vty 0 4
+R3(config-line)#password 123
+R3(config-line)#login
+R3(config-line)#end
+```
+
 VTY是远程登陆的虚拟端口，路由器上从0-4有5个VTY口，如果想同时配置这5个端口 `line vty 0 4`
 
 
