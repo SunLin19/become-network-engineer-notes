@@ -108,3 +108,13 @@ R3(config)#int s1/0
 R3(config-if)#no ip access-group 1 in
 ```
 
+### 扩展acl
+
+
+
+
+
+
+
+
+
