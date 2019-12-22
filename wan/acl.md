@@ -119,6 +119,21 @@ R3(config-line)#login
 R3(config-line)#end
 ```
 
+ACL配置拒绝R2到R3的Telnet通信
+
+```
+R2(config)#access-list 100 deny tcp host 192.168.1.1 host 192.168.10.4 eq telnet
+/*第二条命令允许所有IP通信，源和目的是任意主机。*/
+
+R2(config)#access-list 100 permit ip any any
+
+R2(config)#int s 0/0
+R2(config-if)#ip access-group 100 in
+R2(config-if)#end
+
+```
+
+
 VTY是远程登陆的虚拟端口，路由器上从0-4有5个VTY口，如果想同时配置这5个端口 `line vty 0 4`
 
 
