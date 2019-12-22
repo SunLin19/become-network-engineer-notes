@@ -110,9 +110,10 @@ R3(config-if)#no ip access-group 1 in
 
 ### 扩展acl
 
-在R3上配置VTY
+在R3上配置远程登陆的虚拟端口（VTY）
 
 ```
+//路由器上从0-4有5个VTY，同时配置这5个端口 `
 R3(config)#line vty 0 4
 R3(config-line)#password 123
 R3(config-line)#login
@@ -122,19 +123,24 @@ R3(config-line)#end
 ACL配置拒绝R2到R3的Telnet通信
 
 ```
-R2(config)#access-list 100 deny tcp host 192.168.1.1 host 192.168.10.4 eq telnet
-/*第二条命令允许所有IP通信，源和目的是任意主机。*/
+/*
+ * 扩展ACL号为100，第一条命令拒绝tcp类型的连接，
+ * 源主机是192.168.1.1，没有配置源端口，默认就匹配所有端口，
+ * 目的主机是192.168.10.4，目的端口是23，即telnet
+ */
+R1(config)#access-list 100 deny tcp host 192.168.1.1 host 192.168.10.4 eq telnet
+//允许所有IP通信，源和目的是任意主机
+R1(config)#access-list 100 permit ip any any
 
-R2(config)#access-list 100 permit ip any any
-
-R2(config)#int s 0/0
-R2(config-if)#ip access-group 100 in
-R2(config-if)#end
+//启用ACL
+R1(config)#int s 0/0
+R1(config-if)#ip access-group 100 in
+R1(config-if)#end
 
 ```
 
 
-VTY是远程登陆的虚拟端口，路由器上从0-4有5个VTY口，如果想同时配置这5个端口 `line vty 0 4`
+
 
 
 
