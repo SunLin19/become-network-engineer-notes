@@ -135,24 +135,14 @@ R1(config)#access-list 100 permit ip any any
 //启用ACL
 R1(config)#int s 1/0
 R1(config-if)#ip access-group 100 in
-R1(config-if)#end
 
+---
+/*telnet 192.168.10.4 测试完成后，删除之前配置的ACL100*/
+R2(config)#no access-list 100
+R2(config)#int s 1/0
+R2(config-if)#no ip access-group 100 in
+R2(config-if)#exit
 ```
-
-恢复R2到R3的telnet通信
-
-```
-	/*
- * 末尾添加established参数，
- * 注意，因为是允许R3访问R1的telnet，
- * 源和目的地址以及端口别搞错了，
- * 这个访问列表是当R3的telnet发到R1，R1回复的TCP中携带ACK号才匹配的，
- * 所以源应该是R1，源端口应该是R1的telnet端口23，
- * 目的端口是R3上的一个随机端口，没有写出来就是匹配所有端口。
- */
-
-```
-
 
 
 
