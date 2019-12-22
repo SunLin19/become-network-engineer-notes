@@ -74,7 +74,7 @@ https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_
 
 * 广域网
   * [帧中继](wan/frame-relay.md) （已完成）
-  * 访问控制列表 计划中
+  * 访问控制列表 （烂尾）
 
 
 ## 相关资源分享
