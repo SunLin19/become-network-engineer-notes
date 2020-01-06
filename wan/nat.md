@@ -89,8 +89,18 @@ Pro Inside global      Inside local       Outside local      Outside global
  * 配置外网地址池,ipool是这个地址池的自定义名称,
  * 外网地址池范围从11.11.11.10-11.11.11.30，40个可用于转换的IP地址
  */
+
 R1(config)#ip nat pool poolname1 11.11.11.10 11.11.11.30 netmask 255.255.255.0
+
+//设置一个ACL将192.168.1.0/24网段都允许被转换。
+R1(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+
+//开启动态NAT，允许ACL 1中的私有地址转换成poolname1中的外网IP
+R1(config)#ip nat inside source list 1 pool poolname1
 ```
+
+
+
 
 
 参考链接：
