@@ -8,7 +8,7 @@
 
 ## NAT配置
 
-![](https://i.postimg.cc/jjKT9xNJ/v612c7-BTr-S.png)
+![](https://i.postimg.cc/j2mt5b2P/6-UMbqjj-JGv.png)
 
 ***注：VPCS选GNS3 VM***
 
