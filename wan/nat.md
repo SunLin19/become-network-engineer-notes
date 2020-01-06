@@ -50,6 +50,24 @@ R1(config)#ip nat inside source static 192.168.1.1 11.11.11.10
 R1(config)#ip nat inside source static 192.168.1.2 11.11.11.20
 ```
 
+配置R2，并开启ICMP调试，以此查看PC ping R2的ICMP
+
+```
+R2(config)#int s1/0
+R2(config-if)#ip add 11.11.11.111 255.255.255.0
+R2(config-if)#no sh
+R2(config-if)#
+R2(config-if)#do debug ip icmp
+ICMP packet debugging is on
+
+/*
+ * R2上的ICMP调试显示发送方为11.11.11.10，
+ * 说明R1上的静态NAT是成功的，成功将PC-1的私有IP转换成了公网IP。
+ */
+R2#
+*Mar  1 00:47:56.075: ICMP: echo reply sent, src 11.11.11.111, dst 11.11.11.10
+```
+
 
 参考链接：
 
