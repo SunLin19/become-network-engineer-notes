@@ -82,11 +82,11 @@ Pro Inside global      Inside local       Outside local      Outside global
 
 ### 动态NAT
 
-动态NAT：动态NAT是在路由器上配置一个外网IP地址池，
+**动态NAT是在路由器上配置一个外网IP地址池，和DHCP租约IP有相似之处。**
 
+```
 
-
-
+```
 
 
 参考链接：
