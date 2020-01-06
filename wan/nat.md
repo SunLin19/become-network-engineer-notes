@@ -97,6 +97,12 @@ R1(config)#access-list 1 permit 192.168.1.0 0.0.0.255
 
 //开启动态NAT，允许ACL 1中的私有地址转换成poolname1中的外网IP
 R1(config)#ip nat inside source list 1 pool poolname1
+
+PC-2> ping 11.11.11.111
+
+//debug ip icmp
+R2#
+*Mar  1 02:30:55.723: ICMP: echo reply sent, src 11.11.11.111, dst 11.11.11.11
 ```
 
 
