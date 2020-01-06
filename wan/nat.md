@@ -8,7 +8,7 @@
 
 ## NAT配置
 
-![]()
+![](https://i.postimg.cc/jjKT9xNJ/v612c7-BTr-S.png)
 
 ### 静态NAT
 
