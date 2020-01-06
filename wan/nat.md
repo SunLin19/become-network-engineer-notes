@@ -37,10 +37,17 @@ SW1(config-if-range)#no sh
 R1(config)#int f0/0
 R1(config-if)#ip add 192.168.1.254 255.255.255.0 //配置内网网关
 R1(config-if)#no sh
-R1(config-if)#ip nat inside //NAT转内网
+R1(config-if)#ip nat inside //配置内网入口
 
+//配置与ISP相连的外网接口
+R1(config-if)#int s1/0
+R1(config-if)#ip add 11.11.11.11 255.255.255.0
+R1(config-if)#no sh
+R1(config-if)#ip nat outside //配置外网入口
 
-
+/*配置静态转换条目，每个内网IP需要和一个外网IP对应*/
+R1(config)#ip nat inside source static 192.168.1.1 11.11.11.10
+R1(config)#ip nat inside source static 192.168.1.2 11.11.11.20
 ```
 
 
