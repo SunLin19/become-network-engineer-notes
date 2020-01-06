@@ -24,11 +24,9 @@ PC-1> ip 192.168.1.1 24 192.168.1.254
 PC-2> ip 192.168.1.2 24 192.168.1.254
 ```
 
-***注：网上搜寻IOU镜像为三层交换机，需要开启二层数据链路端口***
-
 ```
 SW1(config)#int range e0/0-2 
-SW1(config-if-range)#swi
+SW1(config-if-range)#swi //三层交换机，需要开启二层数据链路端口
 SW1(config-if-range)#swi mode access
 SW1(config-if-range)#no sh
 ```
