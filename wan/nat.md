@@ -68,6 +68,14 @@ R2#
 *Mar  1 00:47:56.075: ICMP: echo reply sent, src 11.11.11.111, dst 11.11.11.10
 ```
 
+查看R1的NAT地址转换表
+
+```
+R1(config)#do show ip nat translations
+Pro Inside global      Inside local       Outside local      Outside global
+--- 11.11.11.10        192.168.1.1        ---                ---
+--- 11.11.11.20        192.168.1.2        ---                ---
+```
 
 参考链接：
 
