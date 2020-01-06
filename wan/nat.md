@@ -105,7 +105,54 @@ R2#
 *Mar  1 02:30:55.723: ICMP: echo reply sent, src 11.11.11.111, dst 11.11.11.11
 ```
 
+### 配置PAT
 
+其他设备配置保持不变，重设R1（右击R1，stop->start）
+
+```
+R1(config)#int f0/0
+R1(config-if)#ip add 192.168.1.254 255.255.255.0
+R1(config-if)#ip nat inside
+
+R1(config-if)#int s1/0
+R1(config-if)#ip add 11.11.11.11 255.255.255.0
+R1(config-if)#ip nat outside
+R1(config-if)#no sh
+
+
+//配置允许转换的内部地址范围
+R1(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+//ACL1中允许的私有IP地址将会共用R1的s0/0接口外网IP地址
+R1(config)#ip nat inside source list 1 interface s1/0 overload
+R1(config)#end
+```
+
+在PC-1中Ping测试
+
+```
+PC-1> ping 11.11.11.111
+
+//可以看到内部IP地址使用了外网IP不同的端口
+R1#show ip nat translations
+Pro Inside global      Inside local       Outside local      Outside global
+icmp 11.11.11.11:27224 192.168.1.2:27224  11.11.11.111:27224 11.11.11.111:27224
+icmp 11.11.11.11:27480 192.168.1.2:27480  11.11.11.111:27480 11.11.11.111:27480
+icmp 11.11.11.11:27736 192.168.1.2:27736  11.11.11.111:27736 11.11.11.111:27736
+```
+
+### 配置静态端口映射
+
+假设PC-1上面架设了TFTP服务，外网要访问该服务就需要将PC-1（192.168.1.1）的69端口映射到外网s0/0（11.11.11.11）的某个端口上，请看下面的实际操作：
+
+```
+ip nat inside source static udp 192.168.1.1 69 11.11.11.11 69
+
+R1#show ip nat tr
+Pro Inside global      Inside local       Outside local      Outside global
+udp 11.11.11.11:69     192.168.1.1:69     ---                ---
+```
+
+配置完静态端口映射后，外网的用户只需要访问11.11.11.11:69就能访问到内网的192.168.1.1:69，即可通过外网IP访问到内网VPC1的TFTP服务了。
 
 
 
