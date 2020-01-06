@@ -31,7 +31,7 @@ SW1(config-if-range)#swi mode access
 SW1(config-if-range)#no sh
 ```
 
-配置R1网关接口，
+在边界路由做NAT
 
 ```
 
