@@ -85,7 +85,11 @@ Pro Inside global      Inside local       Outside local      Outside global
 **动态NAT是在路由器上配置一个外网IP地址池，和DHCP租约IP有相似之处。**
 
 ```
-
+/*
+ * 配置外网地址池,ipool是这个地址池的自定义名称,
+ * 外网地址池范围从11.11.11.10-11.11.11.30，40个可用于转换的IP地址
+ */
+R1(config)#ip nat pool poolname1 11.11.11.10 11.11.11.30 netmask 255.255.255.0
 ```
 
 
