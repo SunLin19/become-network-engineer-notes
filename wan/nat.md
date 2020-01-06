@@ -2,6 +2,7 @@
 
 > 摘自 [[CCNA图文笔记]-31-NAT协议实例详解](https://www.qingsword.com/qing/745.html)
 
+总结这段话，inside 先 routing 再做 nat，outside 先 nat，再做 routing。 
 
 参考链接：
 
