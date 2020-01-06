@@ -8,6 +8,8 @@
 
 ## NAT配置
 
+NAT的实现方式有三种，即静态转换Static Nat、动态转换Dynamic Nat和端口多路复用OverLoad。
+
 ![](https://i.postimg.cc/j2mt5b2P/6-UMbqjj-JGv.png)
 
 ### 静态NAT配置
