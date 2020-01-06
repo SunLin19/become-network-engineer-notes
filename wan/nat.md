@@ -10,20 +10,27 @@
 
 ![](https://i.postimg.cc/j2mt5b2P/6-UMbqjj-JGv.png)
 
-***注：VPCS选GNS3 VM，set pcname xxxx 即为设置PC名称***
 
 ### 静态NAT配置
 
 静态NAT就是一对一的NAT，内部有多少私有地址需要连接外网，就配置等量的外网IP与其对应。
 
-```
-PC-1> ip 192.168.1.1 24 192.168.1.254
-```
+***注：VPCS选GNS3 VM，set pcname xxxx 即为设置PC名称***
 
 ```
+PC-1> ip 192.168.1.1 24 192.168.1.254
+
 PC-2> ip 192.168.1.2 24 192.168.1.254
 ```
 
+***注：网上搜寻IOU镜像为三层交换机，需要开启二层数据链路端口***
+
+```
+SW1(config)#int range e0/0-2 
+SW1(config-if-range)#swi
+SW1(config-if-range)#swi mode access
+SW1(config-if-range)#no sh
+```
 
 参考链接：
 
