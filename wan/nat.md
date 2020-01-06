@@ -10,8 +10,15 @@
 
 ![](https://i.postimg.cc/jjKT9xNJ/v612c7-BTr-S.png)
 
-### 静态NAT
+***注：VPCS选GNS3 VM***
 
+### 静态NAT配置
+
+静态NAT就是一对一的NAT，内部有多少私有地址需要连接外网，就配置等量的外网IP与其对应。
+
+```
+
+```
 
 
 参考链接：
