@@ -34,7 +34,11 @@ SW1(config-if-range)#no sh
 在边界路由做NAT
 
 ```
-
+R1(config)#int f0/0
+R1(config-if)#ip add 192.168.1.254 255.255.255.0 //配置内网网关接口
+R1(config-if)#no sh
+//
+R1(config-if)#ip nat inside
 ```
 
 
